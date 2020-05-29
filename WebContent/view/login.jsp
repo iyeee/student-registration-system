@@ -65,10 +65,10 @@
 		});
 	})
 </script> 
-<title>登录|学生信息管理系统</title>
+<title>学生信息管理系统-用户登录</title>
 <meta name="keywords" content="学生信息管理系统">
 </head>
-<body>
+<body> 
 
 <div class="header" style="padding: 0;">
 	<h2 style="color: white; width: 400px; height: 60px; line-height: 60px; margin: 0 0 0 30px; padding: 0;">学生信息管理系统</h2>
@@ -117,7 +117,7 @@
     </form>
   </div>
 </div>
-<div class="footer">Copyright &nbsp; artisan @ 猿来入此 </div>
+<div class="footer">Copyright &nbsp; @2020 版权所有 软件工程课设小组 </div>
 
 
 </body>
