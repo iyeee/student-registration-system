@@ -19,8 +19,8 @@ public class Student {
 	private String status;
 	private String sex;
 	private String identityId;
-	private Date graduateDate;
-	private Date birthday;
+	private String graduateDate;
+	private String birthday;
 	private String mobile;
 	private String qq;
 	private InputStream photo;
@@ -105,19 +105,19 @@ public class Student {
 		this.identityId = identityId;
 	}
 
-	public Date getGraduateDate() {
+	public String getGraduateDate() {
 		return graduateDate;
 	}
 
-	public void setGraduateDate(Date graduateDate) {
+	public void setGraduateDate(String graduateDate) {
 		this.graduateDate = graduateDate;
 	}
 
-	public Date getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
 
-	public void setBirthday(Date birthday) {
+	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 
@@ -143,5 +143,26 @@ public class Student {
 
 	public void setPhoto(InputStream photo) {
 		this.photo = photo;
+	}
+
+	@Override
+	public String toString() {
+		return "Student{" +
+				"id=" + id +
+				", sn='" + sn + '\'' +
+				", num=" + num +
+				", name='" + name + '\'' +
+				", password='" + password + '\'' +
+				", grade=" + grade +
+				", clazzId=" + clazzId +
+				", status='" + status + '\'' +
+				", sex='" + sex + '\'' +
+				", identityId='" + identityId + '\'' +
+				", graduateDate=" + graduateDate +
+				", birthday=" + birthday +
+				", mobile='" + mobile + '\'' +
+				", qq='" + qq + '\'' +
+				", photo=" + photo +
+				'}';
 	}
 }

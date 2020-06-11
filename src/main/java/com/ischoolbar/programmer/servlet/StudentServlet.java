@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ischoolbar.programmer.util.JsonDateValueProcessor;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
@@ -22,6 +23,9 @@ import com.ischoolbar.programmer.model.Clazz;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.util.SnGenerateUtil;
+import net.sf.json.JsonConfig;
+import org.junit.Test;
+
 /**
  * 
  * @author llq
@@ -32,6 +36,7 @@ public class StudentServlet extends HttpServlet {
 		doPost(request, response);
 	}
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
+		System.out.println("StudentServlet");
 		String method = request.getParameter("method");
 		if("toStudentListView".equals(method)){
 			studentList(request,response);
@@ -72,6 +77,7 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void editStudent(HttpServletRequest request,
 			HttpServletResponse response) {
+		System.out.println("eidtStudent");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		int id = Integer.parseInt(request.getParameter("id"));
@@ -80,6 +86,9 @@ public class StudentServlet extends HttpServlet {
 		String qq = request.getParameter("qq");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
 		String status=request.getParameter("status");
+		String identityId=request.getParameter("identityID");
+		String graduateDate=request.getParameter("graduateDate");
+		String birthday=request.getParameter("birthday");
 		Student student = new Student();
 		student.setClazzId(clazzId);
 		student.setMobile(mobile);
@@ -88,6 +97,9 @@ public class StudentServlet extends HttpServlet {
 		student.setQq(qq);
 		student.setSex(sex);
 		student.setStatus(status);
+		student.setIdentityId(identityId);
+		student.setGraduateDate(graduateDate);
+		student.setBirthday(birthday);
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.editStudent(student)){
 			try {
@@ -102,6 +114,7 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void getStudentList(HttpServletRequest request,
 			HttpServletResponse response) {
+		System.out.println("getStudentList");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("studentName");
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
@@ -118,18 +131,25 @@ public class StudentServlet extends HttpServlet {
 			student.setId(currentUser.getId());
 		}
 		StudentDao studentDao = new StudentDao();
-		List<Student> clazzList = studentDao.getStudentList(student, new Page(currentPage, pageSize));
+		List<Student> studentList = studentDao.getStudentList(student, new Page(currentPage, pageSize));
+		/*
+		*≤‚ ‘*/
+		for (Student student1 : studentList) {
+			System.out.println(student1);
+		}
 		int total = studentDao.getStudentListTotal(student);
 		studentDao.closeCon();
 		response.setCharacterEncoding("UTF-8");
 		Map<String, Object> ret = new HashMap<String, Object>();
 		ret.put("total", total);
-		ret.put("rows", clazzList);
+		ret.put("rows", studentList);
 		try {
 			String from = request.getParameter("from");
 			if("combox".equals(from)){
-				response.getWriter().write(JSONArray.fromObject(clazzList).toString());
+				System.out.println(JSONArray.fromObject(studentList).toString());
+				response.getWriter().write(JSONArray.fromObject(studentList).toString());
 			}else{
+				System.out.println(JSONArray.fromObject(ret).toString());
 				response.getWriter().write(JSONObject.fromObject(ret).toString());
 			}
 		} catch (IOException e) {
@@ -139,6 +159,7 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void addStudent(HttpServletRequest request,
 			HttpServletResponse response) throws ParseException {
+		System.out.println("addStudent");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
@@ -147,15 +168,13 @@ public class StudentServlet extends HttpServlet {
 		String qq = request.getParameter("qq");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
 
-		int num=Integer.parseInt(request.getParameter("num"));
-		int grade=Integer.parseInt(request.getParameter("grade"));
+//		int num=Integer.parseInt(request.getParameter("num").trim());
+		int grade=Integer.parseInt(request.getParameter("grade").trim());
 		String status=request.getParameter("status");
+//		String graduateDate=request.getParameter("graduateDate");
+//		String birthday=request.getParameter("birthday");
+		String identityId=request.getParameter("identityId");
 
-		String graduateDate = request.getParameter("graduateDate");
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-		java.util.Date parse = simpleDateFormat.parse(graduateDate);
-		Date Date=new Date(parse.getTime());
-		Date birth=new Date(simpleDateFormat.parse(request.getParameter("birthday")).getTime());
 
 		Student student = new Student();
 		student.setClazzId(clazzId);
@@ -166,15 +185,17 @@ public class StudentServlet extends HttpServlet {
 		student.setSex(sex);
 		student.setSn(SnGenerateUtil.generateSn(clazzId));
 
-		student.setNum(num);
+//		student.setNum(num);
 		student.setGrade(grade);
 		student.setStatus(status);
-		student.setGraduateDate(Date);
-		student.setBirthday(birth);
+//		student.setGraduateDate(graduateDate);
+//		student.setBirthday(birthday);
+		student.setIdentityId(identityId);
 
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.addStudent(student)){
 			try {
+				System.out.println("success");
 				response.getWriter().write("success");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -184,10 +205,47 @@ public class StudentServlet extends HttpServlet {
 			}
 		}
 	}
+	/*
+	*≤‚ ‘addStudent*/
+	@Test
+	public void testAddStudent(){
+		Student student = new Student();
+		String name="mqd";
+		String password="12332112";
+		String sex="ƒ–";
+		String mobile="13123983121";
+		String qq="123123123";
+		int grade=2019;
+		int clazzId=1;
+		String status="1231";
+		String identityId="123";
+		String graduateDate="2020-06-30";
+		String birthday="2020-06-30";
+		student.setClazzId(clazzId);
+		student.setMobile(mobile);
+		student.setName(name);
+		student.setPassword(password);
+		student.setQq(qq);
+		student.setSex(sex);
+		student.setSn(SnGenerateUtil.generateSn(clazzId));
+
+//		student.setNum(num);
+		student.setGrade(grade);
+		student.setStatus(status);
+		student.setGraduateDate(graduateDate);
+		student.setBirthday(birthday);
+		student.setIdentityId(identityId);
+
+		StudentDao studentDao = new StudentDao();
+		if(studentDao.addStudent(student)) {
+			System.out.println("success");
+		}
+	}
 	private void studentList(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
 		// TODO Auto-generated method stub
 		try {
+			System.out.println("studentList");
 			request.getRequestDispatcher("view/studentList.jsp").forward(request, response);
 		} catch (ServletException e) {
 			// TODO Auto-generated catch block

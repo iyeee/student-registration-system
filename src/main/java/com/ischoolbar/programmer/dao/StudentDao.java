@@ -10,6 +10,7 @@ import com.ischoolbar.programmer.model.Admin;
 import com.ischoolbar.programmer.model.Clazz;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
+import com.ischoolbar.programmer.util.DateFormatUtil;
 import com.ischoolbar.programmer.util.StringUtil;
 import org.junit.Test;
 
@@ -35,8 +36,13 @@ public class StudentDao extends BaseDao {
 		sql += ",sex = '" + student.getSex() + "'";
 		sql += ",mobile = '" + student.getMobile() + "'";
 		sql += ",qq = '" + student.getQq() + "'";
-		sql += ",clazz_id = " + student.getClazzId();
-		sql += ",status = '"+student.getStatus();
+		sql += ",clazz_id = '" + student.getClazzId()+"'";
+		sql += ",status = '"+student.getStatus()+"'";
+
+		sql += ",identity_id = '"+student.getIdentityId();
+//		sql += ",birthday = '"+student.getBirthday()+"'";
+//		sql += ",graduate_date = '"+student.getGraduateDate();
+
 		sql += "' where id = " + student.getId();
 		return update(sql);
 	}
@@ -78,11 +84,9 @@ public class StudentDao extends BaseDao {
 				student.setSex(resultSet.getString("sex"));
 				student.setSn(resultSet.getString("sn"));
 				student.setNum(resultSet.getInt("num"));
-				student.setGrade(resultSet.getInt("grade"));
-				student.setStatus(resultSet.getString("status"));
-				student.setIdentityId(resultSet.getString("identity_id"));
-				student.setGraduateDate(resultSet.getDate("graduate_date"));
-				student.setBirthday(resultSet.getDate("birthday"));
+				student.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
+				student.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+
 				return student;
 			}
 		} catch (SQLException e) {
@@ -117,6 +121,14 @@ public class StudentDao extends BaseDao {
 				s.setQq(resultSet.getString("qq"));
 				s.setSex(resultSet.getString("sex"));
 				s.setSn(resultSet.getString("sn"));
+				s.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
+				s.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+				s.setGrade(resultSet.getInt("grade"));
+				s.setStatus(resultSet.getString("status"));
+				s.setNum(resultSet.getInt("num"));
+				s.setIdentityId(resultSet.getString("identity_id"));
+
+
 				ret.add(s);
 			}
 		} catch (SQLException e) {
@@ -181,21 +193,17 @@ public class StudentDao extends BaseDao {
 	@Test
 	public void Test2() throws ParseException {
 		Student student=new Student();
-		student.setId(16);
-		student.setSn("S21528633634989");
+		student.setId(22);
 		student.setNum(21172536);
-		student.setName("莫琪");
+		student.setName("李四光");
 		student.setPassword("980523");
 		student.setGrade(2017);
 		student.setClazzId(4);
 		student.setStatus("大组长");
 		student.setSex("女");
-		student.setIdentityId("330481998072638462");
-		SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
-		java.util.Date gradaDate=sdf.parse("2021-06-30");
-		java.util.Date birth=sdf.parse("1998-06-30");
-		student.setGraduateDate(new Date(gradaDate.getTime()));
-		student.setBirthday(new Date(birth.getTime()));
+		student.setIdentityId("111111111111");
+		student.setGraduateDate("2017-06-30");
+		student.setBirthday("2021-06-30");
 		student.setMobile("13750748731");
 		student.setQq("10097989123");
 		editStudent(student);
@@ -204,9 +212,8 @@ public class StudentDao extends BaseDao {
 	@Test
 	public void Test() throws ParseException {
 		Student student=new Student();
-		student.setSn("S21528633634989");
 		student.setNum(21172536);
-		student.setName("莫琪");
+		student.setName("李四光哥哥");
 		student.setPassword("980523");
 		student.setGrade(2017);
 		student.setClazzId(4);
@@ -216,8 +223,8 @@ public class StudentDao extends BaseDao {
 		SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
 		java.util.Date gradaDate=sdf.parse("2021-06-30");
 		java.util.Date birth=sdf.parse("1998-06-30");
-		student.setGraduateDate(new Date(gradaDate.getTime()));
-		student.setBirthday(new Date(birth.getTime()));
+		student.setGraduateDate("2017-06-30");
+		student.setBirthday("2021-06-30");
 		student.setMobile("13750748731");
 		student.setQq("10097989123");
 

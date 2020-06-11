@@ -17,6 +17,7 @@ import org.junit.Test;
  */
 public class SelectedCourseDao extends BaseDao {
 	public List<SelectedCourse> getSelectedCourseList(SelectedCourse selectedCourse,Page page){
+		System.out.println("getSelectCourseList");
 		List<SelectedCourse> ret = new ArrayList<SelectedCourse>();
 		String sql = "select * from s_selected_course ";
 		if(selectedCourse.getStudentId() != 0){
@@ -44,6 +45,7 @@ public class SelectedCourseDao extends BaseDao {
 		return ret;
 	}
 	public int getSelectedCourseListTotal(SelectedCourse selectedCourse){
+		System.out.println("getSelectedCourseListTotal(SelectedCourse selectedCourse)");
 		int total = 0;
 		String sql = "select count(*)as total from s_selected_course ";
 		if(selectedCourse.getStudentId() != 0){
@@ -70,6 +72,7 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public boolean isSelected(int studentId,int courseId){
+		System.out.println("isSelected");
 		boolean ret = false;
 		String sql = "select * from s_selected_course where student_id = " + studentId + " and course_id = " + courseId;
 		ResultSet query = query(sql);
@@ -107,6 +110,7 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public SelectedCourse getSelectedCourse(int id){
+		System.out.println("getSelectCourse");
 		SelectedCourse ret = null;
 		String sql = "select * from s_selected_course where id = " + id;
 		ResultSet query = query(sql);

@@ -1,4 +1,4 @@
-git<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -48,16 +48,6 @@ git<%@ page language="java" contentType="text/html; charset=UTF-8"
 									{"menuid":"71","menuname":"选课列表","icon":"icon-book-open","url":"SelectedCourseServlet?method=toSelectedCourseListView"},
 								]
 						},
-						{"menuid":"8","icon":"","menuname":"考勤信息管理",
-							"menus":[
-									{"menuid":"81","menuname":"考勤列表","icon":"icon-book-open","url":"AttendanceServlet?method=toAttendanceServletListView"},
-								]
-						},
-						{"menuid":"9","icon":"","menuname":"请假信息管理",
-							"menus":[
-									{"menuid":"91","menuname":"请假列表","icon":"icon-book-open","url":"LeaveServlet?method=toLeaveServletListView"},
-								]
-						},
 						{"menuid":"10","icon":"","menuname":"成绩信息管理",
 							"menus":[
 									{"menuid":"101","menuname":"成绩列表","icon":"icon-book-open","url":"ScoreServlet?method=toScoreListView"},
@@ -90,7 +80,7 @@ git<%@ page language="java" contentType="text/html; charset=UTF-8"
         <span style="padding-left:10px; font-size: 16px; ">学生信息管理系统</span>
     </div>
     <div region="south" split="true" style="height: 30px; background: #D2E0F2; ">
-        <div class="footer">Copyright &copy; By 【猿来入此】</div>
+        <div class="footer">Copyright &copy; By 【JLU-CST】</div>
     </div>
     <div region="west" hide="true" split="true" title="导航菜单" style="width:180px;" id="west">
 	<div id="nav" class="easyui-accordion" fit="true" border="false">

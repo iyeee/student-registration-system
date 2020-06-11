@@ -108,7 +108,7 @@ public class SelectedCourseServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
 		int courseId = request.getParameter("courseid") == null ? 0 : Integer.parseInt(request.getParameter("courseid").toString());
-		String type=request.getParameter("type");
+//		String type=request.getParameter("type");
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		SelectedCourse selectedCourse = new SelectedCourse();
@@ -121,9 +121,16 @@ public class SelectedCourseServlet extends HttpServlet {
 		}
 		selectedCourse.setCourseId(courseId);
 		selectedCourse.setStudentId(studentId);
-		selectedCourse.setType(type);
+//		selectedCourse.setType(type);
 		SelectedCourseDao selectedCourseDao = new SelectedCourseDao();
 		List<SelectedCourse> courseList = selectedCourseDao.getSelectedCourseList(selectedCourse, new Page(currentPage, pageSize));
+		/*
+		* ≤‚ ‘
+		* */
+		for(SelectedCourse s:courseList){
+			System.out.println(s.getCourseId()+" "+s.getType());
+		}
+
 		int total = selectedCourseDao.getSelectedCourseListTotal(selectedCourse);
 		selectedCourseDao.closeCon();
 		response.setCharacterEncoding("UTF-8");

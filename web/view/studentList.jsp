@@ -31,18 +31,18 @@
 	        remoteSort: false,
 	        columns: [[  
 				{field:'chk',checkbox: true,width:50},
- 		        {field:'id',title:'ID',width:50, sortable: true},    
+ 		        {field:'id',title:'ID',width:35, sortable: true},
  		        {field:'sn',title:'学号',width:150, sortable: true},
- 		        {field:'name',title:'姓名',width:150},
-				{field:'grade',title:'年级',width:150},
-				{field:'status',title:'职务',width:150},
- 		        {field:'sex',title:'性别',width:100},
-				{field:'identityID',title:'身份证',width:150},
-				{field:'graduateDate',title:'毕业日期',width:150},
-				{field:'birthday',title:'生日',width:150},
- 		        {field:'mobile',title:'电话',width:150},
- 		        {field:'qq',title:'QQ',width:150},
- 		        {field:'clazz_id',title:'班级',width:150, 
+ 		        {field:'name',title:'姓名',width:65,sortable: true},
+				{field:'grade',title:'年级',width:65,sortable: true},
+				{field:'status',title:'职务',width:70,sortable: true,sortable: true},
+ 		        {field:'sex',title:'性别',width:30,sortable: true},
+				{field:'identityId',title:'身份证',width:150,sortable: true},
+				{field:'graduateDate',title:'毕业日期',width:90,sortable: true},
+				{field:'birthday',title:'生日',width:90,sortable: true},
+ 		        {field:'mobile',title:'电话',width:100,sortable: true},
+ 		        {field:'qq',title:'QQ',width:100,sortable: true},
+ 		        {field:'clazz_id',title:'班级',width:200,sortable: true,
  		        	formatter: function(value,row,index){
  						if (row.clazzId){
  							var clazzList = $("#clazzList").combobox("getData");
@@ -331,6 +331,7 @@
 						$("#edit_qq").textbox('setValue', "");
 						$("#edit_gradeList").combobox("clear");
 						$("#edit_gradeList").combobox("reload");
+						$("#edit_status").text("setValue","");
 					}
 				}
 			],
@@ -341,6 +342,7 @@
 				$("#edit_sex").textbox('setValue', selectRow.sex);
 				$("#edit_mobile").textbox('setValue', selectRow.mobile);
 				$("#edit_qq").textbox('setValue', selectRow.qq);
+				$("#edit_status").text('setValue',selectRow.status);
 				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid="+selectRow.id);
 				$("#edit-id").val(selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
@@ -355,7 +357,8 @@
 	  	$("#search-btn").click(function(){
 	  		$('#dataList').datagrid('load',{
 	  			studentName: $('#search_student_name').val(),
-	  			clazzid: $("#clazzList").combobox('getValue') == '' ? 0 : $("#clazzList").combobox('getValue')
+	  			clazzid: $("#clazzList").combobox('getValue') == '' ? 0 : $("#clazzList").combobox('getValue'),
+				// grade: $('#search_grade').val()
 	  		});
 	  	});
 	});
@@ -397,6 +400,7 @@
 		<div style="float: left;"><a id="delete" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-some-delete',plain:true">删除</a></div>
 		</c:if>
 		<div style="float: left;margin-top:4px;" class="datagrid-btn-separator" >&nbsp;&nbsp;姓名：<input id="search_student_name" class="easyui-textbox" name="search_student_name" /></div>
+		<%--<div style="float: left;margin-top:4px;" class="datagrid-btn-separator" >&nbsp;&nbsp;年级：<input id="search_grade" class="easyui-textbox" name="search_grade" /> </div>--%>
 		<div style="margin-left: 10px;margin-top:4px;" >班级：<input id="clazzList" class="easyui-textbox" name="clazz" />
 			<a id="search-btn" href="javascript:;" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true">搜索</a>
 		</div>
@@ -433,11 +437,31 @@
 	    			<td>QQ:</td>
 	    			<td><input id="add_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
 	    		</tr>
+                <tr>
+                    <td>年级:</td>
+                    <td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" name="grade"/></td>
+                </tr>
 	    		<tr>
 	    			<td>班级:</td>
 	    			<td><input id="add_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" /></td>
 	    		</tr>
-	    	</table>
+                <tr>
+                    <td>职务:</td>
+                    <td><input id="add_status" style="width: 200px; height: 30px;" class="easyui-textbox" name="status"/></td>
+                </tr>
+                <tr>
+                    <td>身份证号:</td>
+                    <td><input id="add_identityId" style="width: 200px; height: 30px;" class="easyui-textbox" name="identityId"/></td>
+                </tr>
+                <tr>
+                    <td>毕业日期:</td>
+                    <td><input id="add_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" name="graduateDate"/></td>
+                </tr>
+                <tr>
+                    <td>生日:</td>
+                    <td><input id="add_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" name="birthday"/></td>
+                </tr>
+			</table>
 	    </form>
 	</div>
 	
@@ -475,6 +499,22 @@
 	    			<td>班级:</td>
 	    			<td><input id="edit_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" /></td>
 	    		</tr>
+                <tr>
+                    <td>职务:</td>
+                    <td><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" name="status" /></td>
+                </tr>
+				<tr>
+					<td>身份证:</td>
+					<td><input id="edit_identity_id" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity_id" /></td>
+				</tr>
+				<%--<tr>--%>
+					<%--<td>毕业日期</td>:</td>--%>
+					<%--<td><input id="edit_graduate_id" style="width: 200px; height: 30px;" class="easyui-textbox" name="graduate_date" /></td>--%>
+				<%--</tr>--%>
+				<%--<tr>--%>
+					<%--<td>生日:</td>--%>
+					<%--<td><input id="edit_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" name="birthday" /></td>--%>
+				<%--</tr>--%>
 	    	</table>
 	    </form>
 	</div>
