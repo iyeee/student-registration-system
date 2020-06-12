@@ -37,7 +37,7 @@
 				{field:'grade',title:'年级',width:65,sortable: true},
 				{field:'status',title:'职务',width:70,sortable: true,sortable: true},
  		        {field:'sex',title:'性别',width:30,sortable: true},
-				{field:'identityId',title:'身份证',width:150,sortable: true},
+				{field:'identity',title:'身份证',width:150,sortable: true},
 				{field:'graduateDate',title:'毕业日期',width:90,sortable: true},
 				{field:'birthday',title:'生日',width:90,sortable: true},
  		        {field:'mobile',title:'电话',width:100,sortable: true},
@@ -238,7 +238,7 @@
 										$("#add_graduateDate").textbox('setValue',"");
 										$("#add_birthday").textbox('setValue',"");
 										$("#add_status").textbox('setValue',"");
-										$("#add_identityId").textbox('setValue',"");
+										$("#add_identity").textbox('setValue',"");
 										
 										//重新刷新页面数据
 										$('#dataList').datagrid("options").queryParams = {clazzid: clazzid};
@@ -270,7 +270,7 @@
 						$("#add_graduateDate").textbox('setValue',"");
 						$("#add_birthday").textbox('setValue',"");
 						$("#add_status").textbox('setValue',"");
-						$("#add_identityId").textbox('setValue',"");
+						$("#add_identity").textbox('setValue',"");
 						//重新加载年级
 						$("#add_gradeList").combobox("clear");
 						$("#add_gradeList").combobox("reload");
@@ -345,7 +345,7 @@
 						$("#add_graduateDate").textbox('setValue',"");
 						$("#add_birthday").textbox('setValue',"");
 						$("#add_status").textbox('setValue',"");
-						$("#add_identityId").textbox('setValue',"");
+						$("#add_identity").textbox('setValue',"");
 						$("#edit_gradeList").combobox("clear");
 						$("#edit_gradeList").combobox("reload");
 						$("#edit_status").text("setValue","");
@@ -360,7 +360,7 @@
 				$("#edit_mobile").textbox('setValue', selectRow.mobile);
 				$("#edit_qq").textbox('setValue', selectRow.qq);
 				$("#edit_status").text('setValue',selectRow.status);
-				$("#edit_identity_id").text('setValue',selectRow.identityId);
+				$("#edit_identity").text('setValue',selectRow.identity);
 				$("#edit_graduateDate").text('setValue',selectRow.graduateDate);
 				$("#edit_birthday").text('setValue',selectRow.birthday);
 				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid="+selectRow.id);
@@ -471,7 +471,7 @@
                 </tr>
                 <tr>
                     <td>身份证号:</td>
-                    <td><input id="add_identityId" style="width: 200px; height: 30px;" class="easyui-textbox" name="identityId"/></td>
+                    <td><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity"/></td>
                 </tr>
                 <tr>
                     <td>毕业日期:</td>
@@ -525,7 +525,7 @@
                 </tr>
 				<tr>
 					<td>身份证:</td>
-					<td><input id="edit_identity_id" style="width: 200px; height: 30px;" class="easyui-textbox" name="identityId" /></td>
+					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" /></td>
 				</tr>
 				<%--<tr>--%>
 					<%--<td>毕业日期</td>:</td>--%>

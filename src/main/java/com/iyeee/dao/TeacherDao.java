@@ -21,7 +21,7 @@ public class TeacherDao extends BaseDao {
 	public boolean addTeacher(Teacher teacher){
 		String sql = "insert into s_teacher values(null,null,'"+teacher.getSn()+"','"+teacher.getName()+"'";
 		sql += ",'" + teacher.getPassword() + "','" + teacher.getClazzId();
-		sql += "','" + teacher.getSex() +"','"+teacher.getIdentityId();
+		sql += "','" + teacher.getSex() +"','"+teacher.getidentity();
 		sql += "','" + teacher.getStatus();
 		sql +="','" + teacher.getDepartment();
 		sql	+= "','" + teacher.getMobile() + "'";
@@ -34,7 +34,7 @@ public class TeacherDao extends BaseDao {
 		teacher.setSn("S21322123123");
 		teacher.setName("大明");
 		teacher.setPassword("12321");
-		teacher.setIdentityId("12323122");
+		teacher.setidentity("12323122");
 		teacher.setSex("男");
 		teacher.setClazzId(1);
 		teacher.setStatus("校长");
@@ -51,7 +51,7 @@ public class TeacherDao extends BaseDao {
 		sql += ",qq = '" + teacher.getQq() + "'";
 		sql += ",clazz_id = '" + teacher.getClazzId()+"'";
 		sql += ",num='"+ teacher.getNum()+"'";
-		sql += ",identity_id='"+teacher.getIdentityId()+"'";
+		sql += ",identity='"+teacher.getidentity()+"'";
 		sql += ",status='"+teacher.getStatus()+"'";
 		sql += ",department='"+teacher.getDepartment();
 		sql += "' where id = " + teacher.getId();
@@ -64,7 +64,7 @@ public class TeacherDao extends BaseDao {
 		teacher.setSn("S21322123123");
 		teacher.setName("大明");
 		teacher.setPassword("12321");
-		teacher.setIdentityId("12323122");
+		teacher.setidentity("12323122");
 		teacher.setSex("男");
 		teacher.setClazzId(1);
 		teacher.setStatus("校长");
@@ -111,7 +111,7 @@ public class TeacherDao extends BaseDao {
 				teacher.setSex(resultSet.getString("sex"));
 				teacher.setSn(resultSet.getString("sn"));
 				teacher.setNum(resultSet.getInt("num"));
-				teacher.setIdentityId(resultSet.getString("identity_id"));
+				teacher.setidentity(resultSet.getString("identity"));
 				teacher.setStatus("status");
 				teacher.setDepartment("department");
 
@@ -150,7 +150,7 @@ public class TeacherDao extends BaseDao {
 				t.setQq(resultSet.getString("qq"));
 				t.setSex(resultSet.getString("sex"));
 				t.setSn(resultSet.getString("sn"));
-				t.setIdentityId(resultSet.getString("identity_id"));
+				t.setidentity(resultSet.getString("identity"));
 				t.setStatus(resultSet.getString("status"));
 				t.setDepartment(resultSet.getString("department"));
 				ret.add(t);
@@ -201,7 +201,7 @@ public class TeacherDao extends BaseDao {
 				teacher.setSn(resultSet.getString("sn"));
 				teacher.setDepartment(resultSet.getString("department"));
 				teacher.setStatus(resultSet.getString("status"));
-				teacher.setIdentityId(resultSet.getString("identity_id"));
+				teacher.setidentity(resultSet.getString("identity"));
 
 				return teacher;
 			}

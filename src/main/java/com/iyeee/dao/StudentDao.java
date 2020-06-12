@@ -20,7 +20,7 @@ public class StudentDao extends BaseDao {
 		sql += ",'" + student.getPassword() + "','" +student.getGrade()+"','"+ student.getClazzId();
 		sql += "','" + student.getStatus()+"'";
 		sql += ",'" + student.getSex()+"'";
-		sql += ",'" +student.getIdentityId()+"'";
+		sql += ",'" +student.getidentity()+"'";
 		sql += ",'" +student.getGraduateDate()+"'";
 		sql += ",'" +student.getBirthday()+"'";
 		sql += ",'" + student.getMobile() + "'";
@@ -37,7 +37,7 @@ public class StudentDao extends BaseDao {
 		sql += ",clazz_id = '" + student.getClazzId()+"'";
 		sql += ",status = '"+student.getStatus()+"'";
 
-		sql += ",identity_id = '"+student.getIdentityId();
+		sql += ",identity = '"+student.getidentity();
 //		sql += ",birthday = '"+student.getBirthday()+"'";
 //		sql += ",graduate_date = '"+student.getGraduateDate();
 
@@ -124,7 +124,7 @@ public class StudentDao extends BaseDao {
 				s.setGrade(resultSet.getInt("grade"));
 				s.setStatus(resultSet.getString("status"));
 				s.setNum(resultSet.getInt("num"));
-				s.setIdentityId(resultSet.getString("identity_id"));
+				s.setidentity(resultSet.getString("identity"));
 
 
 				ret.add(s);
@@ -178,7 +178,7 @@ public class StudentDao extends BaseDao {
 				student.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
 				student.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
 				student.setNum(resultSet.getInt("num"));
-				student.setIdentityId(resultSet.getString("identity_id"));
+				student.setidentity(resultSet.getString("identity"));
 
 				return student;
 			}
@@ -205,7 +205,7 @@ public class StudentDao extends BaseDao {
 		student.setClazzId(4);
 		student.setStatus("大组长");
 		student.setSex("女");
-		student.setIdentityId("111111111111");
+		student.setidentity("111111111111");
 		student.setGraduateDate("2017-06-30");
 		student.setBirthday("2021-06-30");
 		student.setMobile("13750748731");
@@ -223,7 +223,7 @@ public class StudentDao extends BaseDao {
 		student.setClazzId(4);
 		student.setStatus("组长");
 		student.setSex("女");
-		student.setIdentityId("330481998072638462");
+		student.setidentity("330481998072638462");
 		SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
 		java.util.Date gradaDate=sdf.parse("2021-06-30");
 		java.util.Date birth=sdf.parse("1998-06-30");

@@ -17,7 +17,7 @@ public class Teacher {
 	private String sex;
 	private String mobile;
 	private String qq;
-	private String identityId;
+	private String identity;
 	private String status;
 	private String department;
 	private InputStream photo;
@@ -94,12 +94,12 @@ public class Teacher {
 		this.qq = qq;
 	}
 
-	public String getIdentityId() {
-		return identityId;
+	public String getidentity() {
+		return identity;
 	}
 
-	public void setIdentityId(String identityId) {
-		this.identityId = identityId;
+	public void setidentity(String identity) {
+		this.identity = identity;
 	}
 
 	public String getStatus() {

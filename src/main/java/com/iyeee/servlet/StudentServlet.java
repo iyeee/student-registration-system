@@ -80,7 +80,7 @@ public class StudentServlet extends HttpServlet {
 		String qq = request.getParameter("qq");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
 		String status=request.getParameter("status");
-		String identityId=request.getParameter("identityID");
+		String identity=request.getParameter("identity");
 		String graduateDate=request.getParameter("graduateDate");
 		String birthday=request.getParameter("birthday");
 		Student student = new Student();
@@ -91,7 +91,7 @@ public class StudentServlet extends HttpServlet {
 		student.setQq(qq);
 		student.setSex(sex);
 		student.setStatus(status);
-		student.setIdentityId(identityId);
+		student.setidentity(identity);
 		student.setGraduateDate(graduateDate);
 		student.setBirthday(birthday);
 		StudentDao studentDao = new StudentDao();
@@ -167,7 +167,7 @@ public class StudentServlet extends HttpServlet {
 		String status=request.getParameter("status");
 //		String graduateDate=request.getParameter("graduateDate");
 //		String birthday=request.getParameter("birthday");
-		String identityId=request.getParameter("identityId");
+		String identity=request.getParameter("identity");
 
 
 		Student student = new Student();
@@ -184,7 +184,7 @@ public class StudentServlet extends HttpServlet {
 		student.setStatus(status);
 //		student.setGraduateDate(graduateDate);
 //		student.setBirthday(birthday);
-		student.setIdentityId(identityId);
+		student.setidentity(identity);
 
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.addStudent(student)){
@@ -212,7 +212,7 @@ public class StudentServlet extends HttpServlet {
 		int grade=2019;
 		int clazzId=1;
 		String status="1231";
-		String identityId="123";
+		String identity="123";
 		String graduateDate="2020-06-30";
 		String birthday="2020-06-30";
 		student.setClazzId(clazzId);
@@ -228,7 +228,7 @@ public class StudentServlet extends HttpServlet {
 		student.setStatus(status);
 		student.setGraduateDate(graduateDate);
 		student.setBirthday(birthday);
-		student.setIdentityId(identityId);
+		student.setidentity(identity);
 
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.addStudent(student)) {

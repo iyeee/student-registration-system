@@ -74,7 +74,7 @@ public class TeacherServlet extends HttpServlet {
 		String mobile = request.getParameter("mobile");
 		String qq = request.getParameter("qq");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
-		String identity_id = request.getParameter("identity_id");
+		String identity = request.getParameter("identity");
 		String status = request.getParameter("status");
 		String department = request.getParameter("department");
 		Teacher teacher = new Teacher();
@@ -84,7 +84,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setId(id);
 		teacher.setQq(qq);
 		teacher.setSex(sex);
-		teacher.setIdentityId(identity_id);
+		teacher.setidentity(identity);
 		teacher.setStatus(status);
 		teacher.setDepartment(department);
 		TeacherDao teacherDao = new TeacherDao();
@@ -145,7 +145,7 @@ public class TeacherServlet extends HttpServlet {
 		String mobile = request.getParameter("mobile");
 		String qq = request.getParameter("qq");
 		int clazzId = Integer.parseInt(request.getParameter("clazzid"));
-		String identity_id = request.getParameter("identity_id");
+		String identity = request.getParameter("identity");
 		String status = request.getParameter("status");
 		String department = request.getParameter("department");
 		Teacher teacher = new Teacher();
@@ -156,7 +156,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setQq(qq);
 		teacher.setSex(sex);
 		teacher.setSn(SnGenerateUtil.generateTeacherSn(clazzId));
-		teacher.setIdentityId(identity_id);
+		teacher.setidentity(identity);
 		teacher.setStatus(status);
 		teacher.setDepartment(department);
 		TeacherDao teacherDao = new TeacherDao();

@@ -17,7 +17,7 @@ public class Student {
 	private int clazzId;
 	private String status;
 	private String sex;
-	private String identityId;
+	private String identity;
 	private String graduateDate;
 	private String birthday;
 	private String mobile;
@@ -96,12 +96,12 @@ public class Student {
 		this.sex = sex;
 	}
 
-	public String getIdentityId() {
-		return identityId;
+	public String getidentity() {
+		return identity;
 	}
 
-	public void setIdentityId(String identityId) {
-		this.identityId = identityId;
+	public void setidentity(String identity) {
+		this.identity = identity;
 	}
 
 	public String getGraduateDate() {
@@ -156,7 +156,7 @@ public class Student {
 				", clazzId=" + clazzId +
 				", status='" + status + '\'' +
 				", sex='" + sex + '\'' +
-				", identityId='" + identityId + '\'' +
+				", identity='" + identity + '\'' +
 				", graduateDate=" + graduateDate +
 				", birthday=" + birthday +
 				", mobile='" + mobile + '\'' +

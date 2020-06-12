@@ -35,26 +35,26 @@
 				{field:'chk',checkbox: true,width:50},
  		        {field:'id',title:'ID',width:50, sortable: true},    
  		        {field:'sn',title:'工号',width:150, sortable: true},    
- 		        {field:'name',title:'姓名',width:150},
- 		        {field:'sex',title:'性别',width:100},
- 		        {field:'mobile',title:'电话',width:150},
- 		        {field:'qq',title:'QQ',width:150},
- 		       	{field:'clazz_id',title:'班级',width:150, 
- 		        	formatter: function(value,row,index){
- 						if (row.clazzId){
- 							var clazzList = $("#clazzList").combobox("getData");
- 							for(var i=0;i<clazzList.length;i++ ){
- 								//console.log(clazzList[i]);
- 								if(row.clazzId == clazzList[i].id)return clazzList[i].name;
- 							}
- 							return row.clazzId;
- 						} else {
- 							return 'not found';
- 						}
- 					}
-				},
-				{field:'identity_id',title:"身份证",width:200},
-				{field:'status',title:"职务",width:150},
+ 		        {field:'name',title:'姓名',width:80},
+ 		        {field:'sex',title:'性别',width:40},
+ 		        {field:'mobile',title:'电话',width:100},
+ 		        {field:'qq',title:'QQ',width:100},
+ 		       // 	{field:'clazz_id',title:'班级',width:150,
+ 		       //  	formatter: function(value,row,index){
+ 				// 		if (row.clazzId){
+ 				// 			var clazzList = $("#clazzList").combobox("getData");
+ 				// 			for(var i=0;i<clazzList.length;i++ ){
+ 				// 				//console.log(clazzList[i]);
+ 				// 				if(row.clazzId == clazzList[i].id)return clazzList[i].name;
+ 				// 			}
+ 				// 			return row.clazzId;
+ 				// 		} else {
+ 				// 			return 'not found';
+ 				// 		}
+ 				// 	}
+				// },
+				{field:'identity',title:"身份证",width:200},
+				{field:'status',title:"职务",width:100},
 				{field:'department',title:'部门',width:200}
 	 		]], 
 	        toolbar: "#toolbar",
@@ -146,7 +146,7 @@
 	    $("#addDialog").dialog({
 	    	title: "添加教师",
 	    	width: 850,
-	    	height: 550,
+	    	height: 450,
 	    	iconCls: "icon-add",
 	    	modal: true,
 	    	collapsible: false,
@@ -190,7 +190,7 @@
 										$("#add_qq").textbox('setValue', "");
 										$("#add_status").textbox('setValue',"");
 										$("#add_department").textbox('setValue',"");
-										$("#add_identity_id").textbox('setValue',"");
+										$("#add_identity").textbox('setValue',"");
 										$(table).find(".chooseTr").remove();
 										
 										//重新刷新页面数据
@@ -216,7 +216,7 @@
 						$("#add_qq").textbox('setValue', "");
 						$("#add_status").textbox('setValue',"");
 						$("#add_department").textbox('setValue',"");
-						$("#add_identity_id").textbox('setValue',"");
+						$("#add_identity").textbox('setValue',"");
 						$(table).find(".chooseTr").remove();
 						
 					}
@@ -229,7 +229,7 @@
 				$("#add_qq").textbox('setValue', "");
 				$("#add_status").textbox('setValue',"");
 				$("#add_department").textbox('setValue',"");
-				$("#add_identity_id").textbox('setValue',"");
+				$("#add_identity").textbox('setValue',"");
 				$(table).find(".chooseTr").remove();
 			}
 	    });
@@ -273,7 +273,7 @@
 	  	$("#editDialog").dialog({
 	  		title: "修改教师信息",
 	    	width: 850,
-	    	height: 550,
+	    	height: 450,
 	    	iconCls: "icon-edit",
 	    	modal: true,
 	    	collapsible: false,
@@ -299,9 +299,9 @@
 							var phone = $("#edit_phone").textbox("getText");
 							var qq = $("#edit_qq").textbox("getText");
 							var status=$("#edit_status").textbox("getText");
-							var identityId=$("#edit_identity_id").textbox("getText");
+							var identity=$("#edit_identity").textbox("getText");
 							var department=$("#edit_department").textbox("getText");
-							var data = {id:id, clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,status:status,identityId:identityId,department:department};
+							var data = {id:id, clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,status:status,identity:identity,department:department};
 
 
 							$.ajax({
@@ -320,7 +320,7 @@
 										$("#edit_qq").textbox('setValue', "");
 										$("#add_status").textbox('setValue',"");
 										$("#add_department").textbox('setValue',"");
-										$("#add_identity_id").textbox('setValue',"");
+										$("#add_identity").textbox('setValue',"");
 										//重新刷新页面数据
 							  			$('#dataList').datagrid("reload");
 							  			$('#dataList').datagrid("uncheckAll");
@@ -344,7 +344,7 @@
 						$("#edit_qq").textbox('setValue', "");
 						$("#add_status").textbox('setValue',"");
 						$("#add_department").textbox('setValue',"");
-						$("#add_identity_id").textbox('setValue',"");
+						$("#add_identity").textbox('setValue',"");
 						$(table).find(".chooseTr").remove();
 						
 					}
@@ -359,7 +359,7 @@
 				$("#edit_qq").textbox('setValue', selectRow.qq);
 				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&tid="+selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
-				$("#edit_identity_id").textbox('setValue',selectRow.identityId);
+				$("#edit_identity").textbox('setValue',selectRow.identity);
 				$("#edit_status").textbox('setValue',selectRow.status);
 				$("#edit_department").textbox('setValue',selectRow.department)
 				var clazzid = selectRow.clazzId;
@@ -373,7 +373,7 @@
 				$("#edit_qq").textbox('setValue', "");
 				$("#add_status").textbox('setValue',"");
 				$("#add_department").textbox('setValue',"");
-				$("#add_identity_id").textbox('setValue',"");
+				$("#add_identity").textbox('setValue',"");
 			}
 	    });
 	   	
@@ -437,7 +437,7 @@
    		<form id="addForm" method="post">
 	    	<table id="addTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6" >
 	    		<tr>
-	    			<td style="width:40px">班级:</td>
+	    			<td style="width:40px">辅导班级:</td>
 	    			<td colspan="3">
 	    				<input id="add_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" />
 	    			</td>
@@ -461,7 +461,7 @@
 	    		</tr>
 	    		<tr>
 	    			<td>身份证:</td>
-	    			<td colspan="4"><input id="add_identityId" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identityId" validType="number" /></td>
+	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" validType="number" /></td>
 	    		</tr>
 				<tr>
 					<td>status:</td>
@@ -494,7 +494,7 @@
     	<form id="editForm" method="post">
 	    	<table id="editTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6" >
 	    		<tr>
-	    			<td style="width:40px">班级:</td>
+	    			<td style="width:40px">辅导班级:</td>
 	    			<td colspan="3">
 	    				<input id="edit_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" />
 	    			</td>
@@ -516,6 +516,18 @@
 	    			<td>QQ:</td>
 	    			<td colspan="4"><input id="edit_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
 	    		</tr>
+                <tr>
+                    <td>职务:</td>
+                    <td colspan="4"><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" validType="text" /></td>
+                </tr>
+                <tr>
+                    <td>部门:</td>
+                    <td colspan="4"><input id="edit_department" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="department" validType="text" /></td>
+                </tr>
+                <tr>
+                    <td>身份证:</td>
+                    <td colspan="4"><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" validType="text" /></td>
+                </tr>
 	    	</table>
 	    </form>
 	</div>
