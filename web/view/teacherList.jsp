@@ -146,7 +146,7 @@
 	    $("#addDialog").dialog({
 	    	title: "添加教师",
 	    	width: 850,
-	    	height: 450,
+	    	height: 550,
 	    	iconCls: "icon-add",
 	    	modal: true,
 	    	collapsible: false,
@@ -464,7 +464,7 @@
 	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" validType="number" /></td>
 	    		</tr>
 				<tr>
-					<td>status:</td>
+					<td>职务:</td>
 					<td colspan="4"><input id="add_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" validType="text" /></td>
 				</tr>
 				<tr>
@@ -482,7 +482,7 @@
 	
 	<!-- 修改窗口 -->
 	<div id="editDialog" style="padding: 10px">
-		<div style=" position: absolute; margin-left: 560px; width: 200px; border: 1px solid #EEF4FF">
+		<div style=" position: absolute; margin-left: 460px; width: 200px; border: 1px solid #EEF4FF">
 	    	<img id="edit_photo" alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="" />
 	    	<form id="uploadForm" method="post" enctype="multipart/form-data" action="PhotoServlet?method=SetPhoto" target="photo_target">
 	    		<!-- StudentServlet?method=SetPhoto -->

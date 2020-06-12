@@ -35,14 +35,14 @@
 			// 		</div>
 				{field:'chk',checkbox: true,width:50},
  		        {field:'id',title:'ID',width:35, sortable: true},
-				{field:'photo',title:'头像',width:100,height:60,
+				{field:'photo',title:'头像',width:60,height:60,
 					formatter:function(value,index,row){
 					// 	// var ssrc="PhotoServlet?method=getPhoto&type=2&sid="+
 						// return '<img src="PhotoServlet?method=getPhoto&type=2&sid=" width="100px" />';
 					// var sr="PhotoServlet?method=getPhoto&type=2&sid="+2;
 					// console.log(sr);
-					// 	return '<img src="PhotoServlet?method=getPhoto" width="100px" />';
-						return '<img src="PhotoServlet?method=getPhoto&type=2&sid="+id width="100px" />';
+						return '<img src="PhotoServlet?method=getPhoto" width="50px" />';
+
 					}
 
 				},
