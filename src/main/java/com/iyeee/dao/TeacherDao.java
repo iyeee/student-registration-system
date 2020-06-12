@@ -111,7 +111,7 @@ public class TeacherDao extends BaseDao {
 				teacher.setSex(resultSet.getString("sex"));
 				teacher.setSn(resultSet.getString("sn"));
 				teacher.setNum(resultSet.getInt("num"));
-				teacher.setIdentityId(resultSet.getString("identityId"));
+				teacher.setIdentityId(resultSet.getString("identity_id"));
 				teacher.setStatus("status");
 				teacher.setDepartment("department");
 
