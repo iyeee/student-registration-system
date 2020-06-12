@@ -16,7 +16,7 @@
   <servlet>
   	<description>验证码</description>
   	<servlet-name>CpachaServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.CpachaServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.CpachaServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>CpachaServlet</servlet-name>
@@ -26,7 +26,7 @@
   <servlet>
   	<description>登录验证</description>
   	<servlet-name>LoginServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.LoginServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>
@@ -36,7 +36,7 @@
   <filter>
   	<description>登录状态过滤</description>
   	<filter-name>LoginFilter</filter-name>
-  	<filter-class>com.iyeee.programmer.filter.LoginFilter</filter-class>
+  	<filter-class>com.iyeee.filter.LoginFilter</filter-class>
   </filter>
   <filter-mapping>
   	<filter-name>LoginFilter</filter-name>
@@ -54,7 +54,7 @@
   <servlet>
   	<description>登录后的主界面</description>
   	<servlet-name>SystemServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.SystemServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.SystemServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>SystemServlet</servlet-name>
@@ -64,7 +64,7 @@
   <servlet>
   	<description>学生信息管理</description>
   	<servlet-name>StudentServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.StudentServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.StudentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>StudentServlet</servlet-name>
@@ -74,7 +74,7 @@
   <servlet>
   	<description>班级信息管理</description>
   	<servlet-name>ClazzServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.ClazzServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.ClazzServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ClazzServlet</servlet-name>
@@ -84,7 +84,7 @@
   <servlet>
   	<description>图片管理</description>
   	<servlet-name>PhotoServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.PhotoServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.PhotoServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>PhotoServlet</servlet-name>
@@ -94,7 +94,7 @@
   <servlet>
   	<description>教师信息管理</description>
   	<servlet-name>TeacherServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.TeacherServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.TeacherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>TeacherServlet</servlet-name>
@@ -104,7 +104,7 @@
   <servlet>
   	<description>课程信息管理</description>
   	<servlet-name>CourseServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.CourseServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.CourseServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>CourseServlet</servlet-name>
@@ -115,7 +115,7 @@
   <servlet>
   	<description>选课信息管理</description>
   	<servlet-name>SelectedCourseServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.SelectedCourseServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.SelectedCourseServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>SelectedCourseServlet</servlet-name>
@@ -126,7 +126,7 @@
    <servlet>
   	<description>考勤信息管理</description>
   	<servlet-name>AttendanceServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.AttendanceServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.AttendanceServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>AttendanceServlet</servlet-name>
@@ -136,7 +136,7 @@
   <servlet>
   	<description>请假信息管理</description>
   	<servlet-name>LeaveServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.LeaveServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.LeaveServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>LeaveServlet</servlet-name>
@@ -146,7 +146,7 @@
   <servlet>
   	<description>请假信息管理</description>
   	<servlet-name>ScoreServlet</servlet-name>
-  	<servlet-class>com.iyeee.programmer.servlet.ScoreServlet</servlet-class>
+  	<servlet-class>com.iyeee.servlet.ScoreServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>ScoreServlet</servlet-name>
