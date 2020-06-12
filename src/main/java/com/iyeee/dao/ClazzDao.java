@@ -8,6 +8,7 @@ import java.util.List;
 import com.iyeee.model.Clazz;
 import com.iyeee.model.Page;
 import com.iyeee.util.StringUtil;
+import org.junit.Test;
 
 /**
  * 
@@ -29,6 +30,9 @@ public class ClazzDao extends BaseDao {
 				cl.setId(resultSet.getInt("id"));
 				cl.setName(resultSet.getString("name"));
 				cl.setInfo(resultSet.getString("info"));
+				cl.setNum(resultSet.getInt("num"));
+				cl.setInstitute(resultSet.getString("institute"));
+				cl.setGrade(resultSet.getInt("grade"));
 				ret.add(cl);
 			}
 		} catch (SQLException e) {
@@ -55,7 +59,7 @@ public class ClazzDao extends BaseDao {
 		return total;
 	}
 	public boolean addClazz(Clazz clazz){
-		String sql = "insert into s_clazz values(null,'"+clazz.getName()+"','"+clazz.getInfo()+"') ";
+		String sql = "insert into s_clazz values(null,'"+clazz.getName()+"','"+clazz.getInstitute()+"','"+clazz.getNum()+"','"+clazz.getGrade()+"','"+clazz.getInfo()+"') ";
 		return update(sql);
 	}
 	public boolean deleteClazz(int id){
@@ -64,8 +68,28 @@ public class ClazzDao extends BaseDao {
 	}
 	public boolean editClazz(Clazz clazz) {
 		// TODO Auto-generated method stub
-		String sql = "update s_clazz set name = '"+clazz.getName()+"',info = '"+clazz.getInfo()+"' where id = " + clazz.getId();
+		String sql = "update s_clazz set name = '"+clazz.getName()+"',info = '"+clazz.getInfo()+"',institute='"+clazz.getInstitute()+"',num='"+clazz.getNum()+"',grade='"+clazz.getGrade()+"' where id = " + clazz.getId();
 		return update(sql);
 	}
-	
+	@Test
+	public void testAddClazz(){
+		Clazz clazz=new Clazz();
+		clazz.setName("软件学院十班");
+		clazz.setInstitute("软件学院");
+		clazz.setNum(10);
+		clazz.setGrade(2020);
+		clazz.setInfo("吉林大学大学软件学院十班 求实创新，励志图强");
+		addClazz(clazz);
+	}
+	@Test
+	public void testEditClazz(){
+		Clazz clazz=new Clazz();
+		clazz.setId(8);
+		clazz.setName("软件学院十班");
+		clazz.setInstitute("软件学院");
+		clazz.setNum(10);
+		clazz.setGrade(2017);
+		clazz.setInfo("吉林大学大学软件学院十班 求实创新，励志图强!");
+		editClazz(clazz);
+	}
 }

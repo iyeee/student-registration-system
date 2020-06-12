@@ -30,9 +30,12 @@
 	        remoteSort: false,
 	        columns: [[  
 				{field:'chk',checkbox: true,width:50},
- 		        {field:'id',title:'ID',width:50, sortable: true},    
- 		        {field:'name',title:'班级名称',width:200},
- 		        {field:'info',title:'班级介绍',width:100, 
+ 		        {field:'id',title:'ID',width:50, sortable: true},
+				{field:'grade',title:'年级',width:60,sortable:true},
+ 		        {field:'name',title:'班级名称',width:220,sortable:true},
+ 		        {field:'institute',title:'学院名称',width:200,sortable:true},
+ 		        {field:'num',title:'班号',width:40,sortable:true},
+ 		        {field:'info',title:'班级介绍',width:300,
  		        },
 	 		]], 
 	        toolbar: "#toolbar"
@@ -117,7 +120,10 @@
 										$("#addDialog").dialog("close");
 										//清空原表格数据
 										$("#add_name").textbox('setValue', "");
+										$("#add_institute").textbox('setValue',"");
+										$("#add_num").textbox('setValue',"");
 										$("#info").val("");
+										$("#add_grade").textbox('setValue',"");
 										//重新刷新页面数据
 							  			//$('#gradeList').combobox("setValue", gradeid);
 							  			$('#dataList').datagrid("reload");
@@ -137,6 +143,9 @@
 					iconCls:'icon-reload',
 					handler:function(){
 						$("#add_name").textbox('setValue', "");
+						$("#add_institute").textbox('setValue',"");
+						$("#add_num").textbox('setValue',"");
+						$("#add_grade").textbox('setValue',"");
 						//重新加载年级
 						$("#info").val("");
 					}
@@ -199,6 +208,9 @@
 										//清空原表格数据
 										$("#edit_name").textbox('setValue', "");
 										$("#edit_info").val("");
+										$("#add_institute").textbox('setValue',"");
+										$("#add_num").textbox('setValue',"");
+										$("#add_grade").textbox('setValue',"");
 										//重新刷新页面数据
 							  			//$('#gradeList').combobox("setValue", gradeid);
 							  			$('#dataList').datagrid("reload");
@@ -218,18 +230,24 @@
 					iconCls:'icon-reload',
 					handler:function(){
 						$("#edit_name").textbox('setValue', "");
-						//重新加载年级
 						$("#edit_info").val("");
+						$("#add_institute").textbox('setValue',"");
+						$("#add_num").textbox('setValue',"");
+						$("#add_grade").textbox('setValue',"");
 					}
 				},
 			],
 			onBeforeOpen: function(){
 				var selectRow = $("#dataList").datagrid("getSelected");
-				//console.log(selectRow);
+				console.log(selectRow);
 				//设置值
+				//???没有预设值，需要修改
 				$("#edit_name").textbox('setValue', selectRow.name);
 				$("#edit_info").val(selectRow.info);
 				$("#edit-id").val(selectRow.id);
+				$("#add_institute").text('setValue',selectRow.institute);
+				$("#add_num").val(selectRow.num);
+				$("#add_grade").val(selectRow.grade);
 			}
 	    });
 	  
@@ -255,10 +273,22 @@
 	<div id="addDialog" style="padding: 10px">  
     	<form id="addForm" method="post">
 	    	<table cellpadding="8" >
+				<tr>
+					<td>年级:</td>
+					<td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
 	    			<td><input id="add_name" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="name"  data-options="required:true, missingMessage:'不能为空'" /></td>
 	    		</tr>
+				<tr>
+					<td>学院名称:</td>
+					<td><input id="add_institute" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="institute"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>班号:</td>
+					<td><input id="add_num" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>
 	    			<td>
@@ -274,10 +304,22 @@
     	<form id="editForm" method="post">
     	<input type="hidden" id="edit-id" name="id">
 	    	<table cellpadding="8" >
+				<tr>
+					<td>年级:</td>
+					<td><input id="edit_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
 	    			<td><input id="edit_name" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="name"  data-options="required:true, missingMessage:'不能为空'" /></td>
 	    		</tr>
+				<tr>
+					<td>学院名称:</td>
+					<td><input id="edit_institute" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="institute"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>班号:</td>
+					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>
 	    			<td>

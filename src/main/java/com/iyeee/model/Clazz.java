@@ -7,8 +7,35 @@ package com.iyeee.model;
 public class Clazz {
 	private int id;
 	private String name;
+	private String institute;
+	private int num;
+	private int grade;
+
+	public int getGrade() {
+		return grade;
+	}
+
+	public void setGrade(int grade) {
+		this.grade = grade;
+	}
+
 	private String info;
-	
+
+	public String getInstitute() {
+		return institute;
+	}
+
+	public void setInstitute(String institute) {
+		this.institute = institute;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	public int getId() {
 		return id;

@@ -45,10 +45,16 @@ public class ClazzServlet extends HttpServlet {
 		Integer id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name"); 
 		String info = request.getParameter("info");
+		int num= Integer.parseInt(request.getParameter("num"));
+		String institute=request.getParameter("institute");
+		int grade= Integer.parseInt(request.getParameter("grade"));
 		Clazz clazz = new Clazz();
 		clazz.setName(name);
 		clazz.setInfo(info);
 		clazz.setId(id);
+		clazz.setNum(num);
+		clazz.setInstitute(institute);
+		clazz.setGrade(grade);
 		ClazzDao clazzDao = new ClazzDao();
 		if(clazzDao.editClazz(clazz)){
 			try {
@@ -82,9 +88,15 @@ public class ClazzServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		String name = request.getParameter("name"); 
 		String info = request.getParameter("info");
+		String institute=request.getParameter("institute");
+		int num=Integer.parseInt(request.getParameter("num"));
+		int grade=Integer.parseInt(request.getParameter("grade"));
 		Clazz clazz = new Clazz();
 		clazz.setName(name);
 		clazz.setInfo(info);
+		clazz.setInstitute(institute);
+		clazz.setNum(num);
+		clazz.setGrade(grade);
 		ClazzDao clazzDao = new ClazzDao();
 		if(clazzDao.addClazz(clazz)){
 			try {

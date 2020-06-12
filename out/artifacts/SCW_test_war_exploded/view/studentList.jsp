@@ -29,9 +29,22 @@
 	        sortName:'id',
 	        sortOrder:'DESC', 
 	        remoteSort: false,
-	        columns: [[  
+	        columns: [[
+			// <div style="float: right; margin: 20px 20px 0 0; width: 200px; border: 1px solid #EBF3FF" id="photo">
+			// 		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=getPhoto" />
+			// 		</div>
 				{field:'chk',checkbox: true,width:50},
  		        {field:'id',title:'ID',width:35, sortable: true},
+				{field:'photo',title:'头像',width:100,height:60,
+					formatter:function(value,index,row){
+					// 	// var ssrc="PhotoServlet?method=getPhoto&type=2&sid="+
+						// return '<img src="PhotoServlet?method=getPhoto&type=2&sid=" width="100px" />';
+					// var sr="PhotoServlet?method=getPhoto&type=2&sid="+2;
+					// console.log(sr);
+						return '<img src="PhotoServlet?method=getPhoto" width="100px" />';
+					}
+
+				},
  		        {field:'sn',title:'学号',width:150, sortable: true},
  		        {field:'name',title:'姓名',width:65,sortable: true},
 				{field:'grade',title:'年级',width:65,sortable: true},

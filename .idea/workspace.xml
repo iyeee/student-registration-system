@@ -9,29 +9,11 @@
     <list default="true" id="cecfba67-e6cd-490b-82b3-164044689fcf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/TeacherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/servlet/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/servlet/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/servlet/TeacherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/TeacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/TeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/TeacherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/dao/TeacherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/servlet/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/servlet/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/servlet/TeacherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/easyui/jquery.easyui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/easyui/jquery.easyui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/clazzList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/clazzList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/teacherList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,29 +105,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/file/logo.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/TeacherDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="109" column="57" selection-start-line="109" selection-start-column="57" selection-end-line="109" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+            <state relative-caret-position="892">
+              <caret line="127" column="57" lean-forward="true" selection-start-line="127" selection-start-column="57" selection-end-line="127" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -153,61 +116,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="10" column="71" lean-forward="true" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+            <state relative-caret-position="4180">
+              <caret line="421" column="8" lean-forward="true" selection-start-line="421" selection-start-column="8" selection-end-line="421" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="126" selection-start-line="126" selection-end-line="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="446" column="32" lean-forward="true" selection-start-line="446" selection-start-column="32" selection-end-line="446" selection-end-column="32" />
+            <state relative-caret-position="407">
+              <caret line="256" column="6" lean-forward="true" selection-start-line="256" selection-start-column="6" selection-end-line="256" selection-end-column="6" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#4;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_course">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_clazz">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/easyui/jquery.easyui.min.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1657">
-              <caret line="6690" column="89" selection-start-line="6690" selection-start-column="89" selection-end-line="6690" selection-end-column="89" />
+            <state relative-caret-position="-283">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#264#265#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1298">
+              <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -223,11 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>score</find>
-      <find>setStatus</find>
-      <find>add_courseList</find>
-      <find>edit_score</find>
-      <find>StudentList</find>
       <find>getStudentList</find>
       <find>getClazzList</find>
       <find>getStudentListTotal</find>
@@ -235,7 +188,6 @@
       <find>sex</find>
       <find>Type</find>
       <find>toStudentListView</find>
-      <find>clazzList</find>
       <find>search_student_name</find>
       <find>easyui-linkbutton</find>
       <find>icon-search</find>
@@ -253,10 +205,16 @@
       <find>identityId</find>
       <find>identity_id</find>
       <find>choose</find>
+      <find>selected_course_student_fk</find>
+      <find>num</find>
+      <find>addGrade</find>
+      <find>gradeList</find>
+      <find>getPhoto</find>
+      <find>clazzList</find>
     </findStrings>
     <replaceStrings>
-      <replace />
       <replace>identity</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -298,10 +256,14 @@
         <option value="$PROJECT_DIR$/web/view/system.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/TeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" />
-        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="$PROJECT_DIR$/web/easyui/jquery.easyui.min.js" />
         <option value="$PROJECT_DIR$/web/view/teacherList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java" />
+        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/web/view/clazzList.jsp" />
       </list>
     </option>
   </component>
@@ -359,65 +321,57 @@
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="easyui" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="H-ui.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
@@ -430,13 +384,6 @@
               <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
@@ -458,12 +405,12 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591939713086" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591952990453" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15940489" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -488,17 +435,33 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat test">
-    <configuration name="StudentDao.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClazzDao.testAddClazz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.iyeee.programmer.dao.*" />
+          <option name="PATTERN" value="com.iyeee.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.StudentDao" />
-      <option name="METHOD_NAME" value="Test" />
+      <option name="PACKAGE_NAME" value="com.iyeee.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.dao.ClazzDao" />
+      <option name="METHOD_NAME" value="testAddClazz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClazzDao.testEditClazz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SCW_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.iyeee.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.iyeee.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.dao.ClazzDao" />
+      <option name="METHOD_NAME" value="testEditClazz" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -515,22 +478,6 @@
       <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
       <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.StudentDao" />
       <option name="METHOD_NAME" value="Test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentServlet.testAddStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SCW_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.iyeee.programmer.servlet.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.iyeee.programmer.servlet" />
-      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.servlet.StudentServlet" />
-      <option name="METHOD_NAME" value="testAddStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -647,20 +594,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.StudentDao.Test" />
       <item itemvalue="JUnit.StudentDao.Test2" />
-      <item itemvalue="JUnit.StudentServlet.testAddStudent" />
       <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
       <item itemvalue="JUnit.TeacherDao.testEditTeacher" />
       <item itemvalue="Tomcat Server.Tomcat test" />
+      <item itemvalue="JUnit.ClazzDao.testAddClazz" />
+      <item itemvalue="JUnit.ClazzDao.testEditClazz" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClazzDao.testEditClazz" />
+        <item itemvalue="JUnit.ClazzDao.testAddClazz" />
         <item itemvalue="JUnit.TeacherDao.testEditTeacher" />
         <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
         <item itemvalue="JUnit.StudentDao.Test2" />
-        <item itemvalue="JUnit.StudentDao.Test" />
-        <item itemvalue="JUnit.StudentServlet.testAddStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -678,32 +625,11 @@
       <workItem from="1591718466340" duration="32554000" />
       <workItem from="1591840833538" duration="19361000" />
       <workItem from="1591873045681" duration="16929000" />
-      <workItem from="1591892329003" duration="18131000" />
+      <workItem from="1591892329003" duration="30892000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TeacherDao_testAddTeacher - 2020.06.11 at 21h 13m 02s.xml">
-      <configuration name="TeacherDao.testAddTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 47m 33s.xml">
-      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testAddTeacher - 2020.06.11 at 21h 49m 08s.xml">
-      <configuration name="TeacherDao.testAddTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 50m 04s.xml">
-      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 50m 54s.xml">
-      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 51m 31s.xml">
-      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 52m 17s.xml">
-      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 53m 55s.xml">
       <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
@@ -713,9 +639,30 @@
     <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 54m 41s.xml">
       <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ClazzDao_testAddClazz - 2020.06.12 at 13h 48m 39s.xml">
+      <configuration name="ClazzDao.testAddClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testEditClazz - 2020.06.12 at 13h 50m 48s.xml">
+      <configuration name="ClazzDao.testEditClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testAddClazz - 2020.06.12 at 14h 37m 51s.xml">
+      <configuration name="ClazzDao.testAddClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testAddClazz - 2020.06.12 at 14h 39m 23s.xml">
+      <configuration name="ClazzDao.testAddClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testEditClazz - 2020.06.12 at 14h 40m 26s.xml">
+      <configuration name="ClazzDao.testEditClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testEditClazz - 2020.06.12 at 14h 41m 09s.xml">
+      <configuration name="ClazzDao.testEditClazz" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ClazzDao_testEditClazz - 2020.06.12 at 14h 58m 25s.xml">
+      <configuration name="ClazzDao.testEditClazz" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99383000" />
+    <option name="totallyTimeSpent" value="112144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,9 +675,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1248" height="807" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0321489" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1962775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -740,7 +686,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.05801527" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.07022901" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05801527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43206108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,7 +707,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
-      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.2250423" />
+      <window_info active="true" anchor="right" id="Database" order="7" visible="true" weight="0.43485618" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -874,36 +820,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/print.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/redo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/reload.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/search.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/set.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/sum.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/text_list_bullets.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/text_list_numbers.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/tip.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/undo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/user_add.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -975,14 +891,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-loginform-bg.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.login.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1067,27 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="10" column="71" lean-forward="true" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/easyui/jquery.easyui.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1657">
@@ -1110,10 +997,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_course">
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score/index/selected_course_course_fk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score/index/selected_course_student_fk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Environments/jdk1.8.0_251/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="792" column="24" selection-start-line="792" selection-start-column="24" selection-end-line="792" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2293">
+          <caret line="117" column="48" lean-forward="true" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/PhotoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2124">
+          <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="441" column="49" selection-start-line="441" selection-start-column="49" selection-end-line="441" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="127" column="57" lean-forward="true" selection-start-line="127" selection-start-column="57" selection-end-line="127" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="91" column="37" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1121,6 +1090,37 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="421" column="8" lean-forward="true" selection-start-line="421" selection-start-column="8" selection-end-line="421" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="256" column="6" lean-forward="true" selection-start-line="256" selection-start-column="6" selection-end-line="256" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#4;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,6 +1183,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
