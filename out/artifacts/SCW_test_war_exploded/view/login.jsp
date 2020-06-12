@@ -71,8 +71,8 @@
 <body>
 
 <div class="header" style="padding: 0;">
-	<h2 style="color: white; width: 400px; height: 80px; line-height: 240px; margin: 0 0 0 240px; padding: 0;font-family: cursive;font-size: xx-large;font-style: italic;text-shadow:2px 2px 2px #000;">学生注册管理系统</h2>
-	<h4 style="color: white; width: 300px; height: 50px; line-height: 180px; margin: 0 0 0 250px; padding: 0;font-family: cursive;font-style: italic;text-shadow:2px 2px 2px #000;">CourseRegisterSystem</h4>
+	<h2 style="color: white; width: 400px; height: 90px; line-height: 270px; margin: 0 0 0 330px; padding: 0;font-family: cursive;font-size: xx-large;font-style: italic;text-shadow:2px 2px 2px #000;">学生注册管理系统</h2>
+	<h4 style="color: white; width: 300px; height: 50px; line-height: 180px; margin: 0 0 0 340px; padding: 0;font-family: cursive;font-style: italic;text-shadow:2px 2px 2px #000;">Student Registration System</h4>
 </div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
