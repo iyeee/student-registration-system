@@ -99,15 +99,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.login.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -160,7 +151,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/READMD.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
@@ -170,6 +161,15 @@
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -269,7 +269,6 @@
         <option value="707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" />
-        <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" />
@@ -280,6 +279,7 @@
         <option value="$PROJECT_DIR$/web/view/login.jsp" />
         <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="$PROJECT_DIR$/READMD.md" />
+        <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
       </list>
     </option>
   </component>
@@ -449,7 +449,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591926221015" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591926447118" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -669,7 +669,7 @@
       <workItem from="1591718466340" duration="32554000" />
       <workItem from="1591840833538" duration="19361000" />
       <workItem from="1591873045681" duration="16929000" />
-      <workItem from="1591892329003" duration="11805000" />
+      <workItem from="1591892329003" duration="12052000" />
     </task>
     <servers />
   </component>
@@ -706,7 +706,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93057000" />
+    <option name="totallyTimeSpent" value="93304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -720,7 +720,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1248" height="807" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5109983" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13536379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -990,9 +990,6 @@
     <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-loginform-bg.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7765" />
@@ -1075,6 +1072,13 @@
           <second_editor>
             <markdownNavigatorState />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
         </state>
       </provider>
     </entry>
