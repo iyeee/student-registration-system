@@ -9,7 +9,7 @@
 <body>
 
 <div title="欢迎使用" style="padding:20px;overflow:hidden; color:red; " >
-	<p style="font-size: 25px; line-height: 30px; height: 30px;">欢迎使用学生注册系统</p>
+	<p style="font-size: 25px; line-height: 30px; height: 30px;">欢迎使用学生注册系统 </p>
   	<p>开发人员：莫单琪 辛逸飞 毛栋 胡方喆 赵俞博</p>
   	<p>开发周期：</p>
   	<hr />
