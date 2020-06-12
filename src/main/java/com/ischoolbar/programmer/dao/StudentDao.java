@@ -11,6 +11,7 @@ import com.ischoolbar.programmer.model.Clazz;
 import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.util.DateFormatUtil;
+import com.ischoolbar.programmer.util.DbUtil;
 import com.ischoolbar.programmer.util.StringUtil;
 import org.junit.Test;
 
@@ -176,6 +177,12 @@ public class StudentDao extends BaseDao {
 				student.setQq(resultSet.getString("qq"));
 				student.setSex(resultSet.getString("sex"));
 				student.setSn(resultSet.getString("sn"));
+				student.setStatus("status");
+				student.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
+				student.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+				student.setNum(resultSet.getInt("num"));
+				student.setIdentityId(resultSet.getString("identity_id"));
+
 				return student;
 			}
 		} catch (SQLException e) {

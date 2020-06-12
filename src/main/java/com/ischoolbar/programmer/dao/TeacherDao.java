@@ -11,6 +11,7 @@ import com.ischoolbar.programmer.model.Page;
 import com.ischoolbar.programmer.model.Student;
 import com.ischoolbar.programmer.model.Teacher;
 import com.ischoolbar.programmer.util.StringUtil;
+import org.junit.Test;
 
 /**
  * 
@@ -19,11 +20,29 @@ import com.ischoolbar.programmer.util.StringUtil;
  */
 public class TeacherDao extends BaseDao {
 	public boolean addTeacher(Teacher teacher){
-		String sql = "insert into s_teacher values(null,'"+teacher.getSn()+"','"+teacher.getName()+"'";
-		sql += ",'" + teacher.getPassword() + "'," + teacher.getClazzId();
-		sql += ",'" + teacher.getSex() + "','" + teacher.getMobile() + "'";
+		String sql = "insert into s_teacher values(null,null,'"+teacher.getSn()+"','"+teacher.getName()+"'";
+		sql += ",'" + teacher.getPassword() + "','" + teacher.getClazzId();
+		sql += "','" + teacher.getSex() +"','"+teacher.getIdentityId();
+		sql += "','" + teacher.getStatus();
+		sql +="','" + teacher.getDepartment();
+		sql	+= "','" + teacher.getMobile() + "'";
 		sql += ",'" + teacher.getQq() + "',null)";
 		return update(sql);
+	}
+	@Test
+	public void testAddTeacher(){
+		Teacher teacher = new Teacher();
+		teacher.setSn("S21322123123");
+		teacher.setName("大明");
+		teacher.setPassword("12321");
+		teacher.setIdentityId("12323122");
+		teacher.setSex("男");
+		teacher.setClazzId(1);
+		teacher.setStatus("校长");
+		teacher.setDepartment("计算机科学与技术");
+		teacher.setMobile("13767676767");
+		teacher.setQq("123231233");
+		addTeacher(teacher);
 	}
 	public boolean editTeacher(Teacher teacher) {
 		// TODO Auto-generated method stub
@@ -31,9 +50,30 @@ public class TeacherDao extends BaseDao {
 		sql += ",sex = '" + teacher.getSex() + "'";
 		sql += ",mobile = '" + teacher.getMobile() + "'";
 		sql += ",qq = '" + teacher.getQq() + "'";
-		sql += ",clazz_id = " + teacher.getClazzId();
-		sql += " where id = " + teacher.getId();
+		sql += ",clazz_id = '" + teacher.getClazzId()+"'";
+		sql += ",num='"+ teacher.getNum()+"'";
+		sql += ",identity_id='"+teacher.getIdentityId()+"'";
+		sql += ",status='"+teacher.getStatus()+"'";
+		sql += ",department='"+teacher.getDepartment();
+		sql += "' where id = " + teacher.getId();
 		return update(sql);
+	}
+	@Test
+	public void testEditTeacher(){
+		Teacher teacher = new Teacher();
+		teacher.setId(9);
+		teacher.setSn("S21322123123");
+		teacher.setName("大明");
+		teacher.setPassword("12321");
+		teacher.setIdentityId("12323122");
+		teacher.setSex("男");
+		teacher.setClazzId(1);
+		teacher.setStatus("校长");
+		teacher.setDepartment("软件学院");
+		teacher.setMobile("13767676767");
+		teacher.setQq("123231233");
+		editTeacher(teacher);
+
 	}
 	public boolean setTeacherPhoto(Teacher teacher) {
 		// TODO Auto-generated method stub
@@ -71,6 +111,12 @@ public class TeacherDao extends BaseDao {
 				teacher.setQq(resultSet.getString("qq"));
 				teacher.setSex(resultSet.getString("sex"));
 				teacher.setSn(resultSet.getString("sn"));
+				teacher.setNum(resultSet.getInt("num"));
+				teacher.setIdentityId(resultSet.getString("identityId"));
+				teacher.setStatus("status");
+				teacher.setDepartment("department");
+
+
 				return teacher;
 			}
 		} catch (SQLException e) {
@@ -105,6 +151,9 @@ public class TeacherDao extends BaseDao {
 				t.setQq(resultSet.getString("qq"));
 				t.setSex(resultSet.getString("sex"));
 				t.setSn(resultSet.getString("sn"));
+				t.setIdentityId(resultSet.getString("identity_id"));
+				t.setStatus(resultSet.getString("status"));
+				t.setDepartment(resultSet.getString("department"));
 				ret.add(t);
 			}
 		} catch (SQLException e) {
@@ -151,6 +200,10 @@ public class TeacherDao extends BaseDao {
 				teacher.setQq(resultSet.getString("qq"));
 				teacher.setSex(resultSet.getString("sex"));
 				teacher.setSn(resultSet.getString("sn"));
+				teacher.setDepartment(resultSet.getString("department"));
+				teacher.setStatus(resultSet.getString("status"));
+				teacher.setIdentityId(resultSet.getString("identity_id"));
+
 				return teacher;
 			}
 		} catch (SQLException e) {

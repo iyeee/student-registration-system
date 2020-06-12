@@ -52,7 +52,10 @@
  							return 'not found';
  						}
  					}
-				}
+				},
+				{field:'identity_id',title:"身份证",width:200},
+				{field:'status',title:"职务",width:150},
+				{field:'department',title:'部门',width:200}
 	 		]], 
 	        toolbar: "#toolbar",
 	        onBeforeLoad : function(){
@@ -185,6 +188,9 @@
 										$("#add_sex").textbox('setValue', "男");
 										$("#add_phone").textbox('setValue', "");
 										$("#add_qq").textbox('setValue', "");
+										$("#add_status").textbox('setValue',"");
+										$("#add_department").textbox('setValue',"");
+										$("#add_identity_id").textbox('setValue',"");
 										$(table).find(".chooseTr").remove();
 										
 										//重新刷新页面数据
@@ -208,7 +214,9 @@
 						$("#add_name").textbox('setValue', "");
 						$("#add_phone").textbox('setValue', "");
 						$("#add_qq").textbox('setValue', "");
-						
+						$("#add_status").textbox('setValue',"");
+						$("#add_department").textbox('setValue',"");
+						$("#add_identity_id").textbox('setValue',"");
 						$(table).find(".chooseTr").remove();
 						
 					}
@@ -219,7 +227,9 @@
 				$("#add_name").textbox('setValue', "");
 				$("#add_phone").textbox('setValue', "");
 				$("#add_qq").textbox('setValue', "");
-				
+				$("#add_status").textbox('setValue',"");
+				$("#add_department").textbox('setValue',"");
+				$("#add_identity_id").textbox('setValue',"");
 				$(table).find(".chooseTr").remove();
 			}
 	    });
@@ -288,8 +298,12 @@
 							var sex = $("#edit_sex").textbox("getText");
 							var phone = $("#edit_phone").textbox("getText");
 							var qq = $("#edit_qq").textbox("getText");
-							var data = {id:id, clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq};
-							
+							var status=$("#edit_status").textbox("getText");
+							var identityId=$("#edit_identity_id").textbox("getText");
+							var department=$("#edit_department").textbox("getText");
+							var data = {id:id, clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,status:status,identityId:identityId,department:department};
+
+
 							$.ajax({
 								type: "post",
 								url: "TeacherServlet?method=EditTeacher",
@@ -304,7 +318,9 @@
 										$("#edit_sex").textbox('setValue', "男");
 										$("#edit_phone").textbox('setValue', "");
 										$("#edit_qq").textbox('setValue', "");
-										
+										$("#add_status").textbox('setValue',"");
+										$("#add_department").textbox('setValue',"");
+										$("#add_identity_id").textbox('setValue',"");
 										//重新刷新页面数据
 							  			$('#dataList').datagrid("reload");
 							  			$('#dataList').datagrid("uncheckAll");
@@ -326,7 +342,9 @@
 						$("#edit_name").textbox('setValue', "");
 						$("#edit_phone").textbox('setValue', "");
 						$("#edit_qq").textbox('setValue', "");
-						
+						$("#add_status").textbox('setValue',"");
+						$("#add_department").textbox('setValue',"");
+						$("#add_identity_id").textbox('setValue',"");
 						$(table).find(".chooseTr").remove();
 						
 					}
@@ -341,6 +359,9 @@
 				$("#edit_qq").textbox('setValue', selectRow.qq);
 				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&tid="+selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
+				$("#edit_identity_id").textbox('setValue',selectRow.identityId);
+				$("#edit_status").textbox('setValue',selectRow.status);
+				$("#edit_department").textbox('setValue',selectRow.department)
 				var clazzid = selectRow.clazzId;
 				setTimeout(function(){
 					$("#edit_clazzList").combobox('setValue', clazzid);
@@ -350,6 +371,9 @@
 				$("#edit_name").textbox('setValue', "");
 				$("#edit_phone").textbox('setValue', "");
 				$("#edit_qq").textbox('setValue', "");
+				$("#add_status").textbox('setValue',"");
+				$("#add_department").textbox('setValue',"");
+				$("#add_identity_id").textbox('setValue',"");
 			}
 	    });
 	   	
@@ -436,9 +460,21 @@
 	    			<td colspan="4"><input id="add_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="phone" validType="mobile" /></td>
 	    		</tr>
 	    		<tr>
-	    			<td>QQ:</td>
-	    			<td colspan="4"><input id="add_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
+	    			<td>身份证:</td>
+	    			<td colspan="4"><input id="add_identityId" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identityId" validType="number" /></td>
 	    		</tr>
+				<tr>
+					<td>status:</td>
+					<td colspan="4"><input id="add_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" validType="text" /></td>
+				</tr>
+				<tr>
+					<td>部门:</td>
+					<td colspan="4"><input id="add_department" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="department" validType="text" /></td>
+				</tr>
+				<tr>
+					<td>QQ:</td>
+					<td colspan="4"><input id="add_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
+				</tr>
 	    	</table>
 	    </form>
 	</div>

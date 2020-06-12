@@ -65,13 +65,14 @@
 		});
 	})
 </script> 
-<title>登录|学生信息管理系统</title>
+<title>登录|学生注册管理系统</title>
 <meta name="keywords" content="学生信息管理系统">
 </head>
 <body>
 
 <div class="header" style="padding: 0;">
-	<h2 style="color: white; width: 400px; height: 60px; line-height: 60px; margin: 0 0 0 30px; padding: 0;">学生信息管理系统</h2>
+	<h2 style="color: white; width: 400px; height: 80px; line-height: 240px; margin: 0 0 0 240px; padding: 0;font-family: cursive;font-size: xx-large;font-style: italic;text-shadow:2px 2px 2px #000;">学生注册管理系统</h2>
+	<h4 style="color: white; width: 300px; height: 50px; line-height: 180px; margin: 0 0 0 250px; padding: 0;font-family: cursive;font-style: italic;text-shadow:2px 2px 2px #000;">CourseRegisterSystem</h4>
 </div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
@@ -117,7 +118,7 @@
     </form>
   </div>
 </div>
-<div class="footer">Copyright &nbsp; artisan @ 猿来入此 </div>
+<div class="footer">Copyright &nbsp; @JLU-CST  </div>
 
 
 </body>

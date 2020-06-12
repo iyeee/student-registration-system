@@ -186,7 +186,7 @@ public class PhotoServlet extends HttpServlet {
 			}
 		}
 		String path = request.getSession().getServletContext().getRealPath("");
-		File file = new File(path+"\\file\\logo.jpg");
+		File file = new File(path+"\\file\\logo.png");
 		try {
 			FileInputStream fis = new FileInputStream(file);
 			byte[] b = new byte[fis.available()];

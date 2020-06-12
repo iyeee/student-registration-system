@@ -7,31 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cecfba67-e6cd-490b-82b3-164044689fcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/JsonDateValueProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/file/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/h-ui/images/jlu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/SelectedCourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/SelectedCourseDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/SelectedCourseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/SelectedCourseServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/util/DateFormatUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/util/DateFormatUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/system.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/system.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/TeacherDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/file/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/images/admin-login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/welcome.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/SelectedCourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/SelectedCourseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/SelectedCourseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/SelectedCourseServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/StudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/StudentServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/util/DateFormatUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/util/DateFormatUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/studentList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/system.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/system.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/TeacherDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/file/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/h-ui/css/H-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/h-ui/css/H-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/h-ui/images/admin-login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/teacherList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/welcome.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,71 +130,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-loginform-bg.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="103" selection-start-line="103" selection-end-line="103" />
+            <state relative-caret-position="208">
+              <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="80" column="10" lean-forward="true" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab-close.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7765" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java">
+        <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="57">
+              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="91" selection-start-line="90" selection-end-line="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="510" column="39" lean-forward="true" selection-start-line="510" selection-start-column="39" selection-end-line="510" selection-end-column="39" />
-              <folding>
-                <element signature="n#style#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/BaseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/personalView.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2828" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1584">
-              <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -203,10 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>数据</find>
-      <find>addForm</find>
-      <find>addDialog</find>
-      <find>editDialog</find>
       <find>Score</find>
       <find>editForm</find>
       <find>selectRow</find>
@@ -231,6 +230,12 @@
       <find>icon-search</find>
       <find>studentName</find>
       <find>datagrid</find>
+      <find>logo.</find>
+      <find>admin-lo</find>
+      <find>admin-login-bg</find>
+      <find>jlu.png</find>
+      <find>R</find>
+      <find>jlu</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -253,7 +258,6 @@
         <option value="707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_selected_course.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/SelectedCourse.java" />
         <option value="$PROJECT_DIR$/web/view/selectedCourseList.jsp" />
-        <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/707715cf-713b-46a5-89e4-fa98b86a738e/console.sql" />
         <option value="$PROJECT_DIR$/web/view/system.jsp" />
@@ -263,9 +267,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" />
         <option value="707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" />
         <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" />
+        <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" />
+        <option value="$PROJECT_DIR$/web/view/teacherList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" />
+        <option value="$PROJECT_DIR$/web/h-ui/css/H-ui.css" />
+        <option value="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" />
+        <option value="$PROJECT_DIR$/web/view/login.jsp" />
       </list>
     </option>
   </component>
@@ -302,8 +315,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="308" />
-    <option name="y" value="7" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
     <option name="width" value="1925" />
     <option name="height" value="1141" />
   </component>
@@ -393,6 +406,20 @@
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="easyui" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="easyui" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -400,6 +427,21 @@
               <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="h-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="h-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="h-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="H-ui.css" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
@@ -421,6 +463,13 @@
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -439,7 +488,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591878829391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591922633573" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -447,7 +496,14 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15940489" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2018.3.5\workspace\SCW_test\web\h-ui\images" />
+      <recent name="D:\IntelliJ IDEA 2018.3.5\workspace\SCW_test\web\h-ui\images\gq" />
+      <recent name="D:\IntelliJ IDEA 2018.3.5\workspace\SCW_test\web\file" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -462,22 +518,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat test">
-    <configuration name="SelectedCourseDao.Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SCW_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.SelectedCourseDao" />
-      <option name="METHOD_NAME" value="Test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentDao.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SCW_test" />
       <extension name="coverage">
@@ -510,22 +550,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDao.Test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SCW_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.StudentDao" />
-      <option name="METHOD_NAME" value="Test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentServlet.testAddStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SCW_test" />
       <extension name="coverage">
@@ -537,6 +561,38 @@
       <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.servlet" />
       <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.servlet.StudentServlet" />
       <option name="METHOD_NAME" value="testAddStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherDao.testAddTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SCW_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.TeacherDao" />
+      <option name="METHOD_NAME" value="testAddTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeacherDao.testEditTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SCW_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.TeacherDao" />
+      <option name="METHOD_NAME" value="testEditTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -621,20 +677,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SelectedCourseDao.Test3" />
       <item itemvalue="JUnit.StudentDao.Test" />
       <item itemvalue="JUnit.StudentDao.Test2" />
-      <item itemvalue="JUnit.StudentDao.Test3" />
       <item itemvalue="JUnit.StudentServlet.testAddStudent" />
+      <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
+      <item itemvalue="JUnit.TeacherDao.testEditTeacher" />
       <item itemvalue="Tomcat Server.Tomcat test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeacherDao.testEditTeacher" />
+        <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
         <item itemvalue="JUnit.StudentDao.Test2" />
         <item itemvalue="JUnit.StudentDao.Test" />
         <item itemvalue="JUnit.StudentServlet.testAddStudent" />
-        <item itemvalue="JUnit.StudentDao.Test3" />
-        <item itemvalue="JUnit.SelectedCourseDao.Test3" />
       </list>
     </recent_temporary>
   </component>
@@ -651,44 +707,45 @@
       <workItem from="1591706002136" duration="12408000" />
       <workItem from="1591718466340" duration="32554000" />
       <workItem from="1591840833538" duration="19361000" />
-      <workItem from="1591873045681" duration="5654000" />
+      <workItem from="1591873045681" duration="16929000" />
+      <workItem from="1591892329003" duration="8221000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 17h 42m 17s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testAddTeacher - 2020.06.11 at 21h 13m 02s.xml">
+      <configuration name="TeacherDao.testAddTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 17h 42m 27s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 47m 33s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test - 2020.06.11 at 17h 43m 07s.xml">
-      <configuration name="StudentDao.Test" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testAddTeacher - 2020.06.11 at 21h 49m 08s.xml">
+      <configuration name="TeacherDao.testAddTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServlet_testAddStudent - 2020.06.11 at 18h 36m 30s.xml">
-      <configuration name="StudentServlet.testAddStudent" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 50m 04s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServlet_testAddStudent - 2020.06.11 at 18h 36m 46s.xml">
-      <configuration name="StudentServlet.testAddStudent" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 50m 54s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test - 2020.06.11 at 20h 04m 12s.xml">
-      <configuration name="StudentDao.Test" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 51m 31s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 20h 04m 33s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 52m 17s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 20h 06m 04s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 53m 55s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 20h 06m 52s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 54m 23s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDao_Test2 - 2020.06.11 at 20h 08m 31s.xml">
-      <configuration name="StudentDao.Test2" configurationId="JUnit" />
+    <history-entry file="TeacherDao_testEditTeacher - 2020.06.11 at 21h 54m 41s.xml">
+      <configuration name="TeacherDao.testEditTeacher" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69977000" />
+    <option name="totallyTimeSpent" value="89473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -701,9 +758,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1248" height="807" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0321489" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29526228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -713,8 +769,44 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.05801527" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05801527" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35114503" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6687023" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43206108" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32977098" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32977098" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32061067" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5221374" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32977098" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.27328244" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.670229" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24957699" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32994923" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" weight="0.0321489" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15482233" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.05801527" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27328244" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43206108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32977098" />
@@ -737,7 +829,7 @@
       <window_info anchor="right" id="Database" order="7" visible="true" weight="0.0321489" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -782,476 +874,211 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/SelectedCourse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/lock.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://D:/Environments/jdk1.8.0_251/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="237" column="12" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/man.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_clazz.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/mini_add.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/selectedCourseList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="297" column="84" lean-forward="true" selection-start-line="297" selection-start-column="84" selection-end-line="297" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/more.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/standardSchemas/xhtml1-transitional.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="1204" column="2" selection-start-line="1204" selection-start-column="2" selection-end-line="1204" selection-end-column="2" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/mini_edit.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/scoreList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="513" column="23" selection-start-line="513" selection-start-column="23" selection-end-line="513" selection-end-column="23" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/mini_refresh.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/LeaveServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/no.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/note.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_course/index/course_teacher_foreign">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/ok.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/pencil.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/CourseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/pencil_add.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/CourseServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-760">
-          <caret line="107" column="37" lean-forward="true" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/print.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_clazz">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/redo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_leave" />
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/reload.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/search.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_attendance" />
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_admin">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/set.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://D:/Environments/jdk1.8.0_251/src.zip!/java/sql/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="255" column="44" lean-forward="true" selection-start-line="255" selection-start-column="44" selection-end-line="255" selection-end-column="44" />
-          <folding>
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/sum.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="jar://D:/Environments/jdk1.8.0_251/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1183">
-          <caret line="272" column="11" selection-start-line="272" selection-start-column="11" selection-end-line="272" selection-end-column="11" />
-          <folding>
-            <element signature="e#10720#10721#0" expanded="true" />
-            <element signature="e#10750#10751#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/text_list_bullets.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/ScoreDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/text_list_numbers.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/tip.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/courseList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/undo.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/leaveList.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/user_add.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/scoreStats.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/user_gray.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_selected_course">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/user_red.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/vcard_edit.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/707715cf-713b-46a5-89e4-fa98b86a738e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="13" column="55" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/world.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/world_add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/world_night.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/zoom_in.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/file/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/gq/us.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/gq/cn.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/gq/gj.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ClazzServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="113" column="5" lean-forward="true" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="2534" column="109" selection-start-line="2534" selection-start-column="109" selection-end-line="2534" selection-end-column="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab-2bak.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-login-bg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab-bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ScoreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1081">
-          <caret line="414" column="30" lean-forward="true" selection-start-line="414" selection-start-column="30" selection-end-line="414" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/SnGenerateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/CpachaUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/JsonDateValueProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/NonRegisteringDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1905#1906#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2087#2088#0" expanded="true" />
-            <element signature="e#2121#2122#0" expanded="true" />
-            <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2209#2210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/StringUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java">
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/jlu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-loginform-bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="-7765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" column="129" selection-start-line="14" selection-start-column="129" selection-end-line="14" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/system.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="80" column="10" lean-forward="true" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab-close.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="57">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/personalView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2828" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="72" column="2" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="91" selection-start-line="90" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="510" column="39" lean-forward="true" selection-start-line="510" selection-start-column="39" selection-end-line="510" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

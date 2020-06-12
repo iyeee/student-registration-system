@@ -764,7 +764,7 @@ a:hover{color:#06c}
 
 /*标准色—红色*/
 .c-red,.c-red a,a.c-red{color:red}
-.c-red a:hover,a.c-red:hover{ color:#red}
+.c-red a:hover,a.c-red:hover{ color:red}
 /*标准色—绿色*/
 .c-green,.c-green a,a.c-green{color:green}
 .c-red a:hover,a.c-red:hover{color:green}
@@ -1320,7 +1320,7 @@ label,.placeholder{font-size:14px}
 
 button.close{padding:0;cursor:pointer;background:transparent;border: 0;-webkit-appearance: none}
 /*按钮*/
-.btn{display:inline-block;box-sizing:border-box;cursor:pointer;text-align:center;font-weight:400;white-space:nowrap;vertical-align: middle;-moz-padding-start:npx; -moz-padding-end:npx;border:solid 1px #ddd; background-color:#fff; width:auto;*zoom:1;*overflow:visible;
+.btn{display:inline-block;box-sizing:border-box;cursor:pointer;text-align:center;font-weight:400;white-space:nowrap;vertical-align: middle;-moz-padding-start:1px; -moz-padding-end:1px;border:solid 1px #ddd; background-color:#fff; width:auto;*zoom:1;*overflow:visible;
 	-webkit-transition:background-color .1s linear;
 		-moz-transition:background-color .1s linear;
 		-o-transition:background-color .1s linear;
