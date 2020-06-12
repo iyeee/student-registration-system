@@ -7,38 +7,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cecfba67-e6cd-490b-82b3-164044689fcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/file/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/h-ui/images/jlu.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/707715cf-713b-46a5-89e4-fa98b86a738e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/dao/TeacherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/file/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/css/H-ui.login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/h-ui/images/admin-login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/TeacherDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/dao/TeacherDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/model/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/PhotoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ischoolbar/programmer/servlet/TeacherServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/file/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/h-ui/css/H-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/h-ui/css/H-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/h-ui/images/admin-login-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/teacherList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/AdminDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/AdminDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/AdminDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/AttendanceDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/AttendanceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/AttendanceDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/BaseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/ClazzDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/ClazzDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/ClazzDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/CourseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/CourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/LeaveDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/LeaveDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/LeaveDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/ScoreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/ScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/ScoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/SelectedCourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/SelectedCourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/TeacherDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/filter/LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/filter/LoginFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Attendance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Attendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Clazz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Clazz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Clazz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Leave.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Leave.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Leave.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Page.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/SelectedCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/SelectedCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/SelectedCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/AttendanceServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/AttendanceServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/AttendanceServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ClazzServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ClazzServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/ClazzServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/CourseServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/CourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/CourseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/CpachaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/CpachaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/CpachaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/LeaveServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/LeaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/LeaveServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/LoginServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/PhotoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/PhotoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ScoreServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/ScoreServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/ScoreServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SelectedCourseServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/SelectedCourseServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SystemServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/SystemServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/SystemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/TeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/TeacherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/CpachaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/CpachaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/CpachaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/DateFormatUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DbUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/JsonDateValueProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/JsonDateValueProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/JsonDateValueProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/SnGenerateUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/SnGenerateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/SnGenerateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/programmer/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/studentList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -130,11 +179,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/h-ui/images/admin-loginform-bg.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/h-ui/css/H-ui.login.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -145,11 +189,6 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -171,25 +210,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/attendanceList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7765" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+            <state relative-caret-position="-440">
+              <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3534">
+              <caret line="481" column="31" lean-forward="true" selection-start-line="481" selection-start-column="31" selection-end-line="481" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/AdminDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/StudentServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/TeacherServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1452">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -206,12 +277,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Score</find>
       <find>editForm</find>
-      <find>selectRow</find>
       <find>getSelected</find>
       <find>score</find>
-      <find>status</find>
       <find>setStatus</find>
       <find>add_courseList</find>
       <find>edit_score</find>
@@ -223,7 +291,6 @@
       <find>sex</find>
       <find>Type</find>
       <find>toStudentListView</find>
-      <find>identity</find>
       <find>clazzList</find>
       <find>search_student_name</find>
       <find>easyui-linkbutton</find>
@@ -236,6 +303,10 @@
       <find>jlu.png</find>
       <find>R</find>
       <find>jlu</find>
+      <find>identityId</find>
+      <find>identity</find>
+      <find>status</find>
+      <find>selectRow</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -268,7 +339,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/util/DateFormatUtil.java" />
         <option value="707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/servlet/StudentServlet.java" />
-        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Teacher.java" />
         <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java" />
@@ -279,6 +349,7 @@
         <option value="$PROJECT_DIR$/web/h-ui/css/H-ui.css" />
         <option value="$PROJECT_DIR$/web/h-ui/css/H-ui.login.css" />
         <option value="$PROJECT_DIR$/web/view/login.jsp" />
+        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
       </list>
     </option>
   </component>
@@ -315,8 +386,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
+    <option name="x" value="308" />
+    <option name="y" value="7" />
     <option name="width" value="1925" />
     <option name="height" value="1141" />
   </component>
@@ -350,46 +421,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SCW_test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SCW_test" type="b2602c69:ProjectViewProjectNode" />
@@ -488,7 +519,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591922633573" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591925745630" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/standard.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -522,12 +553,12 @@
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="PATTERN" value="com.iyeee.programmer.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.StudentDao" />
+      <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.StudentDao" />
       <option name="METHOD_NAME" value="Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -538,12 +569,12 @@
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="PATTERN" value="com.iyeee.programmer.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.StudentDao" />
+      <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.StudentDao" />
       <option name="METHOD_NAME" value="Test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -554,12 +585,12 @@
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.servlet.*" />
+          <option name="PATTERN" value="com.iyeee.programmer.servlet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.servlet" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.servlet.StudentServlet" />
+      <option name="PACKAGE_NAME" value="com.iyeee.programmer.servlet" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.servlet.StudentServlet" />
       <option name="METHOD_NAME" value="testAddStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -570,12 +601,12 @@
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="PATTERN" value="com.iyeee.programmer.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.TeacherDao" />
+      <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.TeacherDao" />
       <option name="METHOD_NAME" value="testAddTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -586,12 +617,12 @@
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ischoolbar.programmer.dao.*" />
+          <option name="PATTERN" value="com.iyeee.programmer.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ischoolbar.programmer.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.ischoolbar.programmer.dao.TeacherDao" />
+      <option name="PACKAGE_NAME" value="com.iyeee.programmer.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.iyeee.programmer.dao.TeacherDao" />
       <option name="METHOD_NAME" value="testEditTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -708,7 +739,7 @@
       <workItem from="1591718466340" duration="32554000" />
       <workItem from="1591840833538" duration="19361000" />
       <workItem from="1591873045681" duration="16929000" />
-      <workItem from="1591892329003" duration="8221000" />
+      <workItem from="1591892329003" duration="11319000" />
     </task>
     <servers />
   </component>
@@ -745,7 +776,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89473000" />
+    <option name="totallyTimeSpent" value="92571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -759,7 +790,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1248" height="807" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29526228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36717427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -769,7 +800,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.05801527" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6687023" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41068703" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43206108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -878,16 +909,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/TeacherDao.java</url>
           <line>74</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/dao/TeacherDao.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/TeacherDao.java</url>
           <line>58</line>
           <properties />
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/view/login.jsp</url>
+          <line>5</line>
+          <properties />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -897,18 +934,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/lock.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/man.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/mini_add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/more.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/easyui/themes/icons/mini_edit.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1025,7 +1050,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ischoolbar/programmer/model/Admin.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/model/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -1072,14 +1097,45 @@
     <entry file="file://$PROJECT_DIR$/web/h-ui/images/acrossTab-close.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/StudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/servlet/TeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1452">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+        <state relative-caret-position="-440">
+          <caret line="85" column="21" lean-forward="true" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#h2#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3534">
+          <caret line="481" column="31" lean-forward="true" selection-start-line="481" selection-start-column="31" selection-end-line="481" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/programmer/dao/AdminDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
