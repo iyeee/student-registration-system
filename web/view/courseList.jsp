@@ -30,9 +30,9 @@
 	        remoteSort: false,
 	        columns: [[  
 				{field:'chk',checkbox: true,width:50},
- 		        {field:'id',title:'ID',width:50, sortable: true},    
- 		        {field:'name',title:'课程名称',width:200},
- 		       	{field:'teacherId',title:'授课老师',width:200,
+ 		        {field:'id',title:'ID',width:40, sortable: true},
+ 		        {field:'name',title:'课程名称',width:100},
+ 		       	{field:'teacherId',title:'授课老师',width:80,
  		        	formatter: function(value,row,index){
  						if (row.teacherId){
  							var teacherList = $("#teacherList").combobox("getData");
@@ -46,9 +46,16 @@
  						}
  					}	
  		       	},
- 		       	{field:'courseDate',title:'上课时间',width:200},
- 		        {field:'selectedNum',title:'已选人数',width:200},
- 		        {field:'maxNum',title:'最大可选人数',width:200},
+ 		       	{field:'time',title:'上课时间',width:100},
+ 		        {field:'selectedNum',title:'已选人数',width:70},
+ 		        {field:'maxNum',title:'最大可选人数',width:70},
+				{field:'cyear',title:'年份',width:70},
+				{field:'semester',titile:'学期',width:30},
+				{field:'time',title:'时间',width:100},
+				{field:'week',title:'周数',width:60},
+				{field:'cost',title:'费用',width:50},
+				{field:'pre',title:'先修课',width:150},
+				{field:'info',title:'信息',width:300},
 	 		]], 
 	        toolbar: "#toolbar",
 	        onBeforeLoad : function(){
@@ -130,11 +137,16 @@
 							var teacherid = $("#edit_teacherList").combobox("getValue");
 							var id = $("#dataList").datagrid("getSelected").id;
 							var name = $("#edit_name").textbox("getText");
-							var courseDate = $("#edit_course_date").textbox("getText");
 							var maxNum = $("#edit_max_num").numberbox("getValue");
 							var info = $("#edit_info").val();
-							var data = {id:id, teacherid:teacherid, name:name,courseDate:courseDate,info:info,maxnum:maxNum};
-							
+							var cyear=$("#edit_cyear").numberbox("getValue");
+							var semester=$("#edit_semester").combobox("getValue");
+							var time=$("#edit_time").textbox("getText");
+							var week=$("#edit_week").textbox("getText");
+							var cost=$("#edit_cost").numberbox("getValue");
+							var pre=$("#edit_pre").textbox("getText");
+							var data = {id:id, teacherid:teacherid, name:name,info:info,maxnum:maxNum,cyear:cyear,semester:semester,time:time,week:week,cost:cost,pre:pre};
+							console.log(data)
 							$.ajax({
 								type: "post",
 								url: "CourseServlet?method=EditCourse",
@@ -146,8 +158,13 @@
 										$("#editDialog").dialog("close");
 										//清空原表格数据
 										$("#edit_name").textbox('setValue', "");
-										$("#edit_course_date").textbox('setValue', "");
 										$("#edit_info").val("");
+										$("#edit_cyear").numberbox('setValue',"");
+										$("#edit_semester").textbox("setValue","");
+										$("#edit_time").textbox('setValue',"");
+										$("#edit_week").textbox('setValue',"");
+										$("#edit_cost").numberbox('setValue',"");
+										$("#edit_pre").textbox('setValue',"");
 										
 										//重新刷新页面数据
 							  			$('#dataList').datagrid("reload");
@@ -170,7 +187,13 @@
 						$("#edit_name").textbox('setValue', "");
 						$("#edit_phone").textbox('setValue', "");
 						$("#edit_qq").textbox('setValue', "");
-						
+						$("#edit_cyear").numberbox('setValue',"");
+						$("#edit_semester").textbox("setValue","");
+						$("#edit_time").textbox('setValue',"");
+						$("#edit_week").textbox('setValue',"");
+						$("#edit_cost").numberbox('setValue',"");
+						$("#edit_pre").textbox('setValue',"");
+
 						$(table).find(".chooseTr").remove();
 						
 					}
@@ -183,6 +206,13 @@
 				$("#edit_course_date").textbox('setValue', selectRow.courseDate);
 				$("#edit_max_num").numberbox('setValue', selectRow.maxNum);
 				$("#edit_info").val(selectRow.info);
+				$("#edit_cyear").numberbox('setValue',selectRow.cyear);
+				$("#edit_semester").textbox('setValue',selectRow.semester);
+				$("#edit_time").textbox('setValue',selectRow.time);
+				$("#edit_week").textbox('setValue',selectRow.week);
+				$("#edit_cost").numberbox('setValue',selectRow.cost);
+				$("#edit_pre").textbox('setValue',selectRow.pre);
+
 				//$("#edit-id").val(selectRow.id);
 				var teacherId = selectRow.teacherId;
 				setTimeout(function(){
@@ -191,8 +221,14 @@
 			},
 			onClose: function(){
 				$("#edit_name").textbox('setValue', "");
-				$("#edit_course_date").textbox('setValue', "");
 				$("#edit_info").val("");
+				$("#edit_cyear").numberbox('setValue',"");
+				$("#edit_semester").textbox("setValue","");
+				$("#edit_time").textbox('setValue',"");
+				$("#edit_week").textbox('setValue',"");
+				$("#edit_cost").numberbox('setValue',"");
+				$("#edit_pre").textbox('setValue',"");
+
 				//$("#edit-id").val('');
 			}
 	    });
@@ -359,13 +395,35 @@
 	    			<td style="width:80px"></td>
 	    		</tr>
 	    		<tr>
-	    			<td>上课时间:</td>
-	    			<td><input id="add_course_date" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="course_date" data-options="required:true, missingMessage:'不能为空'" /></td>
-	    		</tr>
-	    		<tr>
 	    			<td>最多可选人数:</td>
 	    			<td><input id="add_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="maxnum" data-options="min:0,precision:0,required:true, missingMessage:'不能为空'" /></td>
 	    		</tr>
+				<tr>
+					<td>年份:</td>
+					<td><input id="add_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="year" name="cyear" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>时间:</td>
+					<td><input id="add_time" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="time" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>学期:</td>
+					<td colspan="3">
+						<select id="add_semester"  class="easyui-combobox" name="semester" style="width:200px;"><option>上</option><option>下</option></select>
+					</td>
+				</tr>
+				<tr>
+					<td>周数:</td>
+					<td><input id="add_week" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="week" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>费用:</td>
+					<td><input id="add_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>先修课:</td>
+					<td><input id="add_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="cost" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>课程介绍:</td>
 	    			<td>
@@ -393,13 +451,35 @@
 	    			<td style="width:80px"></td>
 	    		</tr>
 	    		<tr>
-	    			<td>上课时间:</td>
-	    			<td><input id="edit_course_date" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="course_date" data-options="required:true, missingMessage:'不能为空'" /></td>
-	    		</tr>
-	    		<tr>
 	    			<td>最多可选人数:</td>
 	    			<td><input id="edit_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="max_num" data-options="min:0,precision:0,required:true, missingMessage:'不能为空'" /></td>
 	    		</tr>
+				<tr>
+					<td>年份:</td>
+					<td><input id="edit_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="year" name="cyear" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>时间:</td>
+					<td><input id="edit_time" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="time" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>学期:</td>
+					<td>
+						<select id="edit_semester" style="width: 200px; height: 30px;" class="easyui-combobox" name="semester"> <option>上</option><option>下</option> </select>
+					</td>
+				</tr>
+				<tr>
+					<td>周数:</td>
+					<td><input id="edit_week" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="week" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>费用:</td>
+					<td><input id="edit_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空'" /></td>
+				</tr>
+				<tr>
+					<td>先修课:</td>
+					<td><input id="edit_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="cost" data-options="required:true, missingMessage:'不能为空'" /></td>
+				</tr>
 	    		<tr>
 	    			<td>课程介绍:</td>
 	    			<td>

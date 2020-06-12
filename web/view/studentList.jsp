@@ -41,7 +41,8 @@
 						// return '<img src="PhotoServlet?method=getPhoto&type=2&sid=" width="100px" />';
 					// var sr="PhotoServlet?method=getPhoto&type=2&sid="+2;
 					// console.log(sr);
-						return '<img src="PhotoServlet?method=getPhoto" width="100px" />';
+					// 	return '<img src="PhotoServlet?method=getPhoto" width="100px" />';
+						return '<img src="PhotoServlet?method=getPhoto&type=2&sid="+id width="100px" />';
 					}
 
 				},

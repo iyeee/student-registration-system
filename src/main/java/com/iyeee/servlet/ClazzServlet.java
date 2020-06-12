@@ -42,7 +42,7 @@ public class ClazzServlet extends HttpServlet {
 	private void editClazz(HttpServletRequest request,
 			HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		Integer id = Integer.parseInt(request.getParameter("id"));
+		int id = Integer.parseInt(request.getParameter("id"));
 		String name = request.getParameter("name"); 
 		String info = request.getParameter("info");
 		int num= Integer.parseInt(request.getParameter("num"));

@@ -73,15 +73,27 @@ public class CourseServlet extends HttpServlet {
 		int teacherId = Integer.parseInt(request.getParameter("teacherid").toString());
 		int maxNum = Integer.parseInt(request.getParameter("maxnum").toString());
 		int id = Integer.parseInt(request.getParameter("id").toString());
-		String courseDate = request.getParameter("courseDate");
 		String info = request.getParameter("info");
+		int cyear= Integer.parseInt(request.getParameter("cyear"));
+		String semester=request.getParameter("semester");
+		String time=request.getParameter("time");
+		String week=request.getParameter("week");
+		int cost= Integer.parseInt(request.getParameter("cost"));
+		String pre=request.getParameter("pre");
+
 		Course course = new Course();
 		course.setId(id);
 		course.setName(name);
 		course.setTeacherId(teacherId);
 		course.setInfo(info);
-		course.setCourseDate(courseDate);
 		course.setMaxNum(maxNum);
+		course.setSemester(semester);
+		course.setCost(cost);
+		course.setPre(pre);
+		course.setWeek(week);
+		course.setTime(time);
+		course.setCyear(cyear);
+
 		CourseDao courseDao = new CourseDao();
 		String msg = "error";
 		if(courseDao.editCourse(course)){
@@ -132,14 +144,24 @@ public class CourseServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		int teacherId = Integer.parseInt(request.getParameter("teacherid").toString());
 		int maxNum = Integer.parseInt(request.getParameter("maxnum").toString());
-		String courseDate = request.getParameter("course_date");
 		String info = request.getParameter("info");
+		int cyear= Integer.parseInt(request.getParameter("cyear"));
+		String semester=request.getParameter("semester");
+		String time=request.getParameter("time");
+		String week=request.getParameter("week");
+		int cost= Integer.parseInt(request.getParameter("cost"));
+		String pre=request.getParameter("pre");
 		Course course = new Course();
 		course.setName(name);
 		course.setTeacherId(teacherId);
 		course.setInfo(info);
 		course.setMaxNum(maxNum);
-		course.setCourseDate(courseDate);
+		course.setSemester(semester);
+		course.setCost(cost);
+		course.setPre(pre);
+		course.setWeek(week);
+		course.setTime(time);
+		course.setCyear(cyear);
 		CourseDao courseDao = new CourseDao();
 		String msg = "error";
 		if(courseDao.addCourse(course)){

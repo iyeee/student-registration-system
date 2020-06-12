@@ -245,7 +245,7 @@
 				$("#edit_name").textbox('setValue', selectRow.name);
 				$("#edit_info").val(selectRow.info);
 				$("#edit-id").val(selectRow.id);
-				$("#add_institute").text('setValue',selectRow.institute);
+				$("#add_institute").val(selectRow.institute);
 				$("#add_num").val(selectRow.num);
 				$("#add_grade").val(selectRow.grade);
 			}
@@ -318,7 +318,7 @@
 				</tr>
 				<tr>
 					<td>班号:</td>
-					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>
