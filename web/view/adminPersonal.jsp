@@ -57,10 +57,8 @@
 	  									if(msg == "success"){
 	  										$.messager.alert("消息提醒","修改成功，将重新登录","info")
 	  										setTimeout(function(){
-	  											top.location.href = "LoginServlet?method=logout";
+	  											top.location.href = "SystemServlet?method=LoginOut";
 	  										}, 1000);
-	  									}else{
-	  										$.messager.alert("消息提醒",msg,"error")
 	  									}
 	  								}
 	  							});
@@ -95,6 +93,19 @@
 	    	closed: false,
 	    	toolbar: [
 				{
+					text:'重置',
+					plain: true,
+					iconCls:'icon-reload',
+					handler:function(){
+						//清空表单
+						$("#school_name").textbox('setValue', "");
+						$("#forbid_teacher").removeAttr("checked");
+						$("#forbid_student").removeAttr("checked");
+						$("#notice_teacher").textbox('setValue', "");
+						$("#notice_student").textbox('setValue', "");
+					}
+				},'-',
+				{
 					text:'修改密码',
 					plain: true,
 					iconCls:'icon-password',
@@ -106,9 +117,39 @@
 			
 	    });
 		
-	    setTimeout(function(){
-	    	$("#passwordDialog").dialog("open");
-	    },1000);
+		//修改
+		$("#systemTable a").each(function(){
+			$(this).click(function(){
+				var input = $(this).parents("tr").find("input");
+				var inputName = $(input).attr("name");
+				var name = "";
+				var value = "";
+				if(inputName == "forbidTeacher" || inputName == "forbidStudent"){
+					name = inputName;
+					if($(input).attr("checked")){
+						value = 1;
+					} else{
+						value = 0;
+					}
+				} else{
+					var name = $(input).attr("textboxname");
+					var value = $(input).textbox("getValue");
+				}
+				
+				//保存
+				var data = {'name': name, 'value': value};
+				$.ajax({
+					type: "post",
+					url: "SystemServlet?method=EditSystemInfo&t="+new Date().getTime(),
+					data: data,
+					success: function(msg){
+						if(msg == "success"){
+							$.messager.alert("消息提醒","保存成功","info");
+						}
+					}
+				});
+			});
+		});
 		
 		
 	})
@@ -117,7 +158,37 @@
 <body>
 	
 	<div id="editDialog" style="padding: 20px;">
-		
+		<div style="width: 650px">
+    	<table id="systemTable" class="table table-border table-bordered table-striped" style="width: 650px" cellpadding="8" >
+    		<tr>
+    			<td width="200">学校名称:</td>
+    			<td width="350">
+    				<input id="school_name" value="${systemInfo.schoolName}" class="easyui-textbox" style="width: 300px; height: 30px;" type="text" name="schoolName" />
+    			</td>
+    			<td width="100"><a data-options="iconCls:'icon-save'" class="easyui-linkbutton">保存</a></td>
+    		</tr>
+    		<tr>
+    			<td>禁止教师<br/>登录系统 </td>
+    			<td><input id="forbid_teacher" ${systemInfo.forbidTeacher == 1 ? 'checked' : ''} type="checkbox" name="forbidTeacher" /></td>
+    			<td><a data-options="iconCls:'icon-save'" class="easyui-linkbutton">保存</a></td>
+    		</tr>
+    		<tr>
+    			<td>禁止学生<br/>登录系统 </td>
+    			<td><input id="forbid_student" ${systemInfo.forbidStudent == 1 ? 'checked' : ''} type="checkbox" name="forbidStudent" /></td>
+    			<td><a data-options="iconCls:'icon-save'" class="easyui-linkbutton">保存</a></td>
+    		</tr>
+    		<tr>
+    			<td>教师通知:</td>
+    			<td><input id="notice_teacher"  value="${systemInfo.noticeTeacher}" style="width: 300px; height: 70px;" data-options="multiline: true" class="easyui-textbox" type="text" name="noticeTeacher" /></td>
+    			<td><a data-options="iconCls:'icon-save'" class="easyui-linkbutton">保存</a></td>
+    		</tr>
+    		<tr>
+    			<td>学生通知:</td>
+    			<td><input id="notice_student"  value="${systemInfo.noticeStudent}" style="width: 300px; height: 70px;" data-options="multiline: true" class="easyui-textbox" type="text" name="noticeStudent" /></td>
+    			<td><a data-options="iconCls:'icon-save'" class="easyui-linkbutton">保存</a></td>
+    		</tr>
+    	</table>
+    	</div>
 	</div>
 	
 	<!-- 修改密码窗口 -->
@@ -127,13 +198,14 @@
 	    		<tr>
 	    			<td>原密码:</td>
 	    			<td>
-	    				<input id="old_password" name="password" style ="width: 200px; height: 30px;" class="easyui-textbox" type="password"  data-options="required:true, missingMessage:'请输入原密码'" />
+	    				<input id="old_password" style ="width: 200px; height: 30px;" class="easyui-textbox" type="password" validType="oldPassword[${user.password}]"  data-options="required:true, missingMessage:'请输入原密码'" />
 	    			</td>
 	    		</tr>
 	    		<tr>
 	    			<td>新密码:</td>
 	    			<td>
-	    				<input id="new_password" style="width: 200px; height: 30px;" class="easyui-textbox" type="password" validType="password" name="newpassword" data-options="required:true, missingMessage:'请输入新密码'" />
+	    				<input  type="hidden" name="account" value="${user.account }" />
+	    				<input id="new_password" style="width: 200px; height: 30px;" class="easyui-textbox" type="password" validType="password" name="password" data-options="required:true, missingMessage:'请输入新密码'" />
 	    			</td>
 	    		</tr>
 	    		<tr>

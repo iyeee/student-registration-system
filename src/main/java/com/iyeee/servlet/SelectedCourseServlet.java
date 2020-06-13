@@ -44,6 +44,18 @@ public class SelectedCourseServlet extends HttpServlet {
 			getSelectedCourseList(request,response);
 		}else if("DeleteSelectedCourse".equals(method)){
 			deleteSelectedCourse(request,response);
+		}else if("getMainCost".equals(method)){
+			getTotalCost(request,response);
+		}
+	}
+	private void getTotalCost(HttpServletRequest request,HttpServletResponse response){
+		int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
+		SelectedCourseDao selectedCourseDao=new SelectedCourseDao();
+		int mainCost = selectedCourseDao.getMainCost(studentId);
+		try {
+			response.getWriter().write(mainCost);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 	private void deleteSelectedCourse(HttpServletRequest request,
@@ -102,6 +114,7 @@ public class SelectedCourseServlet extends HttpServlet {
 		selectedCourseDao.closeCon();
 		response.getWriter().write(msg);
 	}
+
 	private void getSelectedCourseList(HttpServletRequest request,
 			HttpServletResponse response) {
 		// TODO Auto-generated method stub

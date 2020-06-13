@@ -12,7 +12,7 @@ import org.junit.Test;
 /**
  * 
  * @author llq
- *Ñ¡¿Î±íÊı¾İ¿â²Ù×÷·â×°
+ *é€‰è¯¾è¡¨æ•°æ®åº“æ“ä½œå°è£…
  */
 public class SelectedCourseDao extends BaseDao {
 	public List<SelectedCourse> getSelectedCourseList(SelectedCourse selectedCourse, Page page){
@@ -65,7 +65,7 @@ public class SelectedCourseDao extends BaseDao {
 		return total;
 	}
 	/**
-	 * ¼ì²éÑ§ÉúÊÇ·ñÒÑ¾­Ñ¡Ôñ¸ÃÃÅ¿Î³Ì
+	 * æ£€æŸ¥å­¦ç”Ÿæ˜¯å¦å·²ç»é€‰æ‹©è¯¥é—¨è¯¾ç¨‹
 	 * @param studentId
 	 * @param courseId
 	 * @return
@@ -86,7 +86,7 @@ public class SelectedCourseDao extends BaseDao {
 		return ret;
 	}
 	/**
-	 * Ìí¼ÓÑ¡¿ÎĞÅÏ¢
+	 * æ·»åŠ é€‰è¯¾ä¿¡æ¯
 	 * @param selectedCourse
 	 * @return
 	 */
@@ -95,7 +95,7 @@ public class SelectedCourseDao extends BaseDao {
 		return update(sql);
 	}
 	/**
-	 * É¾³ıËùÑ¡¿Î³Ì
+	 * åˆ é™¤æ‰€é€‰è¯¾ç¨‹
 	 * @param id
 	 * @return
 	 */
@@ -103,8 +103,49 @@ public class SelectedCourseDao extends BaseDao {
 		String sql = "delete from s_selected_course where id = " + id;
 		return update(sql);
 	}
+	public int getMainCost(int id){
+		String sql="select sum(cost) as total from s_course,s_selected_course where s_course.id=s_selected_course.course_id and s_selected_course.type= '" +"ä¸»é€‰"+
+
+				"' group by student_id " +
+				"having student_id="+id;
+		ResultSet query = query(sql);
+		int total=0;
+		try {
+			while (query.next()) {
+				total = query.getInt("total");
+			}
+			} catch(SQLException e){
+				e.printStackTrace();
+			}
+
+		return total;
+
+	}
+	public int getTotalCost(int id){
+		String sql="select sum(cost) as total from s_course,s_selected_course where s_course.id=s_selected_course.course_id" +
+
+				" group by student_id " +
+				"having student_id="+id;
+		ResultSet query = query(sql);
+		int total=0;
+		try {
+			while (query.next()) {
+				total = query.getInt("total");
+			}
+		} catch(SQLException e){
+			e.printStackTrace();
+		}
+
+		return total;
+
+	}
+	@Test
+	public void testGetMain(){
+//		System.out.println(getMainCost(2));
+		System.out.println(getTotalCost(2));
+	}
 	/**
-	 * »ñÈ¡Ò»ÌõÑ¡¿ÎÊı¾İ
+	 * è·å–ä¸€æ¡é€‰è¯¾æ•°æ®
 	 * @param id
 	 * @return
 	 */
@@ -142,7 +183,7 @@ public class SelectedCourseDao extends BaseDao {
 		SelectedCourse selectedCourse=new SelectedCourse();
 		selectedCourse.setStudentId(1);
 		selectedCourse.setCourseId(14);
-		selectedCourse.setType("Ö÷Ñ¡");
+		selectedCourse.setType("ä¸»é€‰");
 		addSelectedCourse(selectedCourse);
 	}
 }

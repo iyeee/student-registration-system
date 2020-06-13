@@ -132,6 +132,7 @@ public class ScoreDao extends BaseDao {
 		return ret;
 	}
 
+
 	/**
 	 * 获取成绩总记录数
 	 * @param score
@@ -170,6 +171,7 @@ public class ScoreDao extends BaseDao {
 		String sql = "delete from s_score where id = " + id;
 		return update(sql);
 	}
+
 
 	public Map<String, Object> getAvgStats(Score score){
 		Map<String,Object> ret = new HashMap<String, Object>();

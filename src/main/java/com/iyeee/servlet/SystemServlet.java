@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.iyeee.dao.AdminDao;
+import com.iyeee.dao.SelectedCourseDao;
 import com.iyeee.dao.StudentDao;
 import com.iyeee.dao.TeacherDao;
 import com.iyeee.model.Admin;
@@ -17,7 +18,7 @@ import com.iyeee.model.Teacher;
 /**
  * 
  * @author llq
- *ÏµÍ³µÇÂ¼ºóÖ÷½çÃæ
+ *ç³»ç»Ÿç™»å½•åä¸»ç•Œé¢
  */
 public class SystemServlet extends HttpServlet {
 
@@ -37,6 +38,9 @@ public class SystemServlet extends HttpServlet {
 		}else if("EditPasswod".equals(method)){
 			editPassword(request,response);
 			return;
+		}else if("toStudentInfoView".equals(method)){
+			toStudentInfoView(request,response);
+			return;
 		}
 		try {
 			request.getRequestDispatcher("view/system.jsp").forward(request, response);
@@ -53,11 +57,11 @@ public class SystemServlet extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 1){
-			//¹ÜÀíÔ±
+			//ç®¡ç†å‘˜
 			Admin admin = (Admin)request.getSession().getAttribute("user");
 			if(!admin.getPassword().equals(password)){
 				try {
-					response.getWriter().write("Ô­ÃÜÂë´íÎó£¡");
+					response.getWriter().write("åŸå¯†ç é”™è¯¯ï¼");
 					return;
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -77,7 +81,7 @@ public class SystemServlet extends HttpServlet {
 				}
 			}else{
 				try {
-					response.getWriter().write("Êı¾İ¿âĞŞ¸Ä´íÎó");
+					response.getWriter().write("æ•°æ®åº“ä¿®æ”¹é”™è¯¯");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -87,11 +91,11 @@ public class SystemServlet extends HttpServlet {
 			}
 		}
 		if(userType == 2){
-			//Ñ§Éú
+			//å­¦ç”Ÿ
 			Student student = (Student)request.getSession().getAttribute("user");
 			if(!student.getPassword().equals(password)){
 				try {
-					response.getWriter().write("Ô­ÃÜÂë´íÎó£¡");
+					response.getWriter().write("åŸå¯†ç é”™è¯¯ï¼");
 					return;
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -111,7 +115,7 @@ public class SystemServlet extends HttpServlet {
 				}
 			}else{
 				try {
-					response.getWriter().write("Êı¾İ¿âĞŞ¸Ä´íÎó");
+					response.getWriter().write("æ•°æ®åº“ä¿®æ”¹é”™è¯¯");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -121,11 +125,11 @@ public class SystemServlet extends HttpServlet {
 			}
 		}
 		if(userType == 3){
-			//½ÌÊ¦
+			//æ•™å¸ˆ
 			Teacher teacher = (Teacher)request.getSession().getAttribute("user");
 			if(!teacher.getPassword().equals(password)){
 				try {
-					response.getWriter().write("Ô­ÃÜÂë´íÎó£¡");
+					response.getWriter().write("åŸå¯†ç é”™è¯¯ï¼");
 					return;
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -145,7 +149,7 @@ public class SystemServlet extends HttpServlet {
 				}
 			}else{
 				try {
-					response.getWriter().write("Êı¾İ¿âĞŞ¸Ä´íÎó");
+					response.getWriter().write("æ•°æ®åº“ä¿®æ”¹é”™è¯¯");
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -165,6 +169,22 @@ public class SystemServlet extends HttpServlet {
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	private void toStudentInfoView(HttpServletRequest request,HttpServletResponse response){
+		try {
+////			int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
+//			SelectedCourseDao selectedCourseDao=new SelectedCourseDao();
+//			int mainCost = selectedCourseDao.getMainCost(1);
+//			request.setAttribute("mainCost",mainCost);
+//			request.setAttribute("test","test");
+//			System.out.println("toStudentView");
+//			response.getWriter().write(mainCost);
+			request.getRequestDispatcher("view/toStudentInfoView.jsp").forward(request,response);
+		} catch (ServletException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
