@@ -212,7 +212,6 @@
 										$("#add_num").textbox('setValue',"");
 										$("#add_grade").textbox('setValue',"");
 										//重新刷新页面数据
-							  			//$('#gradeList').combobox("setValue", gradeid);
 							  			$('#dataList').datagrid("reload");
 										
 									} else{
@@ -275,7 +274,7 @@
 	    	<table cellpadding="8" >
 				<tr>
 					<td>年级:</td>
-					<td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空且只能为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
@@ -306,7 +305,7 @@
 	    	<table cellpadding="8" >
 				<tr>
 					<td>年级:</td>
-					<td><input id="edit_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
@@ -318,7 +317,7 @@
 				</tr>
 				<tr>
 					<td>班号:</td>
-					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>

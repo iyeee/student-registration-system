@@ -2,7 +2,7 @@ package com.iyeee.model;
 /**
  * 
  * @author llq
- *°ΰΌ¶ΚµΜε±ν
+ *η­ηΊ§ε®δ½“θ΅¨
  */
 public class Clazz {
 	private int id;

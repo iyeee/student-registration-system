@@ -2,20 +2,20 @@ package com.iyeee.model;
 /**
  * 
  * @author llq
- *ѡ�α�ʵ��
+ *选课表实体
  */
 public class SelectedCourse {
 	private int id;
 	private int studentId;
 	private int courseId;
-	private String type;
+	private int kind;
 
-	public String getType() {
-		return type;
+	public int getKind() {
+		return kind;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setKind(int kind) {
+		this.kind = kind;
 	}
 
 	public int getId() {

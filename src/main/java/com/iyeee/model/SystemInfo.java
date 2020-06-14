@@ -1,7 +1,7 @@
 package com.iyeee.model;
 
 /**
- * ϵͳ��ʼ����һЩ��Ϣ
+ * 系统初始化的一些信息
  * @author bojiangzhou
  *
  */
@@ -9,15 +9,15 @@ public class SystemInfo {
 	
 	private int id; 
 	
-	private String schoolName; //ѧУ����
+	private String schoolName; //学校名称
 	
-	private int forbidTeacher; //��ֹ��ʦ��¼ϵͳ
+	private int forbidTeacher; //禁止教师登录系统
 	
-	private int forbidStudent; //��ֹѧ����¼ϵͳ
+	private int forbidStudent; //禁止学生登录系统
 	
-	private String noticeTeacher; //��ʦ֪ͨ
+	private String noticeTeacher; //教师通知
 	
-	private String noticeStudent; //ѧ��֪ͨ
+	private String noticeStudent; //学生通知
 
 	public int getId() {
 		return id;

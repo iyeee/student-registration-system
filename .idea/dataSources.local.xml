@@ -11,5 +11,15 @@
       <user-name>root</user-name>
       <introspection-schemas>*:db_student_manager_web</introspection-schemas>
     </data-source>
+    <data-source name="db_student_manager_web@localhost [2]" uuid="d49f0975-5bf7-453e-9db8-ca737b93be8f">
+      <database-info product="MySQL" version="5.7.30" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.30" exact-driver-version="5.1">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:@</introspection-schemas>
+    </data-source>
   </component>
 </project>

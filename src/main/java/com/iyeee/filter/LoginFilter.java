@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 
  * @author llq
- *À¹½ØÓÃ»§Î´µÇÂ¼×´Ì¬ÏÂµÄ²Ù×÷
+ *æ‹¦æˆªç”¨æˆ·æœªç™»å½•çŠ¶æ€ä¸‹çš„æ“ä½œ
  */
 public class LoginFilter implements Filter {
 
@@ -31,7 +31,7 @@ public class LoginFilter implements Filter {
 		HttpServletResponse response = (HttpServletResponse)rep;
 		Object user = request.getSession().getAttribute("user");
 		if(user == null){
-			//Î´µÇÂ¼
+			//æœªç™»å½•
 			response.sendRedirect("index.jsp");
 			return;
 		}else{

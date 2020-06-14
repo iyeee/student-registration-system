@@ -19,7 +19,7 @@ import com.iyeee.model.Page;
 /**
  * 
  * @author llq
- *班级信息管理servlet
+ *鐝骇淇℃伅绠＄悊servlet
  */
 public class ClazzServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{

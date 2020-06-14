@@ -24,7 +24,7 @@ import com.lizhou.fileload.FileUpload;
 /**
  * 
  * @author llq
- *Í¼Æ¬´¦ÀíÀàservlet
+ *å›¾ç‰‡å¤„ç†ç±»servlet
  */
 public class PhotoServlet extends HttpServlet {
 	/**
@@ -63,9 +63,9 @@ public class PhotoServlet extends HttpServlet {
 				student.setPhoto(uploadInputStream);
 				StudentDao studentDao = new StudentDao();
 				if(studentDao.setStudentPhoto(student)){
-					response.getWriter().write("<div id='message'>ÉÏ´«³É¹¦£¡</div>");
+					response.getWriter().write("<div id='message'>ä¸Šä¼ æˆåŠŸï¼</div>");
 				}else{
-					response.getWriter().write("<div id='message'>ÉÏ´«Ê§°Ü£¡</div>");
+					response.getWriter().write("<div id='message'>ä¸Šä¼ å¤±è´¥ï¼</div>");
 				}
 			}
 			if(tid != 0){
@@ -74,15 +74,15 @@ public class PhotoServlet extends HttpServlet {
 				teacher.setPhoto(uploadInputStream);
 				TeacherDao teacherDao = new TeacherDao();
 				if(teacherDao.setTeacherPhoto(teacher)){
-					response.getWriter().write("<div id='message'>ÉÏ´«³É¹¦£¡</div>");
+					response.getWriter().write("<div id='message'>ä¸Šä¼ æˆåŠŸï¼</div>");
 				}else{
-					response.getWriter().write("<div id='message'>ÉÏ´«Ê§°Ü£¡</div>");
+					response.getWriter().write("<div id='message'>ä¸Šä¼ å¤±è´¥ï¼</div>");
 				}
 			}
 		} catch (ProtocolException e) {
 			// TODO Auto-generated catch block
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«Ğ­Òé´íÎó£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ åè®®é”™è¯¯ï¼</div>");
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -91,7 +91,7 @@ public class PhotoServlet extends HttpServlet {
 		}catch (NullFileException e1) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«µÄÎÄ¼şÎª¿Õ!</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ çš„æ–‡ä»¶ä¸ºç©º!</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -101,7 +101,7 @@ public class PhotoServlet extends HttpServlet {
 		catch (SizeException e2) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼ş´óĞ¡²»ÄÜ³¬¹ı"+fileUpload.getFileSize()+"£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶å¤§å°ä¸èƒ½è¶…è¿‡"+fileUpload.getFileSize()+"ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -111,7 +111,7 @@ public class PhotoServlet extends HttpServlet {
 		catch (IOException e3) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>¶ÁÈ¡ÎÄ¼ş³ö´í£¡</div>");
+				response.getWriter().write("<div id='message'>è¯»å–æ–‡ä»¶å‡ºé”™ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -121,7 +121,7 @@ public class PhotoServlet extends HttpServlet {
 		catch (FileFormatException e4) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼ş¸ñÊ½²»ÕıÈ·£¬ÇëÉÏ´« "+fileUpload.getFileFormat()+" ¸ñÊ½µÄÎÄ¼ş£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶æ ¼å¼ä¸æ­£ç¡®ï¼Œè¯·ä¸Šä¼  "+fileUpload.getFileFormat()+" æ ¼å¼çš„æ–‡ä»¶ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -131,7 +131,7 @@ public class PhotoServlet extends HttpServlet {
 		catch (FileUploadException e5) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼şÊ§°Ü£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶å¤±è´¥ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -146,7 +146,7 @@ public class PhotoServlet extends HttpServlet {
 		int sid = request.getParameter("sid") == null ? 0 : Integer.parseInt(request.getParameter("sid"));
 		int tid = request.getParameter("tid") == null ? 0 : Integer.parseInt(request.getParameter("tid"));
 		if(sid != 0){
-			//Ñ§Éú
+			//å­¦ç”Ÿ
 			StudentDao studentDao = new StudentDao();
 			Student student = studentDao.getStudent(sid);
 			studentDao.closeCon();
@@ -166,7 +166,7 @@ public class PhotoServlet extends HttpServlet {
 			}
 		}
 		if(tid != 0){
-			//½ÌÊ¦
+			//æ•™å¸ˆ
 			TeacherDao teacherDao = new TeacherDao();
 			Teacher teacher = teacherDao.getTeacher(tid);
 			teacherDao.closeCon();

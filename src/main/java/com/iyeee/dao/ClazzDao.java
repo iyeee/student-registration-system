@@ -13,7 +13,7 @@ import org.junit.Test;
 /**
  * 
  * @author llq
- *°à¼¶ĞÅÏ¢Êı¾İ¿â²Ù×÷
+ *ç­çº§ä¿¡æ¯æ•°æ®åº“æ“ä½œ
  */
 public class ClazzDao extends BaseDao {
 	public List<Clazz> getClazzList(Clazz clazz, Page page){
@@ -74,22 +74,22 @@ public class ClazzDao extends BaseDao {
 	@Test
 	public void testAddClazz(){
 		Clazz clazz=new Clazz();
-		clazz.setName("Èí¼şÑ§ÔºÊ®°à");
-		clazz.setInstitute("Èí¼şÑ§Ôº");
+		clazz.setName("è½¯ä»¶å­¦é™¢åç­");
+		clazz.setInstitute("è½¯ä»¶å­¦é™¢");
 		clazz.setNum(10);
 		clazz.setGrade(2020);
-		clazz.setInfo("¼ªÁÖ´óÑ§´óÑ§Èí¼şÑ§ÔºÊ®°à ÇóÊµ´´ĞÂ£¬ÀøÖ¾Í¼Ç¿");
+		clazz.setInfo("å‰æ—å¤§å­¦å¤§å­¦è½¯ä»¶å­¦é™¢åç­ æ±‚å®åˆ›æ–°ï¼ŒåŠ±å¿—å›¾å¼º");
 		addClazz(clazz);
 	}
 	@Test
 	public void testEditClazz(){
 		Clazz clazz=new Clazz();
 		clazz.setId(8);
-		clazz.setName("Èí¼şÑ§ÔºÊ®°à");
-		clazz.setInstitute("Èí¼şÑ§Ôº");
+		clazz.setName("è½¯ä»¶å­¦é™¢åç­");
+		clazz.setInstitute("è½¯ä»¶å­¦é™¢");
 		clazz.setNum(10);
 		clazz.setGrade(2017);
-		clazz.setInfo("¼ªÁÖ´óÑ§´óÑ§Èí¼şÑ§ÔºÊ®°à ÇóÊµ´´ĞÂ£¬ÀøÖ¾Í¼Ç¿!");
+		clazz.setInfo("å‰æ—å¤§å­¦å¤§å­¦è½¯ä»¶å­¦é™¢åç­ æ±‚å®åˆ›æ–°ï¼ŒåŠ±å¿—å›¾å¼º!");
 		editClazz(clazz);
 	}
 }

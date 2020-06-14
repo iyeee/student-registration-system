@@ -17,7 +17,7 @@ public class JsonDateValueProcessor implements JsonValueProcessor {
         return process(obj);
     }
     private Object process(Object obj) {
-        if (obj == null) {// Èç¹ûÊ±¼äÎªnull£¬Ôò·µ»Ø¿Õ×Ö´®
+        if (obj == null) {// å¦‚æœæ—¶é—´ä¸ºnullï¼Œåˆ™è¿”å›ç©ºå­—ä¸²
             return "";
         }
         if (obj instanceof Date) {
@@ -25,7 +25,7 @@ public class JsonDateValueProcessor implements JsonValueProcessor {
         }
         if (obj instanceof java.util.Date) {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd",
-                    Locale.CHINA);// ¸ñÊ½»¯Ê±¼äÎªyyyy-MM-ddÀàĞÍ
+                    Locale.CHINA);// æ ¼å¼åŒ–æ—¶é—´ä¸ºyyyy-MM-ddç±»å‹
             return sdf.format(obj);
         } else {
             return new Object();

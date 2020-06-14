@@ -306,7 +306,7 @@
 
 							$.ajax({
 								type: "post",
-								url: "TeacherServlet?method=EditTeacher",
+								url: "TeacherServlet?method=EdTeacher",
 								data: data,
 								success: function(msg){
 									if(msg == "success"){
@@ -433,7 +433,7 @@
 	<div id="addDialog" style="padding: 10px;">  
    		<div style=" position: absolute; margin-left: 560px; width: 200px; border: 1px solid #EEF4FF" id="photo">
     		<img alt="照片" style="max-width: 200px; max-height: 400px;" title="照片" src="PhotoServlet?method=getPhoto" />
-	    </div> 
+	    </div>
    		<form id="addForm" method="post">
 	    	<table id="addTable" border=0 style="width:800px; table-layout:fixed;" cellpadding="6" >
 	    		<tr>
@@ -461,7 +461,7 @@
 	    		</tr>
 	    		<tr>
 	    			<td>身份证:</td>
-	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" validType="number" /></td>
+	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
 	    		</tr>
 				<tr>
 					<td>职务:</td>
@@ -526,7 +526,7 @@
                 </tr>
                 <tr>
                     <td>身份证:</td>
-                    <td colspan="4"><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" validType="text" /></td>
+                    <td colspan="4"><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
                 </tr>
 	    	</table>
 	    </form>

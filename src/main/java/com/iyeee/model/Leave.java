@@ -1,19 +1,19 @@
 package com.iyeee.model;
 /**
- * Çë¼Ù±íÊµÌåÀà
+ * è¯·å‡è¡¨å®ä½“ç±»
  * @author llq
  *
  */
 public class Leave {
 	
-	public static int LEAVE_STATUS_WAIT = 0;//µÈ´ıÉóºË
-	public static int LEAVE_STATUS_AGREE = 1;//Í¬Òâ
-	public static int LEAVE_STATUS_DISAGREE = -1;//²»Í¬Òâ
+	public static int LEAVE_STATUS_WAIT = 0;//ç­‰å¾…å®¡æ ¸
+	public static int LEAVE_STATUS_AGREE = 1;//åŒæ„
+	public static int LEAVE_STATUS_DISAGREE = -1;//ä¸åŒæ„
 	private int id;
 	private int studentId;
-	private String info;//Çë¼ÙÀíÓÉ
-	private int status = LEAVE_STATUS_WAIT;//Çë¼ÙÌõ×´Ì¬
-	private String remark;//Åú¸´ÄÚÈİ
+	private String info;//è¯·å‡ç†ç”±
+	private int status = LEAVE_STATUS_WAIT;//è¯·å‡æ¡çŠ¶æ€
+	private String remark;//æ‰¹å¤å†…å®¹
 	public int getId() {
 		return id;
 	}

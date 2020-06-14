@@ -60,6 +60,20 @@
 							}
 						}
 					},
+					{field:'cost',title:'费用',width:150,
+						formatter: function(value,row,index){
+							if (row.courseId){
+								var courseList = $("#courseList").combobox("getData");
+								for(var i=0;i<courseList.length;i++ ){
+									// console.log(clazzList[i]);
+									if(row.courseId == courseList[i].id)return "￥"+courseList[i].cost;
+								}
+								return row.courseId;
+							} else {
+								return 'not found';
+							}
+						}
+					},
 					{field:'grade',title:'成绩',width:200},
 					{field:'remark',title:'备注',width:200}
 				]],
@@ -191,7 +205,7 @@
 									data: $("#addForm").serialize(),
 									success: function(msg){
 										if(msg == "success"){
-											$.messager.alert("消息提醒","选课信息添加成功!","info");
+											$.messager.alert("消息提醒","成绩信息成功录入!","info");
 											//关闭窗口
 											$("#addDialog").dialog("close");
 											//清空原表格数据
@@ -250,7 +264,7 @@
 									data: $("#editForm").serialize(),
 									success: function(msg){
 										if(msg == "success"){
-											$.messager.alert("消息提醒","选课信息修改成功!","info");
+											$.messager.alert("消息提醒","成绩信息修改成功!","info");
 											//关闭窗口
 											$("#editDialog").dialog("close");
 											//清空原表格数据

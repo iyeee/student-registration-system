@@ -86,7 +86,7 @@ public class SelectedCourseServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
 		int courseId = request.getParameter("courseid") == null ? 0 : Integer.parseInt(request.getParameter("courseid").toString());
-		String type=request.getParameter("type");
+		String kind=request.getParameter("kind");
 		CourseDao courseDao = new CourseDao();
 		String msg = "success";
 		if(courseDao.isFull(courseId)){
@@ -105,7 +105,13 @@ public class SelectedCourseServlet extends HttpServlet {
 		SelectedCourse selectedCourse = new SelectedCourse();
 		selectedCourse.setStudentId(studentId);
 		selectedCourse.setCourseId(courseId);
-		selectedCourse.setType(type);
+		if(kind.trim().equals("main")){
+			selectedCourse.setKind(1);
+		}else if (kind.trim().equals("secondary")){
+			selectedCourse.setKind(2);
+		}else {
+			System.out.println("333333");
+		}
 		if(selectedCourseDao.addSelectedCourse(selectedCourse)){
 			msg = "success";
 		}
@@ -124,10 +130,10 @@ public class SelectedCourseServlet extends HttpServlet {
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		SelectedCourse selectedCourse = new SelectedCourse();
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			studentId = currentUser.getId();
 		}
@@ -137,11 +143,11 @@ public class SelectedCourseServlet extends HttpServlet {
 		SelectedCourseDao selectedCourseDao = new SelectedCourseDao();
 		List<SelectedCourse> courseList = selectedCourseDao.getSelectedCourseList(selectedCourse, new Page(currentPage, pageSize));
 		/*
-		* ²âÊÔ
-		* */
-		for(SelectedCourse s:courseList){
-			System.out.println(s.getCourseId()+" "+s.getType());
-		}
+		* æµ‹è¯•
+//		* */
+//		for(SelectedCourse s:courseList){
+//			System.out.println(s.getCourseId()+" "+s.getType());
+//		}
 
 		int total = selectedCourseDao.getSelectedCourseListTotal(selectedCourse);
 		selectedCourseDao.closeCon();

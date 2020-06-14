@@ -5,11 +5,11 @@ import java.io.InputStream;
 /**
  * 
  * @author llq
- *½ÌÊ¦ÊµÌå±íÉè¼Æ
+ *æ•™å¸ˆå®ä½“è¡¨è®¾è®¡
  */
 public class Teacher {
 	private int id;
-	private String sn;//½ÌÊ¦¹¤ºÅ
+	private String sn;//æ•™å¸ˆå·¥å·
 	private int num;
 	private String name;
 	private String password;

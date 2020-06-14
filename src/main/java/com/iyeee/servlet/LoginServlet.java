@@ -18,7 +18,7 @@ import com.iyeee.util.StringUtil;
 /**
  * 
  * @author llq
- *登录验证servlet
+ *鐧诲綍楠岃瘉servlet
  */
 public class LoginServlet extends HttpServlet {
 
@@ -49,7 +49,7 @@ public class LoginServlet extends HttpServlet {
 			response.getWriter().write("vcodeError");
 			return;
 		}
-		//验证码验证通过，对比用户名密码是否正确
+		//楠岃瘉鐮侀獙璇侀�氳繃锛屽姣旂敤鎴峰悕瀵嗙爜鏄惁姝ｇ‘
 		String loginStatus = "loginFaild";
 		switch (type) {
 			case 1:{

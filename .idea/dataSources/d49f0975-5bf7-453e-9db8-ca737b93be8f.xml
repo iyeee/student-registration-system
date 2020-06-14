@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="db_student_manager_web@localhost">
+<dataSource name="db_student_manager_web@localhost [2]">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
       <ServerVersion>5.7.30</ServerVersion>
@@ -1170,9 +1170,9 @@ name</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="281" parent="237" name="kind">
+    <column id="281" parent="237" name="type">
       <Position>4</Position>
-      <DataType>int(2)|0s</DataType>
+      <DataType>varchar(8)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>

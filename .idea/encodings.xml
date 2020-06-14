@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
-    <file url="PROJECT" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/AdminDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/AttendanceDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/BaseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ClazzDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/CourseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/LeaveDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/SelectedCourseDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/TeacherDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/filter/LoginFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/listener/SystemInitListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Admin.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Attendance.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Clazz.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Course.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Leave.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Page.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Score.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/SelectedCourse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/SystemInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Teacher.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/AttendanceServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ClazzServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/CourseServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/CpachaServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/LeaveServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/LoginServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/PhotoServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/SelectedCourseServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/SystemServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/TeacherServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/CpachaUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/DateFormatUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/DbUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/JsonDateValueProcessor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/SnGenerateUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/StringUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

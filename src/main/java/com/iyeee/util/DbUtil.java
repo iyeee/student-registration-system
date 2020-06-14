@@ -7,7 +7,7 @@ import java.sql.SQLException;
 /**
  * 
  * @author llq
- *Êı¾İ¿âÁ¬util
+ *æ•°æ®åº“è¿util
  */
 public class DbUtil {
 
@@ -20,10 +20,10 @@ public class DbUtil {
 		try {
 			Class.forName(jdbcName);
 			connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
-			System.out.println("Êı¾İ¿âÁ´½Ó³É¹¦£¡");
+			System.out.println("æ•°æ®åº“é“¾æ¥æˆåŠŸï¼");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println("Êı¾İ¿âÁ´½ÓÊ§°Ü£¡");
+			System.out.println("æ•°æ®åº“é“¾æ¥å¤±è´¥ï¼");
 			e.printStackTrace();
 		}
 		return connection;
@@ -33,7 +33,7 @@ public class DbUtil {
 		if(connection != null)
 			try {
 				connection.close();
-				System.out.println("Êı¾İ¿âÁ´½ÓÒÑ¹Ø±Õ£¡");
+				System.out.println("æ•°æ®åº“é“¾æ¥å·²å…³é—­ï¼");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

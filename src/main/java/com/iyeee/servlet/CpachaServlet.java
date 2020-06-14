@@ -12,7 +12,7 @@ import com.iyeee.util.CpachaUtil;
 /**
  * 
  * @author llq
- *ÑéÖ¤Âëservlet
+ *éªŒè¯ç servlet
  */
 public class CpachaServlet extends HttpServlet {
 

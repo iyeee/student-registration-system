@@ -13,7 +13,7 @@ import org.junit.Test;
 /**
  * 
  * @author llq
- *¿Î³ÌÊı¾İ¿â²Ù×÷Àà
+ *è¯¾ç¨‹æ•°æ®åº“æ“ä½œç±»
  */
 
 public class CourseDao extends BaseDao {
@@ -24,17 +24,17 @@ public class CourseDao extends BaseDao {
 
 	public static void main(String[] args) {
 			Course course=new Course();
-			course.setName("´óÑ§ÓïÎÄ");
+			course.setName("å¤§å­¦è¯­æ–‡");
 			course.setTeacherId(9);
 			course.setSelectedNum(2);
 			course.setMaxNum(50);
 			course.setInfo("");
 			course.setCyear(2020);
-			course.setSemester("ÉÏ");
+			course.setSemester("ä¸Š");
 			course.setTime("08:00-09:40");
 			course.setWeek("1-17");
 			course.setCost(312);
-			course.setPre("´óÑ§Ê¶×Ö");
+			course.setPre("å¤§å­¦è¯†å­—");
 //			new CourseDao().addCourse(course);
 			new CourseDao().editCourse(course);
 	}
@@ -108,7 +108,7 @@ public class CourseDao extends BaseDao {
 		return update(sql);
 	}
 	/**
-	 * ¼ì²é¸Ã¿Î³ÌÊÇ·ñÒÑÑ¡Âú
+	 * æ£€æŸ¥è¯¥è¯¾ç¨‹æ˜¯å¦å·²é€‰æ»¡
 	 * @param courseId
 	 * @return
 	 */
@@ -127,7 +127,7 @@ public class CourseDao extends BaseDao {
 		return ret;
 	}
 	/**
-	 * ¸üĞÂ¿Î³ÌÒÑÑ¡ÈËÊı
+	 * æ›´æ–°è¯¾ç¨‹å·²é€‰äººæ•°
 	 * @param courseId
 	 */
 	public void updateCourseSelectedNum(int courseId ,int num){
@@ -141,7 +141,7 @@ public class CourseDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡ÖÆ¶¨id·¶Î§ÄÚµÄ¿Î³ÌÁĞ±í
+	 * è·å–åˆ¶å®šidèŒƒå›´å†…çš„è¯¾ç¨‹åˆ—è¡¨
 	 * @param ids
 	 * @return
 	 */
@@ -175,7 +175,7 @@ public class CourseDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡Ö¸¶¨µÄ¿Î³Ì
+	 * è·å–æŒ‡å®šçš„è¯¾ç¨‹
 	 * @param id
 	 * @return
 	 */

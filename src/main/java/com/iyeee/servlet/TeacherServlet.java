@@ -6,7 +6,7 @@ import java.util.Map;
 
 import javax.servlet.ServletException;
 /**
- * ½ÌÊ¦ĞÅÏ¢¹ÜÀíservletÀà
+ * æ•™å¸ˆä¿¡æ¯ç®¡ç†servletç±»
  */
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -106,13 +106,13 @@ public class TeacherServlet extends HttpServlet {
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		Integer clazz = request.getParameter("clazzid") == null ? 0 : Integer.parseInt(request.getParameter("clazzid"));
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		Teacher teacher = new Teacher();
 		teacher.setName(name);
 		teacher.setClazzId(clazz);
 		if(userType == 3){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Teacher currentUser = (Teacher)request.getSession().getAttribute("user");
 			teacher.setId(currentUser.getId());
 		}

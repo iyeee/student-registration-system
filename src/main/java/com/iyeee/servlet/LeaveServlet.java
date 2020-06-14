@@ -127,10 +127,10 @@ public class LeaveServlet extends HttpServlet {
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		Leave leave = new Leave();
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			studentId = currentUser.getId();
 		}

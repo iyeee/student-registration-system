@@ -12,13 +12,13 @@ import com.iyeee.model.Score;
 import org.junit.Test;
 
 /**
- * ³É¼¨±íÊı¾İ¿â»ù´¡²Ù×÷
+ * æˆç»©è¡¨æ•°æ®åº“åŸºç¡€æ“ä½œ
  * @author llq
  *
  */
 public class ScoreDao extends BaseDao {
 	/**
-	 * ³É¼¨Â¼Èë
+	 * æˆç»©å½•å…¥
 	 * @param score
 	 * @return
 	 */
@@ -28,7 +28,7 @@ public class ScoreDao extends BaseDao {
 	}
 
 	/**
-	 * ĞŞ¸Ä³É¼¨ĞÅÏ¢
+	 * ä¿®æ”¹æˆç»©ä¿¡æ¯
 	 * @param score
 	 * @return
 	 */
@@ -42,7 +42,7 @@ public class ScoreDao extends BaseDao {
 	}
 
 	/**
-	 * ÅĞ¶Ï³É¼¨ÊÇ·ñÂ¼Èë
+	 * åˆ¤æ–­æˆç»©æ˜¯å¦å½•å…¥
 	 * @param studentId
 	 * @param courseId
 	 * @return
@@ -62,7 +62,7 @@ public class ScoreDao extends BaseDao {
 	}
 
 	/**
-	 * ·ÖÒ³»ñÈ¡³É¼¨ÁĞ±í
+	 * åˆ†é¡µè·å–æˆç»©åˆ—è¡¨
 	 * @param score
 	 * @param page
 	 * @return
@@ -98,7 +98,7 @@ public class ScoreDao extends BaseDao {
 	}
 
 	/**
-	 * »ñÈ¡·ûºÏÄ³Ò»Ìõ¼şµÄËùÓĞ³É¼¨ÁĞ±í
+	 * è·å–ç¬¦åˆæŸä¸€æ¡ä»¶çš„æ‰€æœ‰æˆç»©åˆ—è¡¨
 	 * @param score
 	 * @return
 	 */
@@ -134,7 +134,7 @@ public class ScoreDao extends BaseDao {
 
 
 	/**
-	 * »ñÈ¡³É¼¨×Ü¼ÇÂ¼Êı
+	 * è·å–æˆç»©æ€»è®°å½•æ•°
 	 * @param score
 	 * @return
 	 */
@@ -162,7 +162,7 @@ public class ScoreDao extends BaseDao {
 	}
 
 	/**
-	 * É¾³ı³É¼¨
+	 * åˆ é™¤æˆç»©
 	 * @param id
 	 * @return
 	 */
@@ -197,7 +197,7 @@ public class ScoreDao extends BaseDao {
 		score.setCourseId(3);
 		score.setStudentId(1);
 		score.setId(66);
-		score.setRemark("ºÃ");
+		score.setRemark("å¥½");
 		addScore(score);
 	}
 	@Test
@@ -207,7 +207,7 @@ public class ScoreDao extends BaseDao {
 		score.setCourseId(1);
 		score.setStudentId(1);
 		score.setGrade("I");
-		score.setRemark("À´Ã«¶°°ì¹«ÊÒ");
+		score.setRemark("æ¥æ¯›æ ‹åŠå…¬å®¤");
 		editScore(score);
 	}
 }

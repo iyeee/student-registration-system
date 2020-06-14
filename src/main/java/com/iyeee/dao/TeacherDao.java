@@ -15,7 +15,7 @@ import org.junit.Test;
 /**
  * 
  * @author llq
- *½ÌÊ¦±íÊı¾İ¿â²Ù×÷
+ *æ•™å¸ˆè¡¨æ•°æ®åº“æ“ä½œ
  */
 public class TeacherDao extends BaseDao {
 	public boolean addTeacher(Teacher teacher){
@@ -32,13 +32,13 @@ public class TeacherDao extends BaseDao {
 	public void testAddTeacher(){
 		Teacher teacher = new Teacher();
 		teacher.setSn("S21322123123");
-		teacher.setName("´óÃ÷");
+		teacher.setName("å¤§æ˜");
 		teacher.setPassword("12321");
 		teacher.setidentity("12323122");
-		teacher.setSex("ÄĞ");
+		teacher.setSex("ç”·");
 		teacher.setClazzId(1);
-		teacher.setStatus("Ğ£³¤");
-		teacher.setDepartment("¼ÆËã»ú¿ÆÑ§Óë¼¼Êõ");
+		teacher.setStatus("æ ¡é•¿");
+		teacher.setDepartment("è®¡ç®—æœºç§‘å­¦ä¸æŠ€æœ¯");
 		teacher.setMobile("13767676767");
 		teacher.setQq("123231233");
 		addTeacher(teacher);
@@ -62,13 +62,13 @@ public class TeacherDao extends BaseDao {
 		Teacher teacher = new Teacher();
 		teacher.setId(9);
 		teacher.setSn("S21322123123");
-		teacher.setName("´óÃ÷");
+		teacher.setName("å¤§æ˜");
 		teacher.setPassword("12321");
 		teacher.setidentity("12323122");
-		teacher.setSex("ÄĞ");
+		teacher.setSex("ç”·");
 		teacher.setClazzId(1);
-		teacher.setStatus("Ğ£³¤");
-		teacher.setDepartment("Èí¼şÑ§Ôº");
+		teacher.setStatus("æ ¡é•¿");
+		teacher.setDepartment("è½¯ä»¶å­¦é™¢");
 		teacher.setMobile("13767676767");
 		teacher.setQq("123231233");
 		editTeacher(teacher);

@@ -2,14 +2,14 @@ package com.iyeee.model;
 /**
  * 
  * @author llq
- *¿Î³ÌÊµÌå±í
+ *è¯¾ç¨‹å®ä½“è¡¨
  */
 public class Course {
 	private int id;
 	private String name;
 	private int teacherId;
-	private int selectedNum = 0;//ÒÑÑ¡ÈËÊı
-	private int maxNum = 50;//¿Î³Ì×î´óÑ¡¿ÎÈËÊı
+	private int selectedNum = 0;//å·²é€‰äººæ•°
+	private int maxNum = 50;//è¯¾ç¨‹æœ€å¤§é€‰è¯¾äººæ•°
 	private String info;
 	private int cyear;
 	private String semester;

@@ -30,7 +30,17 @@
 				remoteSort: false,
 				columns: [[
 					{field:'chk',checkbox: true,width:50},
-					{field:'type',title:'类型',width:100, sortable: true},
+					{field:'kind',title:'类型',width:100, sortable: true,
+						formatter: function(value,row,index){
+							if(value==1){
+								return '主选';
+							}else if (value==2) {
+								return '备选'
+							}else{
+								return 'error';
+							}
+						}
+					},
 					{field:'id',title:'ID',width:50, sortable: true},
 					{field:'studentId',title:'学生',width:200,
 						formatter: function(value,row,index){
@@ -53,6 +63,20 @@
 								for(var i=0;i<courseList.length;i++ ){
 									//console.log(clazzList[i]);
 									if(row.courseId == courseList[i].id)return courseList[i].name;
+								}
+								return row.courseId;
+							} else {
+								return 'not found';
+							}
+						}
+					},
+					{field:'cost',title:'费用',width:200,
+						formatter: function(value,row,index){
+							if (row.courseId){
+								var courseList = $("#courseList").combobox("getData");
+								for(var i=0;i<courseList.length;i++ ){
+									//console.log(clazzList[i]);
+									if(row.courseId == courseList[i].id)return "￥"+courseList[i].cost;
 								}
 								return row.courseId;
 							} else {
@@ -183,6 +207,7 @@
 									data: $("#addForm").serialize(),
 									success: function(msg){
 										if(msg == "success"){
+											console.log($("#addForm").serialize())
 											$.messager.alert("消息提醒","选课信息添加成功!","info");
 											//关闭窗口
 											$("#addDialog").dialog("close");
@@ -293,9 +318,9 @@
 				<td style="width:80px"></td>
 			</tr>
 			<tr>
-				<td style="width:40px">类型:</td>
+				<td style="width:40px">主备选:</td>
 				<td colspan="3">
-					<select id="add_type" class="easyui-combobox" style="width:200px"><option>主选</option><option>备选</option></select>
+					<select id="add_kind" class="easyui-combobox" name="kind" style="width:200px"><option>main</option><option>secondary</option></select>
 				</td>
 				<td style="width:80px"></td>
 			</tr>

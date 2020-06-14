@@ -9,13 +9,13 @@ import com.iyeee.model.Leave;
 import com.iyeee.model.Page;
 
 /**
- * Çë¼Ù±íÊı¾İ¿â²Ù×÷
+ * è¯·å‡è¡¨æ•°æ®åº“æ“ä½œ
  * @author llq
  *
  */
 public class LeaveDao extends BaseDao {
 	/**
-	 * Ìí¼ÓÇë¼ÙĞÅÏ¢
+	 * æ·»åŠ è¯·å‡ä¿¡æ¯
 	 * @param leave
 	 * @return
 	 */
@@ -25,7 +25,7 @@ public class LeaveDao extends BaseDao {
 	}
 	
 	/**
-	 * ±à¼­Çë¼Ùµ¥
+	 * ç¼–è¾‘è¯·å‡å•
 	 * @param leave
 	 * @return
 	 */
@@ -35,7 +35,7 @@ public class LeaveDao extends BaseDao {
 	}
 	
 	/**
-	 * É¾³ıÇë¼ÙĞÅÏ¢
+	 * åˆ é™¤è¯·å‡ä¿¡æ¯
 	 * @param id
 	 * @return
 	 */
@@ -46,7 +46,7 @@ public class LeaveDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡·ÖÒ³Çë¼Ùµ¥ĞÅÏ¢ÁĞ±í
+	 * è·å–åˆ†é¡µè¯·å‡å•ä¿¡æ¯åˆ—è¡¨
 	 * @param leave
 	 * @param page
 	 * @return
@@ -77,7 +77,7 @@ public class LeaveDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡×Ü¼ÇÂ¼Êı
+	 * è·å–æ€»è®°å½•æ•°
 	 * @param leave
 	 * @return
 	 */

@@ -5,7 +5,7 @@ import java.io.InputStream;
 /**
  * 
  * @author llq
- *Ρ§ΙϊΚµΜεΐΰ
+ *ε­¦η”ε®δ½“η±»
  */
 public class Student {
 	private int id;

@@ -23,14 +23,14 @@ import org.junit.Test;
 /**
  * 
  * @author llq
- *Ñ§ÉúĞÅÏ¢¹ÜÀí¹¦ÄÜÊµÏÖservlet
+ *å­¦ç”Ÿä¿¡æ¯ç®¡ç†åŠŸèƒ½å®ç°servlet
  */
 public class StudentServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException{
 		doPost(request, response);
 	}
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
-		System.out.println("StudentServlet");
+//		System.out.println("StudentServlet");
 		String method = request.getParameter("method");
 		if("toStudentListView".equals(method)){
 			studentList(request,response);
@@ -71,7 +71,7 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void editStudent(HttpServletRequest request,
 			HttpServletResponse response) {
-		System.out.println("eidtStudent");
+//		System.out.println("eidtStudent");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		int id = Integer.parseInt(request.getParameter("id"));
@@ -108,29 +108,29 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void getStudentList(HttpServletRequest request,
 			HttpServletResponse response) {
-		System.out.println("getStudentList");
+//		System.out.println("getStudentList");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("studentName");
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		Integer clazz = request.getParameter("clazzid") == null ? 0 : Integer.parseInt(request.getParameter("clazzid"));
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		Student student = new Student();
 		student.setName(name);
 		student.setClazzId(clazz);
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			student.setId(currentUser.getId());
 		}
 		StudentDao studentDao = new StudentDao();
 		List<Student> studentList = studentDao.getStudentList(student, new Page(currentPage, pageSize));
 		/*
-		*²âÊÔ*/
-		for (Student student1 : studentList) {
-			System.out.println(student1);
-		}
+		*æµ‹è¯•*/
+//		for (Student student1 : studentList) {
+//			System.out.println(student1);
+//		}
 		int total = studentDao.getStudentListTotal(student);
 		studentDao.closeCon();
 		response.setCharacterEncoding("UTF-8");
@@ -140,10 +140,10 @@ public class StudentServlet extends HttpServlet {
 		try {
 			String from = request.getParameter("from");
 			if("combox".equals(from)){
-				System.out.println(JSONArray.fromObject(studentList).toString());
+//				System.out.println(JSONArray.fromObject(studentList).toString());
 				response.getWriter().write(JSONArray.fromObject(studentList).toString());
 			}else{
-				System.out.println(JSONArray.fromObject(ret).toString());
+//				System.out.println(JSONArray.fromObject(ret).toString());
 				response.getWriter().write(JSONObject.fromObject(ret).toString());
 			}
 		} catch (IOException e) {
@@ -153,7 +153,7 @@ public class StudentServlet extends HttpServlet {
 	}
 	private void addStudent(HttpServletRequest request,
 			HttpServletResponse response) throws ParseException {
-		System.out.println("addStudent");
+//		System.out.println("addStudent");
 		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		String password = request.getParameter("password");
@@ -189,7 +189,7 @@ public class StudentServlet extends HttpServlet {
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.addStudent(student)){
 			try {
-				System.out.println("success");
+//				System.out.println("success");
 				response.getWriter().write("success");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -200,13 +200,13 @@ public class StudentServlet extends HttpServlet {
 		}
 	}
 	/*
-	*²âÊÔaddStudent*/
+	*æµ‹è¯•addStudent*/
 	@Test
 	public void testAddStudent(){
 		Student student = new Student();
 		String name="mqd";
 		String password="12332112";
-		String sex="ÄĞ";
+		String sex="ç”·";
 		String mobile="13123983121";
 		String qq="123123123";
 		int grade=2019;
@@ -246,4 +246,8 @@ public class StudentServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
+	@Test
+    public void test(){
+        System.out.println("ceshiæµ‹è¯•");
+    }
 }

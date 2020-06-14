@@ -2,12 +2,12 @@ package com.iyeee.model;
 /**
  * 
  * @author llq
- *·ÖÒ³ÀàÒ³Âë·â×°
+ *åˆ†é¡µç±»é¡µç å°è£…
  */
 public class Page {
-	private int start;//ÆğÊ¼Ò³
-	private int currentPage;//µ±Ç°Ò³
-	private int pageSize;//Ã¿Ò³ÏÔÊ¾ÊıÁ¿
+	private int start;//èµ·å§‹é¡µ
+	private int currentPage;//å½“å‰é¡µ
+	private int pageSize;//æ¯é¡µæ˜¾ç¤ºæ•°é‡
 	public Page(int currentPage,int pageSize){
 		this.start = (currentPage-1)*pageSize;
 		this.currentPage = currentPage;

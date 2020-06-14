@@ -73,10 +73,10 @@ public class AttendanceServlet extends HttpServlet{
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		Attendance attendance = new Attendance();
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			studentId = currentUser.getId();
 		}
@@ -119,9 +119,9 @@ public class AttendanceServlet extends HttpServlet{
 		String msg = "success";
 		response.setCharacterEncoding("UTF-8");
 		if(attendanceDao.isAttendanced(studentId, courseId, type,DateFormatUtil.getFormatDate(new Date(), "yyyy-MM-dd"))){
-			msg = "ÒÑÇ©µ½£¬ÇëÎğÖØ¸´Ç©µ½£¡";
+			msg = "å·²ç­¾åˆ°ï¼Œè¯·å‹¿é‡å¤ç­¾åˆ°ï¼";
 		}else if(!attendanceDao.addAttendance(attendance)){
-			msg = "ÏµÍ³ÄÚ²¿³ö´í¡£ÇëÁªÏµ¹ÜÀíÔ±£¡";
+			msg = "ç³»ç»Ÿå†…éƒ¨å‡ºé”™ã€‚è¯·è”ç³»ç®¡ç†å‘˜ï¼";
 		}
 		try {
 			response.getWriter().write(msg);

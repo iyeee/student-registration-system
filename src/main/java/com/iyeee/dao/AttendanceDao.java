@@ -10,13 +10,13 @@ import com.iyeee.model.Page;
 import com.iyeee.util.StringUtil;
 
 /**
- * ¿¼ÇÚĞÅÏ¢Êı¾İ¿â²Ù×÷
+ * è€ƒå‹¤ä¿¡æ¯æ•°æ®åº“æ“ä½œ
  * @author llq
  *
  */
 public class AttendanceDao extends BaseDao {
 	/**
-	 * Ìí¼Ó¿¼ÇÚĞÅÏ¢
+	 * æ·»åŠ è€ƒå‹¤ä¿¡æ¯
 	 * @param attendance
 	 * @return
 	 */
@@ -26,7 +26,7 @@ public class AttendanceDao extends BaseDao {
 	}
 	
 	/**
-	 * ÅĞ¶Ïµ±Ç°ÊÇ·ñÒÑÇ©µ½
+	 * åˆ¤æ–­å½“å‰æ˜¯å¦å·²ç­¾åˆ°
 	 * @param studentId
 	 * @param courseId
 	 * @param type
@@ -48,7 +48,7 @@ public class AttendanceDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡Ö¸¶¨µÄ¿¼ÇÚĞÅÏ¢ÁĞ±í
+	 * è·å–æŒ‡å®šçš„è€ƒå‹¤ä¿¡æ¯åˆ—è¡¨
 	 * @param attendace
 	 * @param page
 	 * @return
@@ -89,7 +89,7 @@ public class AttendanceDao extends BaseDao {
 	}
 	
 	/**
-	 * »ñÈ¡·ûºÏÌõ¼ş¼ÇÂ¼×ÜÊı
+	 * è·å–ç¬¦åˆæ¡ä»¶è®°å½•æ€»æ•°
 	 * @param attendance
 	 * @return
 	 */
@@ -115,7 +115,7 @@ public class AttendanceDao extends BaseDao {
 	}
 	
 	/**
-	 * É¾³ı
+	 * åˆ é™¤
 	 * @param id
 	 * @return
 	 */

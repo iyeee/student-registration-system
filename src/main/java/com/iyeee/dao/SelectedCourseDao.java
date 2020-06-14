@@ -16,7 +16,7 @@ import org.junit.Test;
  */
 public class SelectedCourseDao extends BaseDao {
 	public List<SelectedCourse> getSelectedCourseList(SelectedCourse selectedCourse, Page page){
-		System.out.println("getSelectCourseList");
+//		System.out.println("getSelectCourseList");
 		List<SelectedCourse> ret = new ArrayList<SelectedCourse>();
 		String sql = "select * from s_selected_course ";
 		if(selectedCourse.getStudentId() != 0){
@@ -34,7 +34,7 @@ public class SelectedCourseDao extends BaseDao {
 				cl.setId(resultSet.getInt("id"));
 				cl.setCourseId(resultSet.getInt("course_id"));
 				cl.setStudentId(resultSet.getInt("student_id"));
-				cl.setType(resultSet.getString("type"));
+				cl.setKind(resultSet.getInt("kind"));
 				ret.add(cl);
 			}
 		} catch (SQLException e) {
@@ -44,7 +44,7 @@ public class SelectedCourseDao extends BaseDao {
 		return ret;
 	}
 	public int getSelectedCourseListTotal(SelectedCourse selectedCourse){
-		System.out.println("getSelectedCourseListTotal(SelectedCourse selectedCourse)");
+//		System.out.println("getSelectedCourseListTotal(SelectedCourse selectedCourse)");
 		int total = 0;
 		String sql = "select count(*)as total from s_selected_course ";
 		if(selectedCourse.getStudentId() != 0){
@@ -71,7 +71,7 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public boolean isSelected(int studentId,int courseId){
-		System.out.println("isSelected");
+//		System.out.println("isSelected");
 		boolean ret = false;
 		String sql = "select * from s_selected_course where student_id = " + studentId + " and course_id = " + courseId;
 		ResultSet query = query(sql);
@@ -91,7 +91,7 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public boolean addSelectedCourse(SelectedCourse selectedCourse){
-		String sql = "insert into s_selected_course values(null,"+selectedCourse.getStudentId()+","+selectedCourse.getCourseId()+",\""+selectedCourse.getType()+"\")";
+		String sql = "insert into s_selected_course values(null,"+selectedCourse.getStudentId()+","+selectedCourse.getCourseId()+",\""+selectedCourse.getKind()+"\")";
 		return update(sql);
 	}
 	/**
@@ -104,7 +104,7 @@ public class SelectedCourseDao extends BaseDao {
 		return update(sql);
 	}
 	public int getMainCost(int id){
-		String sql="select sum(cost) as total from s_course,s_selected_course where s_course.id=s_selected_course.course_id and s_selected_course.type= '" +"主选"+
+		String sql="select sum(cost) as total from s_course,s_selected_course where s_course.id=s_selected_course.course_id and s_selected_course.Kind= '" +"主选"+
 
 				"' group by student_id " +
 				"having student_id="+id;
@@ -150,7 +150,7 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public SelectedCourse getSelectedCourse(int id){
-		System.out.println("getSelectCourse");
+//		System.out.println("getSelectCourse");
 		SelectedCourse ret = null;
 		String sql = "select * from s_selected_course where id = " + id;
 		ResultSet query = query(sql);
@@ -160,7 +160,7 @@ public class SelectedCourseDao extends BaseDao {
 				ret.setId(query.getInt("id"));
 				ret.setCourseId(query.getInt("course_id"));
 				ret.setStudentId(query.getInt("student_id"));
-				ret.setType(query.getString("type"));
+				ret.setKind(query.getInt("kind"));
 				return ret;
 			}
 		} catch (SQLException e) {
@@ -176,14 +176,14 @@ public class SelectedCourseDao extends BaseDao {
 	@Test
 	public void Test2(){
 		SelectedCourse selectedCourse = getSelectedCourse(6);
-		System.out.println(selectedCourse.getType());
+		System.out.println(selectedCourse.getKind());
 	}
 	@Test
 	public void Test3(){
 		SelectedCourse selectedCourse=new SelectedCourse();
 		selectedCourse.setStudentId(1);
 		selectedCourse.setCourseId(14);
-		selectedCourse.setType("主选");
+		selectedCourse.setKind(1);
 		addSelectedCourse(selectedCourse);
 	}
 }

@@ -149,7 +149,7 @@
 							console.log(data)
 							$.ajax({
 								type: "post",
-								url: "CourseServlet?method=EditCourse",
+								url: "CourseServlet?method=EdiCourse",
 								data: data,
 								success: function(msg){
 									if(msg == "success"){
@@ -396,11 +396,11 @@
 	    		</tr>
 	    		<tr>
 	    			<td>最多可选人数:</td>
-	    			<td><input id="add_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="maxnum" data-options="min:0,precision:0,required:true, missingMessage:'不能为空'" /></td>
+	    			<td><input id="add_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="maxnum" data-options="min:0,precision:0,required:true, missingMessage:'不能为空且大于0的数字'" /></td>
 	    		</tr>
 				<tr>
 					<td>年份:</td>
-					<td><input id="add_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="year" name="cyear" data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="add_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cyear" data-options="min:1990,max:2300,required:true, missingMessage:'不能为空且为年份'" /></td>
 				</tr>
 				<tr>
 					<td>时间:</td>
@@ -418,7 +418,7 @@
 				</tr>
 				<tr>
 					<td>费用:</td>
-					<td><input id="add_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="add_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空且大于0的数字'" /></td>
 				</tr>
 				<tr>
 					<td>先修课:</td>
@@ -452,11 +452,11 @@
 	    		</tr>
 	    		<tr>
 	    			<td>最多可选人数:</td>
-	    			<td><input id="edit_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="max_num" data-options="min:0,precision:0,required:true, missingMessage:'不能为空'" /></td>
+	    			<td><input id="edit_max_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="max_num" data-options="min:0,precision:0,required:true, missingMessage:'不能为空且大于0的数字'" /></td>
 	    		</tr>
 				<tr>
 					<td>年份:</td>
-					<td><input id="edit_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="year" name="cyear" data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_cyear" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cyear" data-options="min:1990,max:2300,required:true, missingMessage:'不能为空且为年份'" /></td>
 				</tr>
 				<tr>
 					<td>时间:</td>
@@ -474,11 +474,11 @@
 				</tr>
 				<tr>
 					<td>费用:</td>
-					<td><input id="edit_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_cost" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="cost" data-options="min:0,required:true, missingMessage:'不能为空且大于0的数字'" /></td>
 				</tr>
 				<tr>
 					<td>先修课:</td>
-					<td><input id="edit_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="cost" data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="pre" data-options="required:true, missingMessage:'不能为空'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>课程介绍:</td>

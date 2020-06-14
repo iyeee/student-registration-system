@@ -485,7 +485,7 @@
                 </tr>
                 <tr>
                     <td>身份证号:</td>
-                    <td><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity"/></td>
+                    <td><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
                 </tr>
                 <tr>
                     <td>毕业日期:</td>
@@ -539,7 +539,7 @@
                 </tr>
 				<tr>
 					<td>身份证:</td>
-					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" /></td>
+					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
 				</tr>
 				<%--<tr>--%>
 					<%--<td>毕业日期</td>:</td>--%>

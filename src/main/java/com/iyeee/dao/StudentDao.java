@@ -199,12 +199,12 @@ public class StudentDao extends BaseDao {
 		Student student=new Student();
 		student.setId(22);
 		student.setNum(21172536);
-		student.setName("ÀîËÄ¹â");
+		student.setName("æå››å…‰");
 		student.setPassword("980523");
 		student.setGrade(2017);
 		student.setClazzId(4);
-		student.setStatus("´ó×é³¤");
-		student.setSex("Å®");
+		student.setStatus("å¤§ç»„é•¿");
+		student.setSex("å¥³");
 		student.setidentity("111111111111");
 		student.setGraduateDate("2017-06-30");
 		student.setBirthday("2021-06-30");
@@ -217,12 +217,12 @@ public class StudentDao extends BaseDao {
 	public void Test() throws ParseException {
 		Student student=new Student();
 		student.setNum(21172536);
-		student.setName("ÀîËÄ¹â¸ç¸ç");
+		student.setName("æå››å…‰å“¥å“¥");
 		student.setPassword("980523");
 		student.setGrade(2017);
 		student.setClazzId(4);
-		student.setStatus("×é³¤");
-		student.setSex("Å®");
+		student.setStatus("ç»„é•¿");
+		student.setSex("å¥³");
 		student.setidentity("330481998072638462");
 		SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
 		java.util.Date gradaDate=sdf.parse("2021-06-30");

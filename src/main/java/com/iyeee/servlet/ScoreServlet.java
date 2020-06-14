@@ -106,9 +106,9 @@ public class ScoreServlet extends HttpServlet {
 			scoreList.add(Double.parseDouble(avgStats.get("min_score").toString()));
 			scoreList.add(Double.parseDouble(avgStats.get("avg_score").toString()));
 			List<String> avgStringList = new ArrayList<String>();
-			avgStringList.add("×î¸ß·Ö");
-			avgStringList.add("×îµÍ·Ö");
-			avgStringList.add("Æ½¾ù·Ö");
+			avgStringList.add("æœ€é«˜åˆ†");
+			avgStringList.add("æœ€ä½åˆ†");
+			avgStringList.add("å¹³å‡åˆ†");
 			Map<String, Object> retMap = new HashMap<String, Object>();
 			retMap.put("courseName", avgStats.get("courseName").toString());
 			retMap.put("scoreList", scoreList);
@@ -131,11 +131,11 @@ public class ScoreServlet extends HttpServlet {
 		numberList.add(0);
 		numberList.add(0);
 		List<String> rangeStringList = new ArrayList<String>();
-		rangeStringList.add("60·ÖÒÔÏÂ");
-		rangeStringList.add("60~70·Ö");
-		rangeStringList.add("70~80·Ö");
-		rangeStringList.add("80~90·Ö");
-		rangeStringList.add("90~100·Ö");
+		rangeStringList.add("60åˆ†ä»¥ä¸‹");
+		rangeStringList.add("60~70åˆ†");
+		rangeStringList.add("70~80åˆ†");
+		rangeStringList.add("80~90åˆ†");
+		rangeStringList.add("90~100åˆ†");
 		String courseName = "";
 		for(Map<String, Object> entry:scoreList){
 			courseName = entry.get("courseName").toString();
@@ -178,10 +178,10 @@ public class ScoreServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
 		int courseId = request.getParameter("courseid") == null ? 0 : Integer.parseInt(request.getParameter("courseid").toString());
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			studentId = currentUser.getId();
 		}
@@ -197,13 +197,13 @@ public class ScoreServlet extends HttpServlet {
 			List<Map<String, Object>> scoreList = scoreDao.getGradeList(score);
 			scoreDao.closeCon();
 			HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
-			HSSFSheet createSheet = hssfWorkbook.createSheet("³É¼¨ÁĞ±í");
+			HSSFSheet createSheet = hssfWorkbook.createSheet("æˆç»©åˆ—è¡¨");
 			HSSFRow createRow = createSheet.createRow(0);
-			createRow.createCell(0).setCellValue("Ñ§Éú");
-			createRow.createCell(1).setCellValue("¿Î³Ì");
-			createRow.createCell(2).setCellValue("³É¼¨");
-			createRow.createCell(3).setCellValue("±¸×¢");
-			//ÊµÏÖ½«Êı¾İ×°Èëµ½excelÎÄ¼şÖĞ
+			createRow.createCell(0).setCellValue("å­¦ç”Ÿ");
+			createRow.createCell(1).setCellValue("è¯¾ç¨‹");
+			createRow.createCell(2).setCellValue("æˆç»©");
+			createRow.createCell(3).setCellValue("å¤‡æ³¨");
+			//å®ç°å°†æ•°æ®è£…å…¥åˆ°excelæ–‡ä»¶ä¸­
 			int row = 1;
 			for(Map<String, Object> entry:scoreList){
 				createRow = createSheet.createRow(row++);
@@ -241,39 +241,39 @@ public class ScoreServlet extends HttpServlet {
 			for(int rowNum = 1; rowNum <= sheetAt.getLastRowNum(); rowNum++){
 				HSSFRow row = sheetAt.getRow(rowNum);
 				HSSFCell cell = row.getCell(0);
-				//»ñÈ¡µÚ0ÁĞ£¬Ñ§Éúid
+				//è·å–ç¬¬0åˆ—ï¼Œå­¦ç”Ÿid
 				if(cell == null){
-					errorMsg += "µÚ" + rowNum + "ĞĞÑ§ÉúidÈ±Ê§£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œå­¦ç”Ÿidç¼ºå¤±ï¼\n";
 					continue;
 				}
 				if(cell.getCellType() != cell.CELL_TYPE_NUMERIC){
-					errorMsg += "µÚ" + rowNum + "ĞĞÑ§ÉúidÀàĞÍ²»ÊÇÕûÊı£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œå­¦ç”Ÿidç±»å‹ä¸æ˜¯æ•´æ•°ï¼\n";
 					continue;
 				}
 				int studentId = new Double(cell.getNumericCellValue()).intValue();
-				//»ñÈ¡µÚ1ÁĞ£¬¿Î³Ìid
+				//è·å–ç¬¬1åˆ—ï¼Œè¯¾ç¨‹id
 				cell = row.getCell(1);
 				if(cell == null){
-					errorMsg += "µÚ" + rowNum + "ĞĞ¿Î³ÌidÈ±Ê§£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œè¯¾ç¨‹idç¼ºå¤±ï¼\n";
 					continue;
 				}
 				if(cell.getCellType() != cell.CELL_TYPE_NUMERIC){
-					errorMsg += "µÚ" + rowNum + "ĞĞ¿Î³Ìid²»ÊÇÕûÊı£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œè¯¾ç¨‹idä¸æ˜¯æ•´æ•°ï¼\n";
 					continue;
 				}
 				int courseId = new Double(cell.getNumericCellValue()).intValue();
-				//»ñÈ¡µÚ2ÁĞ£¬³É¼¨
+				//è·å–ç¬¬2åˆ—ï¼Œæˆç»©
 				cell = row.getCell(2);
 				if(cell == null){
-					errorMsg += "µÚ" + rowNum + "ĞĞ³É¼¨È±Ê§£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œæˆç»©ç¼ºå¤±ï¼\n";
 					continue;
 				}
 				if(cell.getCellType() != cell.CELL_TYPE_NUMERIC){
-					errorMsg += "µÚ" + rowNum + "ĞĞ³É¼¨ÀàĞÍ²»ÊÇÊı×Ö£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œæˆç»©ç±»å‹ä¸æ˜¯æ•°å­—ï¼\n";
 					continue;
 				}
 				String scoreValue = cell.getStringCellValue();
-				//»ñÈ¡µÚ3ÁĞ£¬±¸×¢
+				//è·å–ç¬¬3åˆ—ï¼Œå¤‡æ³¨
 				cell = row.getCell(3);
 				String remark = null;
 				if(cell != null){
@@ -281,20 +281,20 @@ public class ScoreServlet extends HttpServlet {
 				}
 				Student student = studentDao.getStudent(studentId);
 				if(student == null){
-					errorMsg += "µÚ" + rowNum + "ĞĞÑ§Éúid²»´æÔÚ£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œå­¦ç”Ÿidä¸å­˜åœ¨ï¼\n";
 					continue;
 				}
 				Course course = courseDao.getCourse(courseId);
 				if(course == null){
-					errorMsg += "µÚ" + rowNum + "ĞĞ¿Î³Ìid²»´æÔÚ£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œè¯¾ç¨‹idä¸å­˜åœ¨ï¼\n";
 					continue;
 				}
 				if(!selectedCourseDao.isSelected(studentId, courseId)){
-					errorMsg += "µÚ" + rowNum + "ĞĞ¿Î³Ì¸ÃÍ¬Ñ§Î´Ñ¡£¬²»ºÏ·¨£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œè¯¾ç¨‹è¯¥åŒå­¦æœªé€‰ï¼Œä¸åˆæ³•ï¼\n";
 					continue;
 				}
 				if(scoreDao.isAdd(studentId, courseId)){
-					errorMsg += "µÚ" + rowNum + "ĞĞ³É¼¨ÒÑ¾­±»Ìí¼Ó£¬ÇëÎğÖØ¸´Ìí¼Ó£¡\n";
+					errorMsg += "ç¬¬" + rowNum + "è¡Œæˆç»©å·²ç»è¢«æ·»åŠ ï¼Œè¯·å‹¿é‡å¤æ·»åŠ ï¼\n";
 					continue;
 				}
 				Score score = new Score();
@@ -306,7 +306,7 @@ public class ScoreServlet extends HttpServlet {
 					count++;
 				}
 			}
-			errorMsg += "³É¹¦Â¼Èë" + count + "Ìõ³É¼¨ĞÅÏ¢£¡";
+			errorMsg += "æˆåŠŸå½•å…¥" + count + "æ¡æˆç»©ä¿¡æ¯ï¼";
 			studentDao.closeCon();
 			courseDao.closeCon();
 			selectedCourseDao.closeCon();
@@ -321,7 +321,7 @@ public class ScoreServlet extends HttpServlet {
 		} catch (ProtocolException e) {
 			// TODO Auto-generated catch block
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«Ğ­Òé´íÎó£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ åè®®é”™è¯¯ï¼</div>");
 			} catch (IOException e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -330,7 +330,7 @@ public class ScoreServlet extends HttpServlet {
 		}catch (NullFileException e1) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«µÄÎÄ¼şÎª¿Õ!</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ çš„æ–‡ä»¶ä¸ºç©º!</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -340,7 +340,7 @@ public class ScoreServlet extends HttpServlet {
 		catch (SizeException e2) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼ş´óĞ¡²»ÄÜ³¬¹ı"+fileUpload.getFileSize()+"£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶å¤§å°ä¸èƒ½è¶…è¿‡"+fileUpload.getFileSize()+"ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -350,7 +350,7 @@ public class ScoreServlet extends HttpServlet {
 		catch (IOException e3) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>¶ÁÈ¡ÎÄ¼ş³ö´í£¡</div>");
+				response.getWriter().write("<div id='message'>è¯»å–æ–‡ä»¶å‡ºé”™ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -360,7 +360,7 @@ public class ScoreServlet extends HttpServlet {
 		catch (FileFormatException e4) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼ş¸ñÊ½²»ÕıÈ·£¬ÇëÉÏ´« "+fileUpload.getFileFormat()+" ¸ñÊ½µÄÎÄ¼ş£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶æ ¼å¼ä¸æ­£ç¡®ï¼Œè¯·ä¸Šä¼  "+fileUpload.getFileFormat()+" æ ¼å¼çš„æ–‡ä»¶ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -370,7 +370,7 @@ public class ScoreServlet extends HttpServlet {
 		catch (FileUploadException e5) {
 			// TODO: handle exception
 			try {
-				response.getWriter().write("<div id='message'>ÉÏ´«ÎÄ¼şÊ§°Ü£¡</div>");
+				response.getWriter().write("<div id='message'>ä¸Šä¼ æ–‡ä»¶å¤±è´¥ï¼</div>");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -429,10 +429,10 @@ public class ScoreServlet extends HttpServlet {
 		Integer currentPage = request.getParameter("page") == null ? 1 : Integer.parseInt(request.getParameter("page"));
 		Integer pageSize = request.getParameter("rows") == null ? 999 : Integer.parseInt(request.getParameter("rows"));
 		Score score = new Score();
-		//»ñÈ¡µ±Ç°µÇÂ¼ÓÃ»§ÀàĞÍ
+		//è·å–å½“å‰ç™»å½•ç”¨æˆ·ç±»å‹
 		int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 		if(userType == 2){
-			//Èç¹ûÊÇÑ§Éú£¬Ö»ÄÜ²é¿´×Ô¼ºµÄĞÅÏ¢
+			//å¦‚æœæ˜¯å­¦ç”Ÿï¼Œåªèƒ½æŸ¥çœ‹è‡ªå·±çš„ä¿¡æ¯
 			Student currentUser = (Student)request.getSession().getAttribute("user");
 			studentId = currentUser.getId();
 		}
