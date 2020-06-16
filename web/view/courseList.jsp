@@ -47,13 +47,13 @@
  					}	
  		       	},
  		       	{field:'time',title:'上课时间',width:100},
- 		        {field:'selectedNum',title:'已选人数',width:70},
+ 		        {field:'selectedNum',title:'已选人数',width:70,sortable:true},
  		        {field:'maxNum',title:'最大可选人数',width:70},
-				{field:'cyear',title:'年份',width:70},
+				{field:'cyear',title:'年份',width:70,sortable:true},
 				{field:'semester',titile:'学期',width:30},
 				{field:'time',title:'时间',width:100},
 				{field:'week',title:'周数',width:60},
-				{field:'cost',title:'费用',width:50},
+				{field:'cost',title:'费用',width:50,sortable:true},
 				{field:'pre',title:'先修课',width:150},
 				{field:'info',title:'信息',width:300},
 	 		]], 
@@ -146,10 +146,10 @@
 							var cost=$("#edit_cost").numberbox("getValue");
 							var pre=$("#edit_pre").textbox("getText");
 							var data = {id:id, teacherid:teacherid, name:name,info:info,maxnum:maxNum,cyear:cyear,semester:semester,time:time,week:week,cost:cost,pre:pre};
-							console.log(data)
+							// console.log(data)
 							$.ajax({
 								type: "post",
-								url: "CourseServlet?method=EdiCourse",
+								url: "CourseServlet?method=EditCourse",
 								data: data,
 								success: function(msg){
 									if(msg == "success"){

@@ -114,4 +114,5 @@ public class Course {
 	public void setPre(String pre) {
 		this.pre = pre;
 	}
+
 }

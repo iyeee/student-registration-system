@@ -74,7 +74,9 @@ public class SelectedCourseServlet extends HttpServlet {
 		}
 		if(selectedCourseDao.deleteSelectedCourse(selectedCourse.getId())){
 			CourseDao courseDao = new CourseDao();
-			courseDao.updateCourseSelectedNum(selectedCourse.getCourseId(), -1);
+			if (selectedCourseDao.getKind(id)==1) {
+				courseDao.updateCourseSelectedNum(selectedCourse.getCourseId(), -1);
+			}
 			courseDao.closeCon();
 		}else{
 			msg = "error";
@@ -134,7 +136,9 @@ public class SelectedCourseServlet extends HttpServlet {
 		if(selectedCourseDao.addSelectedCourse(selectedCourse)){
 			msg = "success";
 		}
-		courseDao.updateCourseSelectedNum(courseId, 1);
+		if (kind.trim().equals("main")) {
+			courseDao.updateCourseSelectedNum(courseId, 1);
+		}
 		courseDao.closeCon();
 		selectedCourseDao.closeCon();
 		response.getWriter().write(msg);

@@ -53,9 +53,10 @@ public class CourseServlet extends HttpServlet {
 		for(String id : ids){
 			idStr += id + ",";
 		}
+
 		idStr = idStr.substring(0, idStr.length()-1);
 		CourseDao courseDao = new CourseDao();
-		if(courseDao.deleteCourse(idStr)){
+		if(courseDao.deleteCourse(idStr,ids)){
 			try {
 				response.getWriter().write("success");
 			} catch (IOException e) {
@@ -93,7 +94,6 @@ public class CourseServlet extends HttpServlet {
 		course.setWeek(week);
 		course.setTime(time);
 		course.setCyear(cyear);
-
 		CourseDao courseDao = new CourseDao();
 		String msg = "error";
 		if(courseDao.editCourse(course)){

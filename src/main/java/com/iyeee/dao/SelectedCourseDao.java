@@ -65,6 +65,57 @@ public class SelectedCourseDao extends BaseDao {
 		}
 		return total;
 	}
+	public int getKind(int id){
+		int kind=1;
+		String sql="select kind from s_selected_course where id='"+id+"'";
+		ResultSet resultSet=query(sql);
+		try {
+			while (resultSet.next()) {
+				kind = resultSet.getInt("kind");
+			}
+		}catch (SQLException e){
+			e.printStackTrace();
+		}
+		return kind;
+	}
+	public int getStudentId(int id){
+		int studentId=0;
+		String sql="select student_id from s_selected_course where id='"+id+"'";
+		ResultSet resultSet=query(sql);
+		try {
+			while (resultSet.next()) {
+				studentId= resultSet.getInt("student_id");
+			}
+		}catch (SQLException e){
+			e.printStackTrace();
+		}
+		return studentId;
+	}
+	public boolean isSecondary(int studentId){
+		boolean ret=false;
+		String sql="select * from s_selected_course where student_id='"+studentId+"' and kind=2;";
+		ResultSet resultSet=query(sql);
+		try {
+			if (resultSet.next()){
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	public boolean updateKind(int studentId){
+		String sql="update s_selected_course\n" +
+				" set  kind=1" +
+				" where kind=2 and  student_id='" +studentId+
+				"'order by id  " +
+				" limit 1";
+		return update(sql);
+	}
+	@Test
+	public void test(){
+		updateKind(9);
+	}
 	/**
 	 * 检查学生是否已经选择该门课程
 	 * @param studentId
@@ -101,6 +152,14 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public boolean deleteSelectedCourse(int id){
+		//主选课被删除备选成为主选
+		int studentId=getStudentId(id);
+		int kind=getKind(id);
+		if (kind==1){
+			if (isSecondary(studentId)){
+				updateKind(studentId);
+			}
+		}
 		String sql = "delete from s_selected_course where id = " + id;
 		return update(sql);
 	}

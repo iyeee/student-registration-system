@@ -3,12 +3,15 @@ package com.iyeee.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import com.iyeee.model.Course;
 import com.iyeee.model.Page;
+import com.iyeee.model.SelectedCourse;
 import com.iyeee.util.StringUtil;
 import org.junit.Test;
+import org.omg.PortableInterceptor.INACTIVE;
 
 /**
  * 
@@ -22,22 +25,6 @@ public class CourseDao extends BaseDao {
 		return update(sql);
 	}
 
-	public static void main(String[] args) {
-			Course course=new Course();
-			course.setName("大学语文");
-			course.setTeacherId(9);
-			course.setSelectedNum(2);
-			course.setMaxNum(50);
-			course.setInfo("");
-			course.setCyear(2020);
-			course.setSemester("上");
-			course.setTime("08:00-09:40");
-			course.setWeek("1-17");
-			course.setCost(312);
-			course.setPre("大学识字");
-//			new CourseDao().addCourse(course);
-			new CourseDao().editCourse(course);
-	}
 	
 	public List<Course> getCourseList(Course course, Page page){
 		List<Course> ret = new ArrayList<Course>();
@@ -102,11 +89,68 @@ public class CourseDao extends BaseDao {
 		String sql = "update s_course set name = '"+course.getName()+"',teacher_id = '"+course.getTeacherId()+"',max_num = '"+course.getMaxNum()+"',info = '"+course.getInfo()+"',cyear='"+course.getCyear()+"',semester='"+course.getSemester()+"',time='"+course.getTime()+"',week='"+course.getWeek()+"',cost='"+course.getCost()+"',pre='"+course.getPre()+"' where id =" + course.getId();
 		return update(sql);
 	}
-	public boolean deleteCourse(String ids) {
+	public boolean deleteCourse(String ids,String[] originIds) {
+		updateKindAll(originIds);
 		// TODO Auto-generated method stub
 		String sql = "delete from s_course where id in("+ids+")";
 		return update(sql);
 	}
+
+	private void updateKindAll(String[] originIds) {
+		SelectedCourseDao selectedCourseDao=new SelectedCourseDao();
+		int[] ids=new int[originIds.length];
+		for(int i=0;i<originIds.length;i++){
+			ids[i]= Integer.parseInt(originIds[i]);
+		}
+		for(int i=0;i<originIds.length;i++){
+			List<Integer> list=new LinkedList<>();
+			list=getSelectedCourseId(ids[i]);
+			for(int id:list){
+				System.out.println(id);
+				selectedCourseDao.deleteSelectedCourse(id);
+			}
+		}
+	}
+	@Test
+	public void Test9(){
+		updateKindAll(new String[]{"14","3"});
+	}
+	private List<Integer> getSelectedCourseId(int courseId){
+		List<Integer> ids=new LinkedList<>();
+		String sql="select id from s_selected_course where course_id='"+courseId+"'";
+		ResultSet resultSet=query(sql);
+		try {
+			while (resultSet.next()) {
+				int id = 0;
+				id = resultSet.getInt("id");
+
+				ids.add(id);
+			}
+		}
+		catch (SQLException e) {
+				e.printStackTrace();
+			}
+		return ids;
+	}
+
+//	public List<Integer> getStudentIdAll(int courseId){
+//		List<Integer> ids=new LinkedList<>();
+//		String sql="select student_id from s_selected_course where course_id='"+courseId+"'";
+//		ResultSet resultSet=query(sql);
+//		try {
+//			while (resultSet.next()) {
+//				int studentId = 0;
+//				studentId = resultSet.getInt("student_id");
+//
+//				ids.add(studentId);
+//			}
+//		}
+//		catch (SQLException e) {
+//				e.printStackTrace();
+//			}
+//		return ids;
+//	}
+
 	/**
 	 * 检查该课程是否已选满
 	 * @param courseId

@@ -1201,7 +1201,6 @@ name</ColNames>
       <RefSchemaName>db_student_manager_web</RefSchemaName>
       <RefTableName>s_course</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="287" parent="238" name="id">
       <Position>1</Position>
