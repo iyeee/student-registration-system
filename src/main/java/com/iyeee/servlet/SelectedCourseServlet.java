@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.iyeee.dao.SysDao;
+import com.iyeee.model.Sys;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
@@ -33,8 +35,18 @@ public class SelectedCourseServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException{
 		String method = request.getParameter("method");
 		if("toSelectedCourseListView".equals(method)){
+			SysDao sysDao=new SysDao();
+			int forbidStudent=sysDao.getStudentState();
+			int forbidTeacher=sysDao.getTeacherState();
+			int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
+			System.out.println("forbidStudent:"+forbidStudent+" forbidteacher:"+forbidTeacher+"type:"+userType);
 			try {
-				request.getRequestDispatcher("view/selectedCourseList.jsp").forward(request, response);
+				if(forbidStudent==1&&userType==2||forbidTeacher==1&&userType==3) {
+					System.out.println("notforbid");
+					request.getRequestDispatcher("view/selectedCourseList.jsp").forward(request, response);
+				}else{
+					request.getRequestDispatcher("view/selectedCourseListForbid.jsp").forward(request,response);
+				}
 			} catch (ServletException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

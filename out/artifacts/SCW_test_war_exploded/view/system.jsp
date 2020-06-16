@@ -62,13 +62,20 @@
                                  {"menuid":"51","menuname":"选课信息","icon":"icon-set","url":"SystemServlet?method=toStudentInfoView"},
                              ]
                          },
-                            </c:if>
+                         </c:if>
                          {"menuid":"5","icon":"","menuname":"系统管理",
                              "menus":[
                                  {"menuid":"51","menuname":"系统设置","icon":"icon-set","url":"SystemServlet?method=toPersonalView"},
                              ]
                          },
-
+                         <c:if test="${userType == 1 }">
+                         {"menuid":"12","icon":"","menuname":"权限管理",
+                             "menus":[
+                                 {"menuid":"51","menuname":"切换学生选课权限","icon":"icon-set","url":"SysServlet?method=changeStudentState&amp;t="+new Date().getTime()},
+                                 {"menuid":"52","menuname":"切换教师选课权限","icon":"icon-set","url":"SysServlet?method=changeTeacherState&amp;t="+new Date().getDate()},
+                             ]
+                         },
+                         </c:if>
 
 				]};
 

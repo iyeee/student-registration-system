@@ -152,4 +152,13 @@
   	<servlet-name>ScoreServlet</servlet-name>
   	<url-pattern>/ScoreServlet</url-pattern>
   </servlet-mapping>
+
+	<servlet>
+		<servlet-name>StateServlet</servlet-name>
+		<servlet-class>com.iyeee.servlet.SysServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StateServlet</servlet-name>
+		<url-pattern>/SysServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

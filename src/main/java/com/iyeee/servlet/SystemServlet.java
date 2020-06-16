@@ -7,10 +7,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.iyeee.dao.AdminDao;
-import com.iyeee.dao.SelectedCourseDao;
-import com.iyeee.dao.StudentDao;
-import com.iyeee.dao.TeacherDao;
+import com.iyeee.dao.*;
 import com.iyeee.model.Admin;
 import com.iyeee.model.Student;
 import com.iyeee.model.Teacher;
@@ -49,6 +46,17 @@ public class SystemServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
+
+//	private void toForbidView(HttpServletRequest request, HttpServletResponse response) {
+//		try {
+//			request.getRequestDispatcher("view/forbid.jsp").forward(request,response);
+//		} catch (ServletException e) {
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//	}
+
 	private void editPassword(HttpServletRequest request,
 			HttpServletResponse response) {
 		// TODO Auto-generated method stub
@@ -181,7 +189,13 @@ public class SystemServlet extends HttpServlet {
 //			request.setAttribute("test","test");
 //			System.out.println("toStudentView");
 //			response.getWriter().write(mainCost);
-			request.getRequestDispatcher("view/toStudentInfoView.jsp").forward(request,response);
+			SysDao sysDao=new SysDao();
+			int state=sysDao.getStudentState();
+			if(state==1) {
+				request.getRequestDispatcher("view/toStudentInfoView.jsp").forward(request, response);
+			}else{
+				request.getRequestDispatcher("view/toStudentInfoViewForbid.jsp").forward(request, response);
+			}
 		} catch (ServletException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
