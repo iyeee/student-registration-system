@@ -20,10 +20,10 @@ public class DbUtil {
 		try {
 			Class.forName(jdbcName);
 			connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
-			System.out.println("数据库链接成功！");
+//			System.out.println("数据库链接成功！");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println("数据库链接失败！");
+//			System.out.println("数据库链接失败！");
 			e.printStackTrace();
 		}
 		return connection;
@@ -33,7 +33,7 @@ public class DbUtil {
 		if(connection != null)
 			try {
 				connection.close();
-				System.out.println("数据库链接已关闭！");
+//				System.out.println("数据库链接已关闭！");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

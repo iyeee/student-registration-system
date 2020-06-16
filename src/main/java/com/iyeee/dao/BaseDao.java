@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.iyeee.util.DbUtil;
+import org.junit.Test;
 
 /**
  * 
@@ -14,7 +15,6 @@ import com.iyeee.util.DbUtil;
  */
 public class BaseDao {
 	private DbUtil dbUtil = new DbUtil();
-	
 	/**
 	 * 关闭数据库连接，释放资源
 	 */
@@ -33,9 +33,10 @@ public class BaseDao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+
 		}
 		return null;
-	} 
+	}
 	/**
 	 *改变数据库内容操作
 	 */

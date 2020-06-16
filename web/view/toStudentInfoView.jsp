@@ -291,6 +291,9 @@
                                         } else if(msg == "courseSelected"){
                                             $.messager.alert("消息提醒","已经选了这门课程，不可再选!","warning");
                                             return;
+                                        }else if(msg == "nopre"){
+                                            $.messager.alert("消息提醒","没有选这门课的先修课","warning");
+                                            return;
                                         }else{
                                             $.messager.alert("消息提醒","系统内部出错，请联系管理员!","warning");
                                             return;

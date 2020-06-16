@@ -422,7 +422,7 @@
 				</tr>
 				<tr>
 					<td>先修课:</td>
-					<td><input id="add_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="cost" data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="add_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="pre"  /></td>
 				</tr>
 	    		<tr>
 	    			<td>课程介绍:</td>
@@ -478,7 +478,7 @@
 				</tr>
 				<tr>
 					<td>先修课:</td>
-					<td><input id="edit_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="pre" data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="edit_pre" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="pre"  /></td>
 				</tr>
 	    		<tr>
 	    			<td>课程介绍:</td>

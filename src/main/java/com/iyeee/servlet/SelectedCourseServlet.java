@@ -18,6 +18,7 @@ import com.iyeee.dao.SelectedCourseDao;
 import com.iyeee.model.Page;
 import com.iyeee.model.SelectedCourse;
 import com.iyeee.model.Student;
+import org.junit.Test;
 
 public class SelectedCourseServlet extends HttpServlet {
 
@@ -87,6 +88,7 @@ public class SelectedCourseServlet extends HttpServlet {
 		int studentId = request.getParameter("studentid") == null ? 0 : Integer.parseInt(request.getParameter("studentid").toString());
 		int courseId = request.getParameter("courseid") == null ? 0 : Integer.parseInt(request.getParameter("courseid").toString());
 		String kind=request.getParameter("kind");
+
 		CourseDao courseDao = new CourseDao();
 		String msg = "success";
 		if(courseDao.isFull(courseId)){
@@ -100,6 +102,23 @@ public class SelectedCourseServlet extends HttpServlet {
 			msg = "courseSelected";
 			response.getWriter().write(msg);
 			selectedCourseDao.closeCon();
+			return;
+		}
+		int preCount=selectedCourseDao.countSelect(studentId,courseId);
+//		System.out.println(preCount);
+		if(preCount==0){
+//			System.out.println("preCount");
+			msg="nopre";
+			response.getWriter().write(msg);
+			selectedCourseDao.closeCon();
+//			System.out.println("nopre");
+			return;
+		}
+		if(selectedCourseDao.isConflict(courseId,studentId)){
+			msg="conflict";
+			response.getWriter().write(msg);
+			selectedCourseDao.closeCon();
+			System.out.println("conflict");
 			return;
 		}
 		SelectedCourse selectedCourse = new SelectedCourse();
@@ -166,5 +185,13 @@ public class SelectedCourseServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	@Test
+	public void test(){
+		String[] split = "1-17".split("-");
+		for(String s:split){
+			System.out.println(s);
+		}
+		System.out.println(Integer.max(1,17));
 	}
 }

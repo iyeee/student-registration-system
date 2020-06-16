@@ -206,8 +206,9 @@
 									url: "SelectedCourseServlet?method=AddSelectedCourse",
 									data: $("#addForm").serialize(),
 									success: function(msg){
+										console.log(msg);
 										if(msg == "success"){
-											console.log($("#addForm").serialize())
+											// console.log($("#addForm").serialize())
 											$.messager.alert("消息提醒","选课信息添加成功!","info");
 											//关闭窗口
 											$("#addDialog").dialog("close");
@@ -218,10 +219,16 @@
 										} else if(msg == "courseFull"){
 											$.messager.alert("消息提醒","该课程已经选满，不可再选!","warning");
 											return;
-										} else if(msg == "courseSelected"){
-											$.messager.alert("消息提醒","已经选了这门课程，不可再选!","warning");
+										} else if(msg == "courseSelected") {
+											$.messager.alert("消息提醒", "已经选了这门课程，不可再选!", "warning");
 											return;
-										}else{
+										}else if(msg == "nopre"){
+											$.messager.alert("消息提醒","没有选这门课的先修课","warning");
+											return;}
+										else if(msg="conflict"){
+											$.messager.alert("消息提醒","和已选的课程时间冲突","warning");
+										}else {
+											console.log(msg);
 											$.messager.alert("消息提醒","系统内部出错，请联系管理员!","warning");
 											return;
 										}

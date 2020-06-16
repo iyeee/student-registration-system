@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="db_student_manager_web@localhost">
+<dataSource name="@localhost">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
       <ServerVersion>5.7.30</ServerVersion>
@@ -1150,7 +1150,6 @@ name</ColNames>
       <RefSchemaName>db_student_manager_web</RefSchemaName>
       <RefTableName>s_course</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="278" parent="237" name="id">
       <Position>1</Position>
@@ -1201,7 +1200,6 @@ name</ColNames>
       <RefSchemaName>db_student_manager_web</RefSchemaName>
       <RefTableName>s_course</RefTableName>
       <RefColNames>id</RefColNames>
-      <OnDelete>cascade</OnDelete>
     </foreign-key>
     <column id="287" parent="238" name="id">
       <Position>1</Position>
