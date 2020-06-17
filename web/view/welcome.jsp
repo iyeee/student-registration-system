@@ -8,9 +8,13 @@
 </head>
 <body>
 
-<div title="欢迎使用" style="padding:20px;overflow:hidden; color:red; " >
-	<p style="font-size: 25px; line-height: 30px; height: 30px;">欢迎使用学生注册系统 </p>
-  	<p>开发人员：莫单琪 辛逸飞 毛栋 胡方喆 赵俞博</p>
+<div title="欢迎使用" style="padding:20px;overflow:hidden; color:black; " >
+	<p style="font-size: 25px;font-family: 'Adobe Caslon Pro Bold' ;line-height: 30px; height: 30px;">欢迎使用学生注册系统 </p>
+	<p style="font-size: 15px;font-family: 'Adobe Caslon Pro Bold' ;line-height: 30px; height: 30px;">Student Registration System</p>
+	<p style="font-size: 15px;font-family: 'Adobe Caslon Pro Bold' ;line-height: 30px; height: 30px;">Software Engineering Experiment - 2020 JLU CST </p>
+	<p style="font-size: 15px;font-family: 'Adobe Caslon Pro Bold' ;line-height: 30px; height: 30px;">开发人员：莫单琪 辛逸飞 毛栋 胡芳喆 赵俞博</p>
+	<p style="font-size: 15px;font-family: 'Adobe Caslon Pro Bold' ;line-height: 30px; height: 30px;"> </p>
+  	<p></p>
 </div>
 </body>
 </html>

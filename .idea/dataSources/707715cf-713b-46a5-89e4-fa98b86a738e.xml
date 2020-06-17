@@ -1343,7 +1343,6 @@ sn</ColNames>
     <column id="312" parent="239" name="clazz_id">
       <Position>6</Position>
       <DataType>int(5)|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="313" parent="239" name="sex">

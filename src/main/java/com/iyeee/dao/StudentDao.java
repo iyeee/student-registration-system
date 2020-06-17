@@ -220,7 +220,7 @@ public class StudentDao extends BaseDao {
 		student.setName("李四光哥哥");
 		student.setPassword("980523");
 		student.setGrade(2017);
-		student.setClazzId(4);
+		student.setClazzId(1);
 		student.setStatus("组长");
 		student.setSex("女");
 		student.setidentity("330481998072638462");

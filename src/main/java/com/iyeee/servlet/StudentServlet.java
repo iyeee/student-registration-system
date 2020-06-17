@@ -165,8 +165,8 @@ public class StudentServlet extends HttpServlet {
 //		int num=Integer.parseInt(request.getParameter("num").trim());
 		int grade=Integer.parseInt(request.getParameter("grade").trim());
 		String status=request.getParameter("status");
-//		String graduateDate=request.getParameter("graduateDate");
-//		String birthday=request.getParameter("birthday");
+		String graduateDate=request.getParameter("graduateDate");
+		String birthday=request.getParameter("birthday");
 		String identity=request.getParameter("identity");
 
 
@@ -182,8 +182,8 @@ public class StudentServlet extends HttpServlet {
 //		student.setNum(num);
 		student.setGrade(grade);
 		student.setStatus(status);
-//		student.setGraduateDate(graduateDate);
-//		student.setBirthday(birthday);
+		student.setGraduateDate(graduateDate);
+		student.setBirthday(birthday);
 		student.setidentity(identity);
 
 		StudentDao studentDao = new StudentDao();

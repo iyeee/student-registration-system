@@ -39,20 +39,20 @@
  		        {field:'sex',title:'性别',width:40},
  		        {field:'mobile',title:'电话',width:100},
  		        {field:'qq',title:'QQ',width:100},
- 		       // 	{field:'clazz_id',title:'班级',width:150,
- 		       //  	formatter: function(value,row,index){
- 				// 		if (row.clazzId){
- 				// 			var clazzList = $("#clazzList").combobox("getData");
- 				// 			for(var i=0;i<clazzList.length;i++ ){
- 				// 				//console.log(clazzList[i]);
- 				// 				if(row.clazzId == clazzList[i].id)return clazzList[i].name;
- 				// 			}
- 				// 			return row.clazzId;
- 				// 		} else {
- 				// 			return 'not found';
- 				// 		}
- 				// 	}
-				// },
+ 		       	{field:'clazz_id',title:'班级',width:150,
+ 		        	formatter: function(value,row,index){
+ 						if (row.clazzId){
+ 							var clazzList = $("#clazzList").combobox("getData");
+ 							for(var i=0;i<clazzList.length;i++ ){
+ 								//console.log(clazzList[i]);
+ 								if(row.clazzId == clazzList[i].id)return clazzList[i].name;
+ 							}
+ 							return row.clazzId;
+ 						} else {
+ 							return 'not found';
+ 						}
+ 					}
+				},
 				{field:'identity',title:"身份证",width:200},
 				{field:'status',title:"职务",width:100},
 				{field:'department',title:'部门',width:200}
@@ -306,7 +306,7 @@
 
 							$.ajax({
 								type: "post",
-								url: "TeacherServlet?method=EdTeacher",
+								url: "TeacherServlet?method=EditTeacher",
 								data: data,
 								success: function(msg){
 									if(msg == "success"){

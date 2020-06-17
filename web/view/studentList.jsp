@@ -373,10 +373,10 @@
 				$("#edit_sex").textbox('setValue', selectRow.sex);
 				$("#edit_mobile").textbox('setValue', selectRow.mobile);
 				$("#edit_qq").textbox('setValue', selectRow.qq);
-				$("#edit_status").text('setValue',selectRow.status);
-				$("#edit_identity").text('setValue',selectRow.identity);
-				$("#edit_graduateDate").text('setValue',selectRow.graduateDate);
-				$("#edit_birthday").text('setValue',selectRow.birthday);
+				$("#edit_status").textbox('setValue',selectRow.status);
+				$("#edit_identity").textbox('setValue',selectRow.identity);
+				$("#edit_graduateDate").textbox('setValue',selectRow.graduateDate);
+				$("#edit_birthday").textbox('setValue',selectRow.birthday);
 				$("#edit_photo").attr("src", "PhotoServlet?method=getPhoto&type=2&sid="+selectRow.id);
 				$("#edit-id").val(selectRow.id);
 				$("#set-photo-id").val(selectRow.id);
@@ -489,7 +489,7 @@
                 </tr>
                 <tr>
                     <td>毕业日期:</td>
-                    <td><input id="add_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" name="graduateDate"/></td>
+                    <td><input id="add_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="graduateDate"/></td>
                 </tr>
                 <tr>
                     <td>生日:</td>
@@ -535,20 +535,20 @@
 	    		</tr>
                 <tr>
                     <td>职务:</td>
-                    <td><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" name="status" /></td>
+                    <td><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" /></td>
                 </tr>
 				<tr>
 					<td>身份证:</td>
 					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
 				</tr>
-				<%--<tr>--%>
-					<%--<td>毕业日期</td>:</td>--%>
-					<%--<td><input id="edit_graduate_id" style="width: 200px; height: 30px;" class="easyui-textbox" name="graduate_date" /></td>--%>
-				<%--</tr>--%>
-				<%--<tr>--%>
-					<%--<td>生日:</td>--%>
-					<%--<td><input id="edit_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" name="birthday" /></td>--%>
-				<%--</tr>--%>
+				<tr>
+					<td>毕业日期</td>:</td>
+					<td><input id="edit_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="graduate_date" /></td>
+				</tr>
+				<tr>
+					<td>生日:</td>
+					<td><input id="edit_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" name="birthday" /></td>
+				</tr>
 	    	</table>
 	    </form>
 	</div>

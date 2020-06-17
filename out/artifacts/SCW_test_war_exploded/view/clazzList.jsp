@@ -244,9 +244,9 @@
 				$("#edit_name").textbox('setValue', selectRow.name);
 				$("#edit_info").val(selectRow.info);
 				$("#edit-id").val(selectRow.id);
-				$("#add_institute").val(selectRow.institute);
-				$("#add_num").val(selectRow.num);
-				$("#add_grade").val(selectRow.grade);
+				$("#add_institute").textbox('setValue',selectRow.institute);
+				$("#add_num").textbox('setValue',selectRow.num);
+				$("#add_grade").textbox('setValue',selectRow.grade);
 			}
 	    });
 	  
@@ -274,7 +274,7 @@
 	    	<table cellpadding="8" >
 				<tr>
 					<td>年级:</td>
-					<td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空且只能为数字'" /></td>
+					<td><input id="add_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" validType="number" name="grade"  data-options="required:true, missingMessage:'不能为空且只能为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
@@ -286,7 +286,7 @@
 				</tr>
 				<tr>
 					<td>班号:</td>
-					<td><input id="add_num" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
+					<td><input id="add_num" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" validType="number" name="num"  data-options="required:true, missingMessage:'不能为空'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>
@@ -305,7 +305,7 @@
 	    	<table cellpadding="8" >
 				<tr>
 					<td>年级:</td>
-					<td><input id="edit_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="number" name="grade"  data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
+					<td><input id="edit_grade" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="grade" validType="number" data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级名称:</td>
@@ -317,7 +317,7 @@
 				</tr>
 				<tr>
 					<td>班号:</td>
-					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="number" name="num"  data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
+					<td><input id="edit_num" style="width: 200px; height: 30px;" class="easyui-numberbox" type="text" name="num" validType="number" data-options="required:true, missingMessage:'不能为空且为数字'" /></td>
 				</tr>
 	    		<tr>
 	    			<td>班级介绍:</td>
