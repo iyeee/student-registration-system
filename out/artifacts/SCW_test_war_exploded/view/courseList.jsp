@@ -236,7 +236,8 @@
 	    //删除
 	    $("#delete").click(function(){
 	    	var selectRow = $("#dataList").datagrid("getSelections");
-        	if(selectRow == null){
+	    	console.log(selectRow);
+        	if(selectRow == null||selectRow.length==0){
             	$.messager.alert("消息提醒", "请选择数据进行删除!", "warning");
             } else{
             	var ids = [];
@@ -255,7 +256,7 @@
 									//刷新表格
 									$("#dataList").datagrid("reload");
 								} else{
-									$.messager.alert("消息提醒","删除失败!","warning");
+									$.messager.alert("消息提醒","删除失败(大于三人选课的课程不能删除)!","warning");
 									return;
 								}
 							}

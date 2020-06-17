@@ -89,7 +89,28 @@ public class CourseDao extends BaseDao {
 		String sql = "update s_course set name = '"+course.getName()+"',teacher_id = '"+course.getTeacherId()+"',max_num = '"+course.getMaxNum()+"',info = '"+course.getInfo()+"',cyear='"+course.getCyear()+"',semester='"+course.getSemester()+"',time='"+course.getTime()+"',week='"+course.getWeek()+"',cost='"+course.getCost()+"',pre='"+course.getPre()+"' where id =" + course.getId();
 		return update(sql);
 	}
+	public int getSelectCourse(int id){
+		String sql="select selected_num from s_course where id='"+id+"'";
+		int num=0;
+		ResultSet resultSet=query(sql);
+		try {
+		while (resultSet.next()){
+				num=resultSet.getInt("selected_num");
+		}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return num;
+	}
+
 	public boolean deleteCourse(String ids,String[] originIds) {
+		int[] idss=new int[originIds.length];
+		for(int i=0;i<originIds.length;i++){
+			idss[i]= Integer.parseInt(originIds[i]);
+			if (getSelectCourse(idss[i])>3){
+				return false;
+			}
+		}
 		updateKindAll(originIds);
 		// TODO Auto-generated method stub
 		String sql = "delete from s_course where id in("+ids+")";

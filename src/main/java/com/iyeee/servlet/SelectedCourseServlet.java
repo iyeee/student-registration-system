@@ -41,7 +41,7 @@ public class SelectedCourseServlet extends HttpServlet {
 			int userType = Integer.parseInt(request.getSession().getAttribute("userType").toString());
 			System.out.println("forbidStudent:"+forbidStudent+" forbidteacher:"+forbidTeacher+"type:"+userType);
 			try {
-				if(forbidStudent==1&&userType==2||forbidTeacher==1&&userType==3) {
+				if(forbidStudent==1&&userType==2||forbidTeacher==1&&userType==3||userType==1) {
 					System.out.println("notforbid");
 					request.getRequestDispatcher("view/selectedCourseList.jsp").forward(request, response);
 				}else{
