@@ -35,14 +35,22 @@ public class CourseServlet extends HttpServlet {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else if("AddCourse".equals(method)){
+		}else if("toCourseListStudentView".equals(method)){
+		try {
+			System.out.println("------");
+			request.getRequestDispatcher("view/courseQuery.jsp").forward(request, response);
+
+		} catch (ServletException e) {
+			e.printStackTrace();
+		}
+	}else if("AddCourse".equals(method)){
 			addCourse(request,response);
 		}else if("CourseList".equals(method)){
 			getCourseList(request,response);
 		}else if("EditCourse".equals(method)){
 			editCourse(request,response);
-		}else if("DeleteCourse".equals(method)){
-			deleteCourse(request,response);
+		}else if("DeleteCourse".equals(method)) {
+			deleteCourse(request, response);
 		}
 	}
 	private void deleteCourse(HttpServletRequest request,

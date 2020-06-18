@@ -159,6 +159,7 @@ public class TeacherServlet extends HttpServlet {
 		teacher.setidentity(identity);
 		teacher.setStatus(status);
 		teacher.setDepartment(department);
+        System.out.println(teacher.toString());
 		TeacherDao teacherDao = new TeacherDao();
 		if(teacherDao.addTeacher(teacher)){
 			try {

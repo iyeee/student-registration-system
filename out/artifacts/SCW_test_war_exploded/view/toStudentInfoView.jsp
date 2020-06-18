@@ -38,7 +38,7 @@
                             } else if (value==2) {
                                 return '备选'
                             }else if(value==3){
-                                return '主选费用总计:'
+                                return '包含备选费用总计:'
                             }
                         }
                     },
@@ -139,7 +139,7 @@
                     // TotalOrderCount: '<span class="subtotal">' + compute("TotalOrderCount") + '</span>',
                     // TotalOrderMoney: '<span class="subtotal">' + compute("TotalOrderMoney") + '</span>',
                     // TotalOrderScore: '<span class="subtotal">' + compute("TotalOrderScore") + '</span>',
-                    courseId: '包含备选费用总计:  ￥'+compute(),
+                    courseId: '主选费用总计:  ￥'+compute(),
                     cost: -1,
                     // Rate: '<span class="subtotal">' + ((compute("TotalOrderScore") / compute("TotalTrailCount")) * 100).toFixed(2) + '</span>'
                 });

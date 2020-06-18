@@ -43,6 +43,13 @@
 								]
 						},
 						</c:if>
+                         <c:if test="${userType == 2}">
+                         {"menuid":"13","icon":"","menuname":"课程信息查询",
+                             "menus":[
+                                 {"menuid":"62","menuname":"课程列表","icon":"icon-book-open","url":"CourseServlet?method=toCourseListStudentView"},
+                             ]
+                         },
+                         </c:if>
 						{"menuid":"7","icon":"","menuname":"选课信息管理",
 							"menus":[
 									{"menuid":"71","menuname":"选课列表","icon":"icon-book-open","url":"SelectedCourseServlet?method=toSelectedCourseListView"},
@@ -96,7 +103,7 @@
         <span style="padding-left:10px; font-size: 16px; ">学生信息管理系统</span>
     </div>
     <div region="south" split="true" style="height: 30px; background: #D2E0F2; ">
-        <div class="footer">Copyright &copy; By 【Kind-CST】</div>
+        <div class="footer">Copyright &copy; By 【JLU-CST】</div>
     </div>
     <div region="west" hide="true" split="true" title="导航菜单" style="width:180px;" id="west">
 	<div id="nav" class="easyui-accordion" fit="true" border="false">

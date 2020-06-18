@@ -171,7 +171,10 @@
 							var phone = $("#add_phone").textbox("getText");
 							var qq = $("#add_qq").textbox("getText");
 							var password = $("#add_password").textbox("getText");
-							var data = {clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,password:password};
+							var status=$("#add_status").textbox("getText");
+							var department=$("#add_department").textbox("getText");
+							var identity=$("#add_identity").textbox("getText");
+							var data = {clazzid:clazzid, name:name,sex:sex,mobile:phone,qq:qq,password:password,status:status,department:department,identity:identity};
 							
 							$.ajax({
 								type: "post",

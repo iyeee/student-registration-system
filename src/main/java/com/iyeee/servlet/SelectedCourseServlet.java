@@ -86,8 +86,11 @@ public class SelectedCourseServlet extends HttpServlet {
 		}
 		if(selectedCourseDao.deleteSelectedCourse(selectedCourse.getId())){
 			CourseDao courseDao = new CourseDao();
+            System.out.println("id:----"+id);
+            System.out.println(selectedCourseDao.getKind(id));
 			if (selectedCourseDao.getKind(id)==1) {
-				courseDao.updateCourseSelectedNum(selectedCourse.getCourseId(), -1);
+                System.out.println("o");
+//				courseDao.updateCourseSelectedNum(selectedCourse.getCourseId(), -1);
 			}
 			courseDao.closeCon();
 		}else{
@@ -96,6 +99,11 @@ public class SelectedCourseServlet extends HttpServlet {
 		selectedCourseDao.closeCon();
 		response.getWriter().write(msg);
 	}
+	@Test
+    public void test7(){
+        SelectedCourseDao selectedCourseDao=new SelectedCourseDao();
+        System.out.println(selectedCourseDao.getKind(134));
+    }
 	private void addSelectedCourse(HttpServletRequest request,
 			HttpServletResponse response) throws IOException {
 		// TODO Auto-generated method stub

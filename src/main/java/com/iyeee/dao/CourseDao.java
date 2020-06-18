@@ -131,6 +131,7 @@ public class CourseDao extends BaseDao {
 				selectedCourseDao.deleteSelectedCourse(id);
 			}
 		}
+		selectedCourseDao.closeCon();
 	}
 	@Test
 	public void Test9(){

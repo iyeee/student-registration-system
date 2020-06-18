@@ -125,4 +125,23 @@ public class Teacher {
 	public void setPhoto(InputStream photo) {
 		this.photo = photo;
 	}
+
+	@Override
+	public String toString() {
+		return "Teacher{" +
+				"id=" + id +
+				", sn='" + sn + '\'' +
+				", num=" + num +
+				", name='" + name + '\'' +
+				", password='" + password + '\'' +
+				", clazzId=" + clazzId +
+				", sex='" + sex + '\'' +
+				", mobile='" + mobile + '\'' +
+				", qq='" + qq + '\'' +
+				", identity='" + identity + '\'' +
+				", status='" + status + '\'' +
+				", department='" + department + '\'' +
+				", photo=" + photo +
+				'}';
+	}
 }

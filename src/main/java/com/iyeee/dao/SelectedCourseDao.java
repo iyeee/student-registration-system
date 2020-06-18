@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.iyeee.model.Course;
 import com.iyeee.model.Page;
 import com.iyeee.model.SelectedCourse;
 import com.iyeee.model.Student;
@@ -91,18 +92,35 @@ public class SelectedCourseDao extends BaseDao {
 		}
 		return studentId;
 	}
-	public boolean isSecondary(int studentId){
-		boolean ret=false;
+	public int getCourseId(int id){
+		int courseId=0;
+		String sql="select course_id from s_selected_course where id='"+id+"'";
+		ResultSet resultSet=query(sql);
+		try {
+			while (resultSet.next()) {
+				courseId= resultSet.getInt("course_id");
+			}
+		}catch (SQLException e){
+			e.printStackTrace();
+		}
+		return courseId;
+	}
+	public int isSecondary(int studentId){
+		int ret=0;
 		String sql="select * from s_selected_course where student_id='"+studentId+"' and kind=2;";
 		ResultSet resultSet=query(sql);
 		try {
 			if (resultSet.next()){
-				return true;
+				ret=resultSet.getInt("id");
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return ret;
+	}
+	@Test
+	public void	test99(){
+		System.out.println(isSecondary(16));
 	}
 	public boolean updateKind(int studentId){
 		String sql="update s_selected_course\n" +
@@ -152,17 +170,27 @@ public class SelectedCourseDao extends BaseDao {
 	 * @return
 	 */
 	public boolean deleteSelectedCourse(int id){
+		CourseDao courseDao=new CourseDao();
+		System.out.println("getKind:"+getKind(id));
+		if(getKind(id)==1){
+			courseDao.updateCourseSelectedNum(getCourseId(id),-1);
+		}
 		//主选课被删除备选成为主选
 		int studentId=getStudentId(id);
 		int kind=getKind(id);
 		if (kind==1){
-			if (isSecondary(studentId)){
+			int selectCourseId=isSecondary(studentId);
+			if(selectCourseId>0){
 				updateKind(studentId);
+
+				courseDao.updateCourseSelectedNum(getCourseId(selectCourseId),1);
 			}
 		}
+		courseDao.closeCon();
 		String sql = "delete from s_selected_course where id = " + id;
 		return update(sql);
 	}
+
 	public int getMainCost(int id){
 		String sql="select sum(cost) as total from s_course,s_selected_course where s_course.id=s_selected_course.course_id and s_selected_course.Kind= '" +"主选"+
 
