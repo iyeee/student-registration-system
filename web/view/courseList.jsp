@@ -51,7 +51,7 @@
  		        {field:'maxNum',title:'最大可选人数',width:70},
 				{field:'cyear',title:'年份',width:70,sortable:true},
 				{field:'semester',titile:'学期',width:30},
-				{field:'time',title:'时间',width:100},
+				// {field:'time',title:'时间',width:100},
 				{field:'week',title:'周数',width:60},
 				{field:'cost',title:'费用',width:50,sortable:true},
 				{field:'pre',title:'先修课',width:150},

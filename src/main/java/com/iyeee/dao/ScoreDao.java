@@ -119,7 +119,7 @@ public class ScoreDao extends BaseDao {
 				s.put("id",resultSet.getInt("id"));
 				s.put("courseId",resultSet.getInt("course_id"));
 				s.put("studentId",resultSet.getInt("student_id"));
-				s.put("score",resultSet.getDouble("score"));
+				s.put("grade",resultSet.getString("grade"));
 				s.put("remark",resultSet.getString("remark"));
 				s.put("studentName", resultSet.getString("studentName"));
 				s.put("courseName", resultSet.getString("courseName"));

@@ -126,7 +126,7 @@
 		<div style="margin-top: 3px;">
 			课程：<input id="courseList" class="easyui-textbox" name="courseList" />
 			<a href="javascript:;" class="easyui-linkbutton search-score-btn" key="range" data-options="iconCls:'icon-sum',plain:true">区间统计图</a>
-			<a href="javascript:;" class="easyui-linkbutton search-score-btn" key="avg" data-options="iconCls:'icon-sum',plain:true">平均统计图</a>
+			<%--<a href="javascript:;" class="easyui-linkbutton search-score-btn" key="avg" data-options="iconCls:'icon-sum',plain:true">平均统计图</a>--%>
 		</div>
 	</div>
 	<div id="charts-div" style="width:100%;height:500px;"></div>

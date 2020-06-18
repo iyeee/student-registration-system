@@ -130,35 +130,40 @@ public class ScoreServlet extends HttpServlet {
 		numberList.add(0);
 		numberList.add(0);
 		numberList.add(0);
+		numberList.add(0);
 		List<String> rangeStringList = new ArrayList<String>();
-		rangeStringList.add("60分以下");
-		rangeStringList.add("60~70分");
-		rangeStringList.add("70~80分");
-		rangeStringList.add("80~90分");
-		rangeStringList.add("90~100分");
+		rangeStringList.add("A");
+		rangeStringList.add("B");
+		rangeStringList.add("C");
+		rangeStringList.add("D");
+		rangeStringList.add("F");
+		rangeStringList.add("I");
 		String courseName = "";
 		for(Map<String, Object> entry:scoreList){
 			courseName = entry.get("courseName").toString();
-			double scoreValue = Double.parseDouble(entry.get("score").toString());
-			if(scoreValue < 60){
+			String  scoreValue = String.valueOf(entry.get("grade"));
+			if(scoreValue.equals("A")){
 				numberList.set(0, numberList.get(0)+1);
 				continue;
 			}
-			if(scoreValue <= 70 && scoreValue >= 60){
+			if(scoreValue.equals("B")){
 				numberList.set(1, numberList.get(1)+1);
 				continue;
 			}
-			if(scoreValue <= 80 && scoreValue > 70){
+			if(scoreValue.equals("C")){
 				numberList.set(2, numberList.get(2)+1);
 				continue;
 			}
-			if(scoreValue <= 90 && scoreValue > 80){
+			if(scoreValue.equals("D")){
 				numberList.set(3, numberList.get(3)+1);
 				continue;
 			}
-			if(scoreValue <= 100 && scoreValue > 90){
+			if(scoreValue.equals("F")){
 				numberList.set(4, numberList.get(4)+1);
 				continue;
+			}
+			if(scoreValue.equals("I")){
+				numberList.set(5,numberList.get(5)+1);
 			}
 		}
 		Map<String, Object> retMap = new HashMap<String, Object>();
