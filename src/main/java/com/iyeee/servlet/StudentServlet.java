@@ -94,6 +94,7 @@ public class StudentServlet extends HttpServlet {
 		student.setidentity(identity);
 		student.setGraduateDate(graduateDate);
 		student.setBirthday(birthday);
+		System.out.println("-----"+graduateDate+""+birthday);
 		StudentDao studentDao = new StudentDao();
 		if(studentDao.editStudent(student)){
 			try {

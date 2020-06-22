@@ -53,9 +53,9 @@
  						}
  					}
 				},
-				{field:'identity',title:"身份证",width:200},
-				{field:'status',title:"职务",width:100},
-				{field:'department',title:'部门',width:200}
+				{field:'identity',title:"社会保险号码",width:200},
+				{field:'status',title:"状态",width:100},
+				{field:'department',title:'系别',width:200}
 	 		]], 
 	        toolbar: "#toolbar",
 	        onBeforeLoad : function(){
@@ -463,15 +463,15 @@
 	    			<td colspan="4"><input id="add_phone" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="phone" validType="mobile" /></td>
 	    		</tr>
 	    		<tr>
-	    			<td>身份证:</td>
-	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
+	    			<td>社会保险号码:</td>
+	    			<td colspan="4"><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true,missingMessage:'只能为数字且不为空'"/></td>
 	    		</tr>
 				<tr>
-					<td>职务:</td>
+					<td>状态:</td>
 					<td colspan="4"><input id="add_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" validType="text" /></td>
 				</tr>
 				<tr>
-					<td>部门:</td>
+					<td>系别:</td>
 					<td colspan="4"><input id="add_department" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="department" validType="text" /></td>
 				</tr>
 				<tr>
@@ -520,16 +520,16 @@
 	    			<td colspan="4"><input id="edit_qq" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="qq" validType="number" /></td>
 	    		</tr>
                 <tr>
-                    <td>职务:</td>
+                    <td>状态:</td>
                     <td colspan="4"><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" validType="text" /></td>
                 </tr>
                 <tr>
-                    <td>部门:</td>
+                    <td>系别:</td>
                     <td colspan="4"><input id="edit_department" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="department" validType="text" /></td>
                 </tr>
                 <tr>
-                    <td>身份证:</td>
-                    <td colspan="4"><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
+                    <td>社会保险号码:</td>
+                    <td colspan="4"><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="identity" type="number" data-options="required:true,missingMessage:'只能为数字且18位'"/></td>
                 </tr>
 	    	</table>
 	    </form>

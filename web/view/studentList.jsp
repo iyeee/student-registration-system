@@ -49,9 +49,9 @@
  		        {field:'sn',title:'学号',width:150, sortable: true},
  		        {field:'name',title:'姓名',width:65,sortable: true},
 				{field:'grade',title:'年级',width:65,sortable: true},
-				{field:'status',title:'职务',width:70,sortable: true,sortable: true},
+				{field:'status',title:'状态',width:70,sortable: true,sortable: true},
  		        {field:'sex',title:'性别',width:30,sortable: true},
-				{field:'identity',title:'身份证',width:150,sortable: true},
+				{field:'identity',title:'社会保险号码',width:150,sortable: true},
 				{field:'graduateDate',title:'毕业日期',width:90,sortable: true},
 				{field:'birthday',title:'生日',width:90,sortable: true},
  		        {field:'mobile',title:'电话',width:100,sortable: true},
@@ -480,12 +480,12 @@
 	    			<td><input id="add_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" /></td>
 	    		</tr>
                 <tr>
-                    <td>职务:</td>
+                    <td>状态:</td>
                     <td><input id="add_status" style="width: 200px; height: 30px;" class="easyui-textbox" name="status"/></td>
                 </tr>
                 <tr>
-                    <td>身份证号:</td>
-                    <td><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
+                    <td>社会保险号码:</td>
+                    <td><input id="add_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true,missingMessage:'只能为数字且不为空'"/></td>
                 </tr>
                 <tr>
                     <td>毕业日期:</td>
@@ -534,20 +534,20 @@
 	    			<td><input id="edit_clazzList" style="width: 200px; height: 30px;" class="easyui-textbox" name="clazzid" /></td>
 	    		</tr>
                 <tr>
-                    <td>职务:</td>
+                    <td>状态:</td>
                     <td><input id="edit_status" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="status" /></td>
                 </tr>
 				<tr>
-					<td>身份证:</td>
-					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true, validType:'length[18,18]',missingMessage:'只能为数字且18位'"/></td>
+					<td>社会保险号码:</td>
+					<td><input id="edit_identity" style="width: 200px; height: 30px;" class="easyui-textbox" name="identity" type="number" data-options="required:true,missingMessage:'只能为数字且18位'"/></td>
 				</tr>
 				<tr>
 					<td>毕业日期</td>:</td>
-					<td><input id="edit_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="graduate_date" /></td>
+					<td><input id="edit_graduateDate" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="graduateDate" /></td>
 				</tr>
 				<tr>
 					<td>生日:</td>
-					<td><input id="edit_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" name="birthday" /></td>
+					<td><input id="edit_birthday" style="width: 200px; height: 30px;" class="easyui-textbox" type="text" name="birthday" /></td>
 				</tr>
 	    	</table>
 	    </form>

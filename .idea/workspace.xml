@@ -7,10 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cecfba67-e6cd-490b-82b3-164044689fcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/courseList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/courseList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/view/scoreStats.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/scoreStats.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/WEB-INF/classes/com/iyeee/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/studentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SCW_test_war_exploded/view/teacherList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/iyeee/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/iyeee/dao/StudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/studentList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/studentList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/view/teacherList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/view/teacherList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,96 +121,96 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/SelectedCourseDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-320">
-              <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
-              <folding>
-                <element signature="e#3427#3428#0" expanded="true" />
-                <element signature="e#3446#3447#0" expanded="true" />
-                <element signature="method#isConflictHelper#0;class#SelectedCourseDao#0" />
-                <element signature="method#countSelect#0;class#SelectedCourseDao#0" />
-                <element signature="method#Test2#0;class#SelectedCourseDao#0" />
-                <element signature="method#Test3#0;class#SelectedCourseDao#0" />
-                <element signature="method#testConflict#0;class#SelectedCourseDao#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/welcome.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
-              <folding>
-                <element signature="n#style#0;n#p#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/toStudentInfoViewForbid.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8414" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/toStudentInfoView.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/scoreStats.jsp">
+        <entry file="file://$PROJECT_DIR$/web/view/courseList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/view/scoreList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/view/courseList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Score.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="58">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_teacher">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="185" column="33" lean-forward="true" selection-start-line="185" selection-start-column="33" selection-end-line="185" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+                <element signature="e#1441#1442#0" expanded="true" />
+                <element signature="e#1463#1464#0" expanded="true" />
+                <element signature="e#1575#1576#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1853#1854#0" expanded="true" />
+                <element signature="e#1873#1874#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#1983#1984#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/BaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,8 +218,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="121" column="50" lean-forward="true" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+            <state relative-caret-position="2464">
+              <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -231,7 +236,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addGrade</find>
       <find>gradeList</find>
       <find>getPhoto</find>
       <find>clazzList</find>
@@ -261,6 +265,7 @@
       <find>addForm</find>
       <find>console</find>
       <find>userType</find>
+      <find>graduate</find>
     </findStrings>
     <replaceStrings>
       <replace>identity</replace>
@@ -303,14 +308,10 @@
         <option value="$PROJECT_DIR$/web/view/scoreList.jsp" />
         <option value="$PROJECT_DIR$/web/view/selectedCourseList.jsp" />
         <option value="$PROJECT_DIR$/web/view/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" />
         <option value="$PROJECT_DIR$/web/view/clazzList.jsp" />
-        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
         <option value="707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/model/Teacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/TeacherServlet.java" />
-        <option value="$PROJECT_DIR$/web/view/teacherList.jsp" />
         <option value="$PROJECT_DIR$/web/view/system.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/CourseServlet.java" />
         <option value="$PROJECT_DIR$/web/view/test.jsp" />
@@ -318,13 +319,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/SelectedCourseServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/SelectedCourseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/CourseDao.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/web/view/welcome.jsp" />
         <option value="$PROJECT_DIR$/web/view/toStudentInfoView.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java" />
         <option value="$PROJECT_DIR$/web/view/scoreStats.jsp" />
         <option value="$PROJECT_DIR$/web/view/courseList.jsp" />
+        <option value="$PROJECT_DIR$/web/view/teacherList.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java" />
+        <option value="$PROJECT_DIR$/web/view/studentList.jsp" />
       </list>
     </option>
   </component>
@@ -360,10 +365,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="448" />
     <option name="y" value="399" />
-    <option name="width" value="1283" />
+    <option name="width" value="1287" />
     <option name="height" value="1141" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -373,6 +378,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -490,7 +496,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -498,7 +503,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592488509058" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592535311743" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -585,7 +590,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDao.Test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDao.test99" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SCW_test" />
       <extension name="coverage">
         <pattern>
@@ -595,7 +600,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.iyeee.dao" />
       <option name="MAIN_CLASS_NAME" value="com.iyeee.dao.StudentDao" />
-      <option name="METHOD_NAME" value="Test2" />
+      <option name="METHOD_NAME" value="test99" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -698,19 +703,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.StudentDao.Test" />
-      <item itemvalue="JUnit.StudentDao.Test2" />
-      <item itemvalue="Tomcat Server.Tomcat test" />
       <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
       <item itemvalue="JUnit.SelectedCourseServlet.test7" />
       <item itemvalue="JUnit.SelectedCourseDao.test99" />
+      <item itemvalue="JUnit.StudentDao.test99" />
+      <item itemvalue="Tomcat Server.Tomcat test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentDao.test99" />
+        <item itemvalue="JUnit.StudentDao.Test" />
         <item itemvalue="JUnit.SelectedCourseDao.test99" />
         <item itemvalue="JUnit.SelectedCourseServlet.test7" />
-        <item itemvalue="JUnit.StudentDao.Test" />
         <item itemvalue="JUnit.TeacherDao.testAddTeacher" />
-        <item itemvalue="JUnit.StudentDao.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -741,29 +746,12 @@
       <workItem from="1592355803751" duration="4405000" />
       <workItem from="1592362956742" duration="8829000" />
       <workItem from="1592396529524" duration="11305000" />
-      <workItem from="1592454540205" duration="17658000" />
+      <workItem from="1592454540205" duration="18307000" />
+      <workItem from="1592523297776" duration="7040000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentDao_Test - 2020.06.17 at 21h 56m 37s.xml">
-      <configuration name="StudentDao.Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDao_Test - 2020.06.17 at 21h 57m 23s.xml">
-      <configuration name="StudentDao.Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TeacherDao_testAddTeacher - 2020.06.18 at 12h 47m 54s.xml">
-      <configuration name="TeacherDao.testAddTeacher" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StudentDao_Test - 2020.06.18 at 13h 45m 21s.xml">
-      <configuration name="StudentDao.Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectedCourseServlet_test7 - 2020.06.18 at 16h 12m 13s.xml">
-      <configuration name="SelectedCourseServlet.test7" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SelectedCourseServlet_test7 - 2020.06.18 at 16h 12m 30s.xml">
-      <configuration name="SelectedCourseServlet.test7" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SelectedCourseServlet_test7 - 2020.06.18 at 16h 21m 29s.xml">
       <configuration name="SelectedCourseServlet.test7" configurationId="JUnit" />
     </history-entry>
@@ -776,9 +764,27 @@
     <history-entry file="SelectedCourseDao_test99 - 2020.06.18 at 16h 37m 52s.xml">
       <configuration name="SelectedCourseDao.test99" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StudentDao_Test - 2020.06.19 at 08h 36m 23s.xml">
+      <configuration name="StudentDao.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDao_test99 - 2020.06.19 at 08h 37m 57s.xml">
+      <configuration name="StudentDao.test99" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDao_test99 - 2020.06.19 at 08h 38m 20s.xml">
+      <configuration name="StudentDao.test99" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDao_test99 - 2020.06.19 at 08h 39m 01s.xml">
+      <configuration name="StudentDao.test99" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDao_test99 - 2020.06.19 at 08h 39m 55s.xml">
+      <configuration name="StudentDao.test99" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudentDao_test99 - 2020.06.19 at 08h 40m 29s.xml">
+      <configuration name="StudentDao.test99" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295699000" />
+    <option name="totallyTimeSpent" value="303388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,10 +796,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1248" height="837" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1248" height="797" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.12671755" visible="true" weight="0.0321489" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.12671755" visible="true" weight="0.0321489" />
       <window_info id="Structure" order="1" sideWeight="0.87328243" side_tool="true" weight="0.18020305" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -803,7 +808,7 @@
       <window_info id="Web" order="7" sideWeight="0.50076336" side_tool="true" weight="0.18104906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.69343066" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7707276" visible="true" weight="0.39854014" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7707276" weight="0.64496124" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -825,7 +830,7 @@
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Word Book" order="6" sideWeight="0.50229007" side_tool="true" weight="0.12351946" />
-      <window_info anchor="right" id="Database" order="7" sideWeight="0.49770993" visible="true" weight="0.13113368" />
+      <window_info anchor="right" id="Database" order="7" sideWeight="0.49770993" visible="true" weight="0.0321489" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
@@ -1004,13 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_teacher">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/SysServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1028,24 +1026,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/util/DbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -1077,42 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-772">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/SystemServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2827">
           <caret line="195" column="18" selection-start-line="195" selection-start-column="18" selection-end-line="195" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="176" column="165" selection-start-line="176" selection-start-column="165" selection-end-line="176" selection-end-column="165" />
         </state>
       </provider>
     </entry>
@@ -1134,25 +1086,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3124">
-          <caret line="178" column="28" selection-start-line="178" selection-start-column="28" selection-end-line="178" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/courseListStudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" selection-start-line="28" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/courseListStudent.jsp" />
     <entry file="file://$PROJECT_DIR$/web/view/clazzList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
@@ -1227,13 +1166,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/SelectedCourseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-320">
+        <state relative-caret-position="3476">
           <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
           <folding>
-            <element signature="e#3427#3428#0" expanded="true" />
-            <element signature="e#3446#3447#0" expanded="true" />
             <element signature="method#isConflictHelper#0;class#SelectedCourseDao#0" />
             <element signature="method#countSelect#0;class#SelectedCourseDao#0" />
             <element signature="method#Test2#0;class#SelectedCourseDao#0" />
@@ -1247,21 +1191,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="112" selection-start-line="11" selection-start-column="112" selection-end-line="11" selection-end-column="112" />
-          <folding>
-            <element signature="n#style#0;n#p#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/toStudentInfoViewForbid.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8414" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/toStudentInfoView.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        <state relative-caret-position="880">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/scoreStats.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/scoreList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2178">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
         </state>
       </provider>
     </entry>
@@ -1272,49 +1225,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_score">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2464">
+          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/courseList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_teacher">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/ScoreDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="121" column="50" lean-forward="true" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
+        <state relative-caret-position="60">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/ScoreServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/view/teacherList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/scoreStats.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="638">
+          <caret line="59" column="32" lean-forward="true" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/scoreList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="396">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1853#1854#0" expanded="true" />
+            <element signature="e#1873#1874#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#1983#1984#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/view/courseList.jsp">
+    <entry file="das://707715cf-713b-46a5-89e4-fa98b86a738e/schema/db_student_manager_web/table/s_student">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        <state relative-caret-position="364">
+          <caret line="185" column="33" lean-forward="true" selection-start-line="185" selection-start-column="33" selection-end-line="185" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/iyeee/servlet/StudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/view/studentList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
         </state>
       </provider>
     </entry>

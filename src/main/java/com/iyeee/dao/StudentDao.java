@@ -39,12 +39,18 @@ public class StudentDao extends BaseDao {
 
 		sql += ",identity = '"+student.getidentity();
 //		sql += ",birthday = '"+student.getBirthday()+"'";
-//		sql += ",graduate_date = '"+student.getGraduateDate();
+		sql += "',graduate_date = '"+student.getGraduateDate();
 
 		sql += "' where id = " + student.getId();
 		return update(sql);
 	}
-
+@Test
+public void test99(){
+		Student student=new Student();
+		student.setId(1);
+		student.setGraduateDate("2020-05-30");
+		editStudent(student);
+}
 	public boolean setStudentPhoto(Student student) {
 		// TODO Auto-generated method stub
 		String sql = "update s_student set photo = ? where id = ?";
@@ -82,8 +88,8 @@ public class StudentDao extends BaseDao {
 				student.setSex(resultSet.getString("sex"));
 				student.setSn(resultSet.getString("sn"));
 				student.setNum(resultSet.getInt("num"));
-				student.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
-				student.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+				student.setBirthday(resultSet.getString("birthday"));
+				student.setGraduateDate(resultSet.getString("graduate_date"));
 
 				return student;
 			}
@@ -119,8 +125,10 @@ public class StudentDao extends BaseDao {
 				s.setQq(resultSet.getString("qq"));
 				s.setSex(resultSet.getString("sex"));
 				s.setSn(resultSet.getString("sn"));
-				s.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
-				s.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+//				s.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
+//				s.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+				s.setGraduateDate(resultSet.getString("graduate_date"));
+				s.setBirthday(resultSet.getString("birthday"));
 				s.setGrade(resultSet.getInt("grade"));
 				s.setStatus(resultSet.getString("status"));
 				s.setNum(resultSet.getInt("num"));
@@ -175,8 +183,8 @@ public class StudentDao extends BaseDao {
 				student.setSex(resultSet.getString("sex"));
 				student.setSn(resultSet.getString("sn"));
 				student.setStatus("status");
-				student.setBirthday(DateFormatUtil.getFormatDate(resultSet.getDate("birthday"),"yyyy-MM-dd"));
-				student.setGraduateDate(DateFormatUtil.getFormatDate(resultSet.getDate("graduate_date"),"yyyy-MM-dd"));
+				student.setBirthday(resultSet.getString("birthday"));
+				student.setGraduateDate(resultSet.getString("graduate_date"));
 				student.setNum(resultSet.getInt("num"));
 				student.setidentity(resultSet.getString("identity"));
 
@@ -224,15 +232,12 @@ public class StudentDao extends BaseDao {
 		student.setStatus("组长");
 		student.setSex("女");
 		student.setidentity("330481998072638462");
-		SimpleDateFormat sdf = new SimpleDateFormat( "yyyy-MM-dd" );
-		java.util.Date gradaDate=sdf.parse("2021-06-30");
-		java.util.Date birth=sdf.parse("1998-06-30");
 		student.setGraduateDate("2017-06-30");
 		student.setBirthday("2021-06-30");
 		student.setMobile("13750748731");
 		student.setQq("10097989123");
 
-		addStudent(student);
+		editStudent(student);
 	}
 	@Test
 	public void Test3(){
